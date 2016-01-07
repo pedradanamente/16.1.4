@@ -1,0 +1,800 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  07</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2007_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=bf8c12564b999698e9b49d3517987fbf&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">07 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:42  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2007_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 07</span><br><br>
+<div id="listasx"><ul>
+
+  <li><span style="font-family: Verdana;">Invasão
+via Backdoors</span></li>
+
+  <li><span style="font-family: Verdana;">Backdoors</span></li>
+
+  <li><span style="font-family: Verdana;">Exemplo
+Prático</span></li>
+
+  <li><span style="font-family: Verdana;">Auto
+Infecção.</span></li>
+
+  <li><span style="font-family: Verdana;">Conexão</span></li>
+
+  <li><span style="font-family: Verdana;">Acessando
+a SHELL cmd.exe</span></li>
+
+  <li><span style="font-family: Verdana;">Sobre
+o Protocolo utilizado</span></li>
+
+  <li><span style="font-family: Verdana;">Shells
+Acessadas</span></li>
+
+  <li><span style="font-family: Verdana;">Vídeo
+demostrativo</span></li>
+
+  <li><span style="font-family: Verdana;">Pen
+test<br>
+
+    </span></li>
+
+</ul></div>
+
+<div align="justify"><span class="small_gray_text">&nbsp;&nbsp;</span><span class="small_gray_text"></span>
+<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+</span><span style="font-family: Verdana; font-weight: bold; font-style: italic;"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <embed style="width: 150px; height: 113px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_001.swf"><br>
+
+      </td>
+
+      <td style="font-weight: bold;"><span style="font-family: Verdana;">INVASÃO VIA
+BACKDOOR.</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<span style="font-family: Verdana;"><br>
+
+</span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;">&nbsp;&nbsp; Com a
+crescente democratização do acesso às
+tecnologias da Informação, a cada dia os riscos
+de segurança também aumentam na mesma
+proporção. O objetivo desta aula é
+mostrar como um simples arquivo mal intencionado pode causar
+sérios danos principalmente se tratando de sua privacidade
+na Internet.<br>
+
+Alem de mostrar os riscos de Backdoors também vamos estudar
+formas de defesa de uma forma técnica.<br>
+
+Em nosso tutorial vamos utilizar um único software tanto
+para pen test como para proteção. Nosso software
+é destinado exclusivamente para estudos e contem uma
+série de proteções para não
+ser usado em situações ilícitas. Nosso
+objetivo é estimular os estudos de segurança de
+uma forma segura e ética.<br>
+
+<br>
+
+&nbsp;</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"> <span style="font-weight: bold;"><br>
+
+BACKDOORS</span><br>
+
+<br>
+
+&nbsp;Backdoors são programas que instalam um ambiente
+de serviço em um computador, tornando-o acessível
+à distância, permitindo o controle remoto da
+máquina sem que o usuário saiba. Isto significa
+que um computador infectado para a ser controlado por outra pessoa
+remotamente e de uma forma totalmente oculta.<br>
+
+<br>
+
+&nbsp;Diferença entre Backdoors e Spywares:<br>
+
+<br>
+
+</span>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Backdoors:</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Apenas abre uma porta para
+acesso remoto.</span></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Spywares:</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Capturas dados pessoais do
+usuário e envia para o “Cracker”
+geralmente via email.</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<span style="font-family: Verdana;"><br>
+
+<br>
+
+&nbsp;Andre, um Backdoor pode ser muito mais perigoso que um spyware pois
+os Spywares são espalhados em formas de worm e o controlador
+não escolhe seu alvo, ele apenas deixa o worm se espalhar na
+rede e fica esperando os dados de computadores infectados,
+consequentemente seu código se torna publico e rapidamente
+as empresas de antivírus criam vacinas e você
+obtém a defesa sem mesmo saber.<br>
+
+<br>
+
+&nbsp;Com os Backdoors a maioria das
+infecções funcionam de forma diferente, o
+controlador escolhe seu alvo, planeja seu ataque, camufla a integridade
+do arquivo,etc.<br>
+
+<br>
+
+Isto pode ser um grande risco principalmente para Empresas, Ambientes
+corporativos pois os alvos são planejados.<br>
+
+<br>
+
+&nbsp;Um Backdoor pode ficar oculto por muitos anos com nenhum
+antivírus sabendo de sua existência ( Com
+exceção de trojans conhecidos ).<br><br>
+
+<embed style="width: 600px; height: 220px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/conexao_direta.swf">
+
+<br>
+
+&nbsp;</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"> <br>
+
+<span style="font-weight: bold;">Exemplo prático</span><br>
+
+<br>
+
+&nbsp;<br>
+
+Vamos criar um Backdoor e se autoinfectar.<br>
+
+Abra seu Insecuritynet 3.X e entre em:<br>
+
+Iniciar -&gt; Intrusão -&gt; Direct Shell Remote<br>
+
+<br>
+
+&nbsp;
+<embed style="width: 189px; height: 271px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_002.swf"><br>
+
+<br>
+
+&nbsp;Agora entre em “Criar Server”<br>
+
+<br>
+
+&nbsp;
+<embed style="width: 488px; height: 281px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_003.swf"><br>
+
+<br>
+
+&nbsp;Digite a porta e a uma senha de conexão:<br>
+
+<br>
+
+&nbsp;
+<embed style="width: 605px; height: 197px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_004.swf"><br>
+
+<br>
+
+&nbsp;Tecle Enter:<br>
+
+</span><span style="font-family: Verdana;">&nbsp;Automaticamente o
+Backdoor será criado e a Pasta onde ele se encontra
+é aberta:</span><br>
+
+<span style="font-family: Verdana;"><br>
+
+&nbsp;
+<embed style="width: 676px; height: 116px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_005.swf"><br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"><br>
+
+<span style="font-weight: bold;">&nbsp;AUTO
+INFECÇÃO</span><br>
+
+<br>
+
+&nbsp;Clicando no Backdoor você se auto
+infectará.<br>
+
+<br style="font-weight: bold;">
+
+<span style="font-weight: bold;">&nbsp;Nossa
+política de segurança:</span><br>
+
+<br>
+
+Você configurou uma senha, portanto somente você
+pode ter acesso ao sistema.<br>
+
+Você pode remover o backdoor de duas maneiras (Conectado no
+Próprio Backdoor ou pela Vacina presente no Menu DEFESA)<br>
+
+&nbsp;Clique no Backdoor e aguarde 30 segundos para a
+infecção, após infectado o backdoor se
+auto deleta.<br>
+
+<br>
+
+&nbsp;<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"> &nbsp;<br>
+
+<br>
+
+<span style="font-weight: bold;">CONEXÃO:</span><br>
+
+<br>
+
+&nbsp;Neste momento seu&nbsp; computador esta infectado e
+você esta fazendo o papel do Cracker.<br>
+
+&nbsp;Iniciar -&gt; Intrusão -&gt; Direct Shell
+Remote -&gt; Conectar<br>
+
+<br>
+
+&nbsp;Digite seu IP ou o IP localhost e a porta que você
+configurou.<br>
+
+<br>
+
+&nbsp;
+<embed style="width: 364px; height: 170px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_006.swf"><br>
+
+<br>
+
+&nbsp; Agora digite a senha que você configurou:<br>
+
+<br>
+
+&nbsp;
+<embed style="width: 448px; height: 105px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_008.swf"><br>
+
+<br>
+
+&nbsp; O Backdoor abre a porta para duas SHELLs.<br>
+
+<br>
+
+<span style="font-weight: bold;">&nbsp; CMD.exe</span><br style="font-weight: bold;">
+
+<span style="font-weight: bold;">&nbsp;
+Próprio Backdoor</span><br>
+
+<br>
+
+&nbsp;O Backdoor Insecuitynet 3.X possui vários comandos
+a nível SHELL e também abre o CMD.exe<br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"> &nbsp;<br>
+
+<span style="font-weight: bold;">ACESSANDO A SHELL CMD.EXE</span><br>
+
+<br>
+
+Para acessar o CMD.exe basta entrar em algum diretório
+(Desktop, Meus Documentos ou Raiz)<br>
+
+Vamos entrar no Desktop ( Digite 1 e tecle enter )<br>
+
+<br>
+
+<embed style="width: 448px; height: 105px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_009.swf"><br>
+
+&nbsp;<br>
+
+<br>
+
+&nbsp;Observe que agora você tem controle total sobre o
+computador, você poderá executar, deletar,
+visualizar, mover, copiar arquivos como se você estivesse no
+Prompt de comando do computador alvo.<br>
+
+&nbsp;Para sair da SHELL CMD.exe e voltar ao Menu (Shell do
+Backdoor) , digite: <span style="font-weight: bold;">exit</span><br>
+
+<br>
+
+&nbsp;</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"><br>
+
+<span style="font-weight: bold;">REMOVENDO O BACKDOOR</span><br>
+
+<br>
+
+Você tem duas opções:<br>
+
+<br>
+
+</span>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Remoção
+Local</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Digite: /quit para desconectar
+e entre em:&nbsp; Iniciar -&gt; defesa -&gt; Vacina</span></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Remoção
+Remota</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">No menu do Backdoor digite o
+comando: REMV</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<span style="font-family: Verdana;"><br>
+
+&nbsp;</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"><br>
+
+<span style="font-weight: bold;">SOBRE O PROTOCOLO UTILIZADO:</span><br>
+
+<br>
+
+Andre, este Backdoor de teste utiliza um protocolo próprio de
+conexão, pois a porta fica aberta e teoricamente seria
+possível conecta-lo via telnet.<br>
+
+<br>
+
+Observe uma tentativa de conexão via telnet.<br>
+
+<br>
+
+&nbsp;
+<embed style="width: 330px; height: 176px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/img_010.swf"><br>
+
+<br>
+
+&nbsp;O Backdoor apenas indica o que está na porta mas
+não libera a conexão com nenhuma Shell.<br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"><br style="font-weight: bold;">
+
+<span style="font-weight: bold;">&nbsp;SHELLS
+ACESSADAS.</span><br>
+
+<br>
+
+&nbsp;<br>
+
+</span>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255); font-weight: bold;"><span style="font-family: Verdana;">CMD.exe</span></td>
+
+      <td style="background-color: rgb(234, 236, 255); font-weight: bold;"><span style="font-family: Verdana;">SHELL do Backdoor</span></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Para saber mais sobre os
+comandos visualize a aula 04 de nosso curso.<br>
+
+      <br>
+
+&nbsp;AULA 04<br>
+
+&nbsp;&nbsp;</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Criação
+de Dirtetório para Compratilhamento (Não de Rede)<br>
+
+      <br>
+
+Download de Arquivos<br>
+
+      <br>
+
+Visulização de Diretórios<br>
+
+      <br>
+
+Envio de Mensagens<br>
+
+      <br>
+
+Captura de Dados do Sistema<br>
+
+      <br>
+
+Shutdown<br>
+
+      <br>
+
+Remoçãodo Backdoor</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<span style="font-family: Verdana;"><br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+<br>
+
+</span><span style="font-family: Verdana;"><span style="font-weight: bold;"> VIDEO DEMOSTRATIVO.</span><br>
+
+<br>
+
+&nbsp;<object height="385" width="480"><param name="movie" value="http://www.youtube.com/v/rl6K0Zlq3IA&amp;hl=pt_BR&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always">
+<embed src="Curso%20ASCD%20-%20Aula%2007_arquivos/rl6K0Zlq3IAhlpt_BRfs1.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" height="385" width="480"></object><br>
+
+<br>
+
+&nbsp;<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+<br>
+
+</span><span style="font-family: Verdana;"> &nbsp;</span><span style="font-family: Verdana;"><span style="font-weight: bold;">PEN TEST</span><br>
+
+<br>
+
+Este foi um teste de Intrusão em seu próprio
+computador, você poderá enviar o Backdoor para um
+amigo e conectar no Computador dele. Lembre-se que IPs NAT (192.X.X.X)
+Só são conectados se estiverem na mesma rede.
+(Verificar AULA 02 )<br>
+
+<br>
+
+Qualquer dúvida, estamos à sua
+disposição.<br>
+
+<br style="font-family: Verdana;">
+
+</span>
+
+
+
+</div>
+
+<!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="07" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="e0bddb5c316990383f1dea4f7cfb2bd1" type="hidden">
+
+<b>1-) Para que serve um Backdoor?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Scanear vulnerabilidades  </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Bloquear acessos indevido </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Fechar portas anteriores à 1024</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Abrir uma porta para aceso remoto de forma sigilosa. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) Como o backdoor obtém acesso?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Direcionando uma porta para uma Shell ou ele próprio fazendo o papel de Shell </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Localizando uma vulnerabilidade no sistema </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Obtendo acesso via buffer overflow</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Localizando vírus ativos </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) Qual a diferença entre Backdoor e Spyware?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Backdoor captura dados remoto e Spyware permite acesso </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Backdoor permite acesso remoto e Spyware tambem permite acesso </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Backdoor permite acesso remoto e Spyware captura dados</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Backdoor captura dados e Spyware tambem captura dados </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2007_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="07" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2007_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

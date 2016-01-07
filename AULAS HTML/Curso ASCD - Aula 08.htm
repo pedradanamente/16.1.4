@@ -1,0 +1,770 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  08</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2008_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=c446e853436ed0595b457b65c28dabe0&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">08 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:44  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2008_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 08</span><br><br>
+<div id="listasx"><ul>
+
+  <li><span style="font-family: Verdana;">Conexões</span></li>
+
+  <li><span style="font-family: Verdana;">Estados
+de uma conexão</span></li>
+
+  <li><span style="font-family: Verdana;">Como
+visualizar uma conexão</span></li>
+
+  <li><span style="font-family: Verdana;">Conexões
+em seu computador</span></li>
+
+
+</ul></div>
+
+<div align="justify"><span>&nbsp;&nbsp;</span><span></span>
+<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+</span><span style="font-family: Verdana;"><br>
+
+<span style="font-weight: bold;"></span></span><br style="font-family: Verdana;">
+
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td><img style="width: 111px; height: 111px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/conexao.jpg"></td>
+
+      <td><span style="font-family: Verdana; font-weight: bold;">CONEXÕES</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+ <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-weight: bold; font-family: Verdana;"><br>
+
+</span><span style="font-family: Verdana;">Para existir uma
+conexão entre dois computadores é necessario:<br>
+
+<br style="font-family: Verdana;">
+
+</span> <span style="font-family: Verdana;">Computador
+Cliente<br>
+
+Programa Cliente<br>
+
+Computador Servidor<br>
+
+Programa Servidor<br>
+
+Endereços IP<br>
+
+Portas definidas<br>
+
+Meio Físico<br>
+
+Protocolo<br>
+
+<br>
+
+Exemplo:<br>
+
+<br>
+
+<embed style="width: 462px; height: 229px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_001.swf"><br>
+
+<br>
+
+&nbsp;<br style="font-family: Verdana;">
+
+</span>
+<table style="text-align: left; width: 401px; height: 228px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Computador Cliente:</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);">Seu
+Computador</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Programa Cliente:</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);">Navegador
+(Firefox)</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Computador Servidor:</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);">Servidor
+Web</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Programa Servidor:</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);">Servidor
+HTTP (Apache)</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Endereços IP:</span></td>
+
+      <td style="background-color: rgb(234, 236, 255);">189.25.1.4
+e 201.58.4.7</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);">Portas
+Definidas:</td>
+
+      <td style="background-color: rgb(234, 236, 255);">1542
+e 80</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);">Meio
+Físico:</td>
+
+      <td style="background-color: rgb(234, 236, 255);">Cabo,
+Fibra óptica, onda de radio, etc.</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(234, 236, 255);">Protocolo:</td>
+
+      <td style="background-color: rgb(234, 236, 255);">TCP/IP</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana; font-weight: bold;"><br>
+
+ESTADOS DE UM CONEXÃO TCP</span><span style="font-weight: bold;"> </span><span style="font-weight: bold;"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;Para
+uma conexão ser estabelecida é
+necessário uma série de processos.<br>
+
+&nbsp;Durante estes processos definimos vários estados
+para uma conexão.<br>
+
+<br style="font-weight: bold;">
+
+<span style="font-weight: bold;">Regra entre cliente
+e servidor:</span><br>
+
+<br>
+
+O computador servidor fica aguardando uma conexão<br>
+
+O computador cliente é quem solicita a conexão.<br>
+
+<br>
+
+<br>
+
+Andre, quando o computador servidor quando está aguardando uma
+conexão ele está no estado <span style="font-weight: bold;">LISTEN</span>.<br>
+
+<br>
+
+Quando o cliente solicita uma conexão é enviado o
+pacote SYN.<br>
+
+Neste momento o cliente que acabou de enviar o pacote está
+no estado <span style="font-weight: bold;">SYN-SENT</span><br>
+
+<br>
+
+O Servidor recebe o pacote e envia outro pacote SYN ACK
+&nbsp;respondendo a solicitação, neste
+momento o servidor está no estado <span style="font-weight: bold;">SYN-RCVD</span>.<br>
+
+<br>
+
+&nbsp;O servidor confirma a conexão com um pacote ACK e
+é iniciada a conexão, neste momento o estado da
+conexão entre cliente e servidor é <span style="font-weight: bold;">ESTABLISHED</span>.<br>
+
+<br>
+
+<embed style="width: 489px; height: 270px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_003.swf"><br>
+
+<br>
+
+&nbsp;</span><span style="font-family: Verdana;"><span style="font-weight: bold; color: rgb(0, 0, 153); font-style: italic;"></span></span><br>
+
+<span style="font-family: Verdana;"><br>
+
+Com o decorrer da conexão pode acontecer vários
+fatores que irá determinar vários outros estados.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; * FIN-WAIT-1: O estado que um
+host se encontra após ter enviado um pacote FIN inicial
+pedindo um fechamento correto da conexão TCP.<br>
+
+&nbsp;&nbsp;&nbsp; * CLOSE-WAIT: O estado da
+conexão do host que recebeu um FIN inicial e envia de volta
+um ACK para confirmar o FIN.<br>
+
+&nbsp;&nbsp;&nbsp; * FIN-WAIT-2: O estado da
+conexão do host que recebeu a resposta ACK para seu FIN
+inicial, e indica que agora está esperando um FIN final.<br>
+
+&nbsp;&nbsp;&nbsp; * LAST-ACK: Esse estado indica que o
+host acabou de enviar seu segundo FIN, que é
+necessário para encerramento correto da conexão
+TCP, e está aguardando uma confirmação.<br>
+
+&nbsp;&nbsp;&nbsp; * TIME-WAIT: Nesse estado encontra-se o
+host iniciador que recebeu um FIN final e enviou um ACK para fechar a
+conexão. Nesse momento ele não irá
+mais receber nenhuma confirmação do ACK que
+acabou de enviar, portanto espera um período de tempo para
+fechar a conexão.<br>
+
+&nbsp;&nbsp;&nbsp; * CLOSED: pode-se considerar como
+“sem estado”. Esse estado existe antes que uma
+conexão seja iniciada ou quando ela é finalizada.
+<br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+<br style="font-weight: bold;">
+
+</span><span style="font-family: Verdana;"><span style="font-weight: bold;">COMO VISUALIZAR AS
+CONEXÕES ATUAIS EM SEU COMPUTADOR E SEUS ESTADOS.</span><br>
+
+<br>
+
+Abra o Prompt de comando e Digite:<br>
+
+netstat -n<br>
+
+<br>
+
+<embed style="width: 664px; height: 320px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_016.swf"><br>
+
+<br>
+
+</span>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="font-family: Verdana; color: rgb(51, 0, 0); font-weight: bold; background-color: rgb(234, 236, 255);">PROTO</td>
+
+      <td style="font-family: Verdana; color: rgb(51, 0, 0); font-weight: bold; background-color: rgb(234, 236, 255);">Endereço
+Local</td>
+
+      <td style="font-family: Verdana; color: rgb(51, 0, 0); font-weight: bold; background-color: rgb(234, 236, 255);">Endereço
+externo</td>
+
+      <td style="font-family: Verdana; color: rgb(51, 0, 0); font-weight: bold; background-color: rgb(234, 236, 255);">Estado</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; background-color: rgb(234, 236, 255);">Protocolo
+Utilizado na conexão</td>
+
+      <td style="font-family: Verdana; background-color: rgb(234, 236, 255);">IP
+do seu computador e a porta Utilizada</td>
+
+      <td style="font-family: Verdana; background-color: rgb(234, 236, 255);">IP
+do computador externo e a porta utilizada</td>
+
+      <td style="font-family: Verdana; background-color: rgb(234, 236, 255);">Estado
+da Conexão</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<span style="font-family: Verdana;"><br>
+
+<br>
+
+&nbsp; Você pode utilizar o Insecuritynet 3.X para
+visualizar suas conexões de uma forma mais detalhada.<br>
+
+<br>
+
+&nbsp; Iniciar -&gt; Gerenciamento Local -&gt; Gerenciar
+Conexão -&gt; Visualizar Conexões.<br>
+
+&nbsp; <br>
+
+&nbsp; Você pode visualizar apenas as conexões
+que utilizam o protocolo TCP<br>
+
+&nbsp; </span><span style="font-family: Verdana;">Você pode visualizar
+também as conexões que utilizam o protocolo UDP e
+LISTINGS<br>
+
+&nbsp; &nbsp;Ou apenas os serviços externos
+conectados.<br>
+
+<br>
+
+&nbsp; Vamos escolher apenas TCP ( Only TCP )<br>
+
+<br>
+
+&nbsp;
+<embed style="width: 203px; height: 117px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_015.swf"><br>
+
+<br>
+
+&nbsp;
+<embed style="width: 666px; height: 433px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_002.swf"><br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+<br style="font-weight: bold;">
+
+</span><span style="font-family: Verdana;"><span style="font-weight: bold;">&nbsp; CONEXÕES EM
+SEU COMPUTADOR</span><br>
+
+<br>
+
+&nbsp; &nbsp;Andre, um simples ato de visualizar um website gera
+varias conexões. alem da conexão direta com o
+servidor do Site também você poderá
+estar conectando em outros servidores que hospeda Banner, Iframes, etc.<br>
+
+&nbsp; &nbsp;Neste caso (Visualizando um webSite) seu
+computador é um Cliente.<br>
+
+&nbsp; &nbsp;<br>
+
+&nbsp; &nbsp;Se voce hospeda algum servidor de JOGO,
+você fica aguardando uma conexão externa, neste
+caso seu computador esta sendo um Servidor.<br>
+
+<br>
+
+&nbsp; &nbsp;Portanto seu computador pode agir como cliente e
+servidor, dependendo de cada situação.<br>
+
+<br style="font-weight: bold;">
+
+<span style="font-weight: bold;">&nbsp;
+&nbsp;Para seu computador ser um servidor e acessível
+aos clientes é necessario:</span><br>
+
+&nbsp; &nbsp;<br>
+
+&nbsp; &nbsp;Endereço externo definido (IP ou DNS)<br>
+
+&nbsp; &nbsp;Porta Definida<br>
+
+&nbsp; &nbsp;O IP deve ser válido na Internet, caso
+contrario somente computadores de sua rede poderão acessar
+seu servidor.<br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"></span> &nbsp;
+&nbsp;<br style="font-weight: bold;">
+
+
+<big style="color: rgb(0, 102, 0);"><big><span style="font-weight: bold;">Situações de conectividade</span></big></big><br>
+&nbsp;<br>
+<br>
+&nbsp;Veja esta situação onde não temos redes privadas<br>
+&nbsp;<br>
+
+<embed style="width: 648px; height: 150px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_020.swf">
+<br>
+<br>
+&nbsp;&nbsp; Neste exemplo o PC-A pode iniciar uma conexão com o
+PC-B, pois o PC-B está visível para o PC-A.<br>
+&nbsp;&nbsp;&nbsp; PC-A (inicia a conexão) = Cliente<br>
+&nbsp;&nbsp;&nbsp; PB-B (recebe a conexão) = Servidor<br>
+<br>
+<br>
+Agora com o computador cliente dentro de uma rede privada<br>
+<br>
+
+<embed style="width: 645px; height: 236px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_021.swf">
+<br>
+<br>
+&nbsp;&nbsp; Neste exemplo o PC-A pode iniciar uma conexão com o
+PC-B, pois o PC-B está visível para o PC-A.<br>
+&nbsp;&nbsp; O PC-A (192.168.0.2) irá conectar no modem e o modem repassa a conexão para o PC-B<br>
+&nbsp;&nbsp;&nbsp; PC-A (inicia a conexão) = Cliente<br>
+&nbsp;&nbsp;&nbsp; PB-B (recebe a conexão) = Servidor<br>
+<br>
+Agora com o servidor dentro de uma rede privada.<br>
+<br>
+
+<embed style="width: 643px; height: 228px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_022.swf">
+<br>
+<br>
+Agora temos um problema para o PC-A conectar no PC-B.<br>
+O PC-A consegue enxergar até o modem (189.200.5.9), como seria
+possível direcionar a conexão para o PC-B (192.168.0.2)?<br>
+A resposta para esta pergunta é: Redirecionado portas no modem para um computador específico.<br>
+<br>
+Para o PC-A iniciar a conexão com o PC-B é necessário utilizar a definicão de porta, por exemplo:<br>
+Vamos imaginar que o PC-B seja um servidor FTP (porta 21)<br>
+<br>
+O Modem deve ser configurado para direcionar os pacotes recebidos na porta 21 para o computador 192.168.0.2 (PC-B)<br>
+<br>
+
+<embed style="width: 636px; height: 218px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_023.swf">
+<br>
+<br>
+Do ponto de vista do PC-A (Cliente) o servidor será o modem (189.200.5.9)<br>
+Nao existe padrão para a configuração do modem,
+cada fabricante tem sua própria maneira e manual de
+instruções.<br>
+<br>
+Agora vamos a uma outra situação, quando tanto o cliente como o servidor estão em uma rede privada<br>
+<br>
+
+<embed style="width: 698px; height: 222px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_024.swf">
+<br>
+<br>
+Se o modem do servidor&nbsp; (PC-B) estiver configurado para
+redirecionar a porta da conexão o PC-A pode iniciar a
+conexão normalmente com o PC-B<br>
+<br>
+Agora veja este exemplo, onde tanto o cliente como o servidor
+estão em uma rede privada&nbsp; e não é
+possível redirecionar as portas no modem.&nbsp; A
+solução será um servidor externo para ligar o
+cliente ao servidor.<br>
+<br>
+
+<embed style="width: 698px; height: 217px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/img_025.swf">
+<br>
+<br>
+Desta forma tanto o PC-A como o PC-B conectam no servidor externo e
+este servidor faz a conexão entre as duas máquinas,
+é como acontece um um bate-papo no Facebook.<br>
+<br>
+<div id="barra"></div><br><br>
+
+
+</div>
+
+<!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="08" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="88f9ea74796b107c357bb954d78c4f6e" type="hidden">
+
+<b>1-) Quais itens abaixo são indispensáveis para haver uma conexão entre dois computadores?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Endereços IP, Portas definidas, Meio Físico e Protocolo </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Endereços IP, Portas definidas, Meio Físico e MSN </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Endereços IP, Internet, Meio Físico e Protocolo</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Endereços IP, Rede sem fio , Meio Físico e Protocolo </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) Qual comando é utilizado no prompt para visualizar as conexões de meu computador?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>netstat </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>ipconfig </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>del</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>dir </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) Qual o estado quando servidor confirma a conexao com um pacote ACK e é iniciada a conexão?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>ESTABLISHED </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>LAST-ACK </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>FIN-WAIT</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>TIME-WAIT </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>CLOSED </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2008_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="08" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2008_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

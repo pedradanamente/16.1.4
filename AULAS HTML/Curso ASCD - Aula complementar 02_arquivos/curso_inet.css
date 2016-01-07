@@ -1,0 +1,223 @@
+ * {
+    margin: 0;
+    padding: 0;
+	  
+    }
+
+    html, body {
+    height: 100%;
+	
+    }
+
+    * html #tudo {height: 100%;}
+
+	 ul { list-style-image: url("ok.png");
+	 position:relative;
+left:10px;
+}
+
+	 ol { 
+	 position:relative;
+left:30px;
+}
+
+	
+    #tudo {
+    width: 790px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+    position: relative;
+
+    min-height: 945px;
+
+    /* background-color: #FFF; */
+	
+   }
+   
+       #tudo2 {
+    width: 800px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+    position: relative;
+
+    min-height: 100%;
+
+    /* background-color: #FFF; */
+	 border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+	
+   }
+
+#conteudo {
+padding-bottom:    50px;
+	 
+
+}
+
+#reader {
+      
+	 border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#logon{
+position:relative;
+
+top:5px;
+  
+	 border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+   padding: 10px; 
+  
+}
+
+
+#login{
+position:relative;
+background-color: #FFF; 
+top:5px;
+     background-image: url("../images_fixas/fundo_login.jpg");
+	 border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+   padding: 10px; 
+   background: url('../images_fixas/fundo_login.png') repeat-x;
+
+  
+}
+
+
+#aula{
+   background: url('../images_fixas/fundo_aula.png') ;
+position:relative;
+  
+top:5px;
+    
+	 border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+   padding: 10px; 
+  
+}
+
+#ava{
+   background: url('../images_fixas/fundo_aula.png') ;
+position:relative;
+  
+top:5px;
+    
+	 border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+   padding: 10px; 
+   
+     font-family: Verdana;
+font-size:15px;
+  
+}
+
+#barra{
+position:relative;
+  background-color: #000000; 
+top:5px;
+    
+border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+   padding: 2px; 
+  
+}
+
+#listasx {
+position:relative;
+left:20px;
+}
+
+#code_01 {
+position:relative;
+left:5px;
+
+background: url('../images_fixas/fundo_codigo_azul.png') ;
+border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+   padding: 8px; 
+   font-family: Verdana;
+font-size:12px;
+color:#87CEFA;
+width: 400px;
+}
+
+    #rodape {
+    position: absolute;
+    bottom: -90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 100%;
+	
+    background-color: rgb(229, 245, 255);
+		 border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+    }
+	
+	    #rodape_normal {
+    position: absolute;
+    bottom: 0px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 100%;
+	
+    background: url('../images_fixas/fundo_preto.png') ;
+		 border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+    }
+	
+	body {
+
+font-family: Verdana;
+font-size:12px;
+color:#000000;
+
+
+
+}
+p {
+font-family: Verdana;
+}
+td {
+font-family: Verdana;
+
+}
+
+a:link, a:visited, a:active {
+	text-decoration:none;
+	color:#236B8E;
+	
+	}
+a:hover {
+	text-decoration: underline; 
+	
+	}

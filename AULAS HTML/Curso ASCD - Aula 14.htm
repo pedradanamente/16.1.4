@@ -1,0 +1,1142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  14</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2014_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=c0e32c46e0fffbc07f948abe68f7cf5a&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">14 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  01/05/2014 15:33  Brasil &nbsp; &nbsp; &nbsp; Acesso:3<br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2014_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 14</span><br><br>    <div id="listasx">
+      <ul>
+        <li><span style="font-family: Verdana;">Segurança em servidores
+            FTP</span></li>
+        <li><span style="font-family: Verdana;">O que é FTP</span></li>
+        <li><span style="font-family: Verdana;">Analisando o servidor</span></li>
+        <li><span style="font-family: Verdana;">Scan do servidor</span></li>
+        <li><span style="font-family: Verdana;">Subdomínios</span><br>
+        </li>
+        <li><span style="font-family: Verdana;">Logando no servidor</span></li>
+        <li><span style="font-family: Verdana;">Visualizando o conteúdo
+            do servidor</span></li>
+        <li><span style="font-family: Verdana;">Acessando um diretório</span></li>
+        <li><span style="font-family: Verdana;">Baixando arquivos</span></li>
+        <li><span style="font-family: Verdana;">Interface Gráfica</span></li>
+        <li><span style="font-family: Verdana;">Lista de comandos</span></li>
+        <li><span style="font-family: Verdana;">Exercício<br>
+          </span></li>
+      </ul>
+    </div>
+    <span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+      <br>
+    </span><span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;"></span></span><br style="font-family: Verdana;">
+    <table style="text-align: left; width: 100%;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td><img style="width: 126px; height: 104px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/nasa.jpg"></td>
+          <td><span style="font-family: Verdana; font-weight: bold;">SEGURANÇA
+              EM SERVIDORES FTP</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana; font-weight: bold;">
+    <span style="font-family: Verdana; font-weight: bold;"></span><span style="font-family: Verdana;"></span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Atualmente invadir um
+      servidor de FTP não é mais uma tarefa fácil.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Os
+      sistemas operacionais, protocolos evoluíram, muitos bugs foram
+      corrigidos. Mas ainda está longe de ser perfeito, existem muitas
+      falhas, formas de invasão.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;O
+      que não existe mais são as formulas prontas do tipo
+      “use este script que você esta dentro do servidor”</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Para
+      você conseguir entrar em um servidor FTP, antes de tudo
+      você precisa saber como ele funciona, quais as vulnerabilidades
+      do servidor e de seu sistema operacional, conhecer a fundo o
+      protocolo
+      FTP, seus comandos, ou seja, é preciso realmente estudar.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;O propósito desta aula é
+      estudar o funcionamento e vulnerabilidades de um servidor FTP.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Usamos
+      um servidor Americano que envia dados para NASA, vamos passo a
+      passo
+      logar e navegar no servidor, porem queremos deixar claro que não
+      tem nada de ilegal, o servidor tem suas proteções como
+      veremos mais adiante.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Não
+      estamos promovendo nenhum tipo de crime virtual, usem isto para
+      aumentar seu conhecimento em segurança, lembrando que se
+      você mudar um byte de um servidor que você não tem
+      autorização é crime.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">&nbsp;
+      Esta aula foi baseada em um tutorial escrito pelo membro de nossa
+      equipe. Edson que possui o pseudônimo “Rackerox”.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">O QUE É FTP</span></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;FTP
+      significa File Transfer Protocol (Protocolo de Transferência de
+      Arquivos), e é uma forma bastante rápida e
+      versátil de transferir arquivos, sendo uma das mais usadas na
+      Internet.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Um
+      Website precisa de um servidor FTP para “guardar” seus
+      arquivos. Quando você visita um site na internet, você esta
+      baixando os arquivos do site (paginas html, fotos, sons, etc) para
+      o
+      seu computador.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Se
+      você tiver acesso ao servidor FTP de um site, você
+      terá acesso aos arquivos deste site, e mais se você
+      estiver logado o FTP você poderá mudar os arquivos</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Andre, primeiramente vamos entender alguns
+      conceitos.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Para existir uma comunicação
+      entre computadores é necessário:</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">-Um endereço de cada computador
+      (IP)</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">-Um linguagem que os dois
+      computadores entendam ( protocolos)</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">-Como
+      são vários serviços ao mesmo tempo,exemplo chat
+      ,site ,remote, etc...Cada serviço precisa ter uma</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">porta especifica, caso contrario
+      os dados de um serviço iriam ser recebidos por outros.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">Cliente /
+      Servidor</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Sem complicar...o conceito é
+      simples:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Cliente é o seu programa de ftp
+      que esta no seu computador.</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">Servidor é o que está hospedado
+      junto com o site.</span><span style="font-family: Verdana;"> (você
+      também pode criar um servidor em seu computador)</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">&nbsp;O
+      Servidor remoto aceita uma conexão de controle do cliente local.
+      O cliente envia comandos para o servidor e a conexão persiste ao
+      longo de toda a sessão (tratando-se assim de um protocolo que
+      usa o TCP).O servidor cria uma conexão de dados para a
+      transferência de dados, sendo criada uma conexão para cada
+      arquivo transferido. Estes dados são transferidos do servidor
+      para o cliente e vice e versa.</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Os
+      comandos estão separados dos dados e o cliente pode enviar
+      comandos durante a transferência de dados. O encerramento da
+      conexão indica o fim do arquivo.</span><br style="font-family:
+      Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana; font-weight: bold;">Porta padrão</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">A porta padrão para FTP é a
+      porta 21</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana; font-weight: bold;">Como conectar</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Existem vários Programas de
+      cliente FTP, mas eles apenas servem para manutenção de sites. O
+      melhor</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">programa mesmo são os clientes
+      que não usam interface gráfica, eles funcionam com linha de
+      comando,</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">funcionam no MS-DOS ou no Prompt
+      de Comando no windows.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Vamos
+      fazer um conexão com um servidor FTP usando o programa de FTP
+      que existe no windows XP. Este programa não tem interface
+      gráfica, ele roda no Prompt de comando.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"></span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">Comandos FTP (Do
+      cliente)</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Estes
+      comandos funcionam com você logado no servidor.Você
+      terá controle total sobre os arquivos hospedados. Nao confunda
+      com o protocolo FTP</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">Tradução de nomes
+      de arquivos</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;A sintaxe dos nomes dos
+      arquivos pode ser incompatível entre diferentes Sistemas
+      Operacionais. O UNIX usa</span><span style="font-family: Verdana;">
+      128 caracteres, maiúsculas e minúsculas, enquanto que o DOS usa 8
+      + 3 caracteres e apenas maiúsculas.</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Certos nomes não podem ser
+      usados em alguns sistemas. Devido a isto tudo o BSD ftp define
+      regras para a</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">tradução de nomes.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">&nbsp;Mensagens
+      FTP</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;O
+      FTP permite dois modos de transferência de mensagens FTP: texto
+      (com traduções apropriadas) ou binário</span><span style="font-family: Verdana;"> (sem tradução). Cada mensagem do
+      servidor inclui um identificador decimal de 3 dígitos (exemplo:
+      226</span><span style="font-family: Verdana;"> Transfer complete).
+      Estas mensagens podem ser vistas ou não, usando para isso o modo
+      verbose ou quiet,</span><span style="font-family: Verdana;">
+      respectivamente.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">SERVIDOR ALVO</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Antes de tudo queremos deixar
+      claro que isto não é uma invasão ilegal, o servidor possui suas</span><span style="font-family: Verdana;"> proteções, mas adiante vocês vão
+      perceber.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Vamos ver passo a passo como
+      chegar até os arquivos de dentro do servidor.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Servidor&nbsp; alvo:</span><br style="font-family: Verdana;">
+    <a href="http://ned.ipac.caltech.edu/" target="_blank"><span style="font-family: Verdana;">http://ned.ipac.caltech.edu/</span></a><br style="font-family: Verdana;">
+    <embed style="width: 688px; height: 415px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_002.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">O
+      servidor é uma base de dados do Governo Americano coordenada
+      pelo Instituto de tecnologia da Califórnia que fornece dados
+      físicos e bibliográficos (coordenadas, parâmetros
+      astronômicos e posição num mapa estelar) para NASA.
+      É um laboratório de dados extragalácticos.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;"><br>
+      &nbsp;
+      Analisandoo servidor</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Primeiro vamos capturar o IP do
+      servidor.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Abra o Insecuritynet 3.X.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Entre em:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Iniciar -&gt; Scan e
+      monitoramento -&gt; Captura de IP -&gt; Capturar IP de um
+      determinado endreço DNS</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Digite o DNS: ned.ipac.caltech.edu<br>
+      <br>
+      &nbsp;<embed style="width: 619px; height: 431px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_003.swf"><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Agora temos o IP do servidor (134.4.36.101) vamos fazer
+      um scan de portas.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Volte ao Insecuritynet 3.X e entre
+      em:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Iniciar -&gt; Scan e
+      Monitoramento -&gt; Por Scan Serviços.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Digite o IP e aguarde o scan.</span><br style="font-family: Verdana;">
+    <br>
+    &nbsp; <embed style="width: 668px; height: 554px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_004.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Como vimos no scan, a porta 21 está
+      aberta, esta é a porta padrão para servidores FTP.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">&nbsp;SCAN DO
+      SERVIDOR.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Vamos fazer um outro scan no IP, mas
+      neste caso especificamente no servidor FTP.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Entre em:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Iniciar -&gt; Scan e
+      monitoramento -&gt; FTP Scan</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Digite o IP<br>
+      <br>
+      &nbsp;<embed style="width: 528px; height: 367px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_005.swf"><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Observe que não conseguimos nada, neste IP.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"><br>
+      &nbsp;</span><span style="font-family: Verdana; font-weight:
+      bold;">
+      <div id="barra"></div>
+    </span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"><span style="font-weight: bold;"><br>
+        &nbsp;SUBDOMÍNIOS</span><br>
+      <br>
+      Mas observe o domínio: ned.ipac.caltech.edu</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Existem vários Subdomínios: <span style="font-weight: bold;">ned, ipac, caltech.edu</span></span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Isto significa que o caltech.edu
+      pode possuir outros computadores que utilizam este mesmo domínio.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Vamos capturar o IP do domínio:</span><span style="font-family: Verdana;"> ipac.caltech.edu</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Iniciar -&gt; Scan e monitoramento -&gt; Captura de IP
+      -&gt; Capturar IP de um determinado endreço DNS</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        666px; height: 432px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_006.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"></span><span style="font-family: Verdana;">Lembra da
+      aula sobre faixa de IP.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Vamos analisar: 134.4.25.146</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Temos: 134.4.25.0 à 134.4.25.255</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Como estamos em busca de servidores
+      FTP. Vamos adicionar FTP ao domínio:</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">ftp.ipac.caltech.edu</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Iniciar -&gt; Scan e monitoramento
+      -&gt; Captura de IP -&gt; Capturar IP de um determinado endreço
+      DNS</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        645px; height: 431px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_007.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Agora chegamos a um dos
+      servidores FTP.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Vamos fazer um novo Scan no servidor:</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Entre em:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Iniciar -&gt; Scan e
+      monitoramento -&gt; FTP Scan</span><br style="font-family:
+      Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Digite o IP capturado: 134.4.25.134<br>
+      <br>
+      <embed style="width: 663px; height: 392px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_008.swf"><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Observe que:<br>
+      <br style="font-family: Verdana;">
+    </span>
+    <table style="text-align: left; width: 446px; height: 76px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Anonimous Login:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">+OK</span></td>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">Permite Login
+              anônimo</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">OS:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">UNIX Type: L8</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Servidor Unix</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Reading:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">+OK</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Posso ler arquivos do
+              servido</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Writing</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">NOT</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Não posso “escrever”
+              arquivos</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<br>
+    </span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><span style="font-family: Verdana;"></span><span style="font-family: Verdana; font-weight: bold;"></span><br style="font-family: Verdana; font-weight: bold;">
+    <span style="font-family: Verdana;"><span style="font-weight: bold;"><br>
+        Logando no servidor</span><br>
+      <br>
+      Agora que já temos um servidor, vamos conectar utilizando o
+      cliente do Windows (ftp.exe):</span><br style="font-family:
+      Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Abra o prompt de comandos e digite:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">ftp 134.4.25.134</span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 490px; height: 143px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_009.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Digite qualquer coisa no “usuário’</span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 435px; height: 157px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_010.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Digite qualquer coisa na “senha”</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        436px; height: 163px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_011.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Não se preocupe com a falha de
+      logon.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;Agora digite: quote user
+      ftp<br>
+      <br>
+      &nbsp;<embed style="width: 536px; height: 216px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_012.swf"><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Agora digite quote pass ftp</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        544px; height: 264px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_013.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Traduzindo a mensagem:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">&nbsp;Seu
+      login foi aceito, mas com restrições.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><span style="font-weight: bold;"><br>
+        VISUALIZANDO O CONTEÚDO DO SERVIDOR</span><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Agora vamos visualizar o
+      conteúdo do servidor:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Digite:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">dir</span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 506px; height: 177px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_014.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Observe que temos, os seguintes
+      diretórios:<br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 299px; height: 156px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">bin -&gt; ./usr/bin</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">&nbsp;data</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">&nbsp;dev</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">&nbsp;etc</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">&nbsp;lib</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">&nbsp;platform</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">&nbsp;pub</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">&nbsp;usr</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br style="font-family:
+        Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"></span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><span style="font-weight: bold;"><br>
+        ACESSANDO UM DIRETÓRIO</span></span><br style="font-family:
+      Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Vamos entrar no diretório “pub”</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Digite:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">cd pub</span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 282px; height: 38px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_015.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Listando o diretório<br>
+      <span style="font-weight: bold;">dir</span></span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 540px; height: 99px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_016.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Encontramos alguns subdiretórios:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><br style="font-family:
+      Verdana;">
+    <table style="text-align: left; width: 224px; height: 60px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">2mass</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">HotAndCool_Workshop</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">Software</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Vamos entrar no&nbsp;
+      HotAndCool_Workshop</span><span style="font-family: Verdana;"><br>
+    </span><span style="font-family: Verdana;">Digite:</span><br style="font-family: Verdana; font-weight: bold;">
+    <span style="font-family: Verdana; font-weight: bold;">cd
+      “HotAndCool_Workshop”</span><span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">dir</span></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Observe que podemos ver vários arquivos<br>
+      <br>
+      <embed style="width: 667px; height: 562px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_017.swf"><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;"></span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"></span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><span style="font-weight: bold;"><br>
+        Baixando um arquivo para seu computador</span></span><span style="font-family: Verdana;"></span><br style="font-family:
+      Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Primeiro temos que definir um diretório para receber o
+      arquivo em nosso PC.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Vamos escolher o Desktop</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Digite: <br>
+      <span style="font-weight: bold;">lcd Desktop</span></span><br>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        564px; height: 53px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_018.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Agora escolha um arquivo.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Vamos baixar um arquivo qualquer (<span style="font-weight: bold;">isabellecherchneff.txt</span>)</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Basta usar o comando get</span><br style="font-family: Verdana;">
+    Digite:<br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">get
+      isabellecherchneff.txt</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        638px; height: 118px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_019.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Vamos baixar outro arquivo:</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Neste mesmo diretório temos um
+      subdiretório: <span style="font-weight: bold;">Photos</span></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        640px; height: 539px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_020.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Vamos entrar e listar este
+      subdiretório:</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<span style="font-weight:
+        bold;">cd photos</span></span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<span style="font-weight:
+        bold;">dir</span></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        563px; height: 154px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_021.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Vamos baixar o arquivo PDF</span><br style="font-family: Verdana;">
+    &nbsp;<br>
+    &nbsp;Digite<br style="font-family: Verdana; font-weight: bold;">
+    <span style="font-family: Verdana; font-weight: bold;">&nbsp;get
+      CoverOptions090905.pdf</span><br style="font-family: Verdana;">
+    &nbsp;<br>
+    <embed style="width: 641px; height: 58px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_022.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Aguarde o Download (Não irá aparecer barra)</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        487px; height: 58px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_023.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">Observe seu
+      desktop</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        364px; height: 164px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_024.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Temos os dois arquivos que
+      estavam no servidor.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Você poderá visualizá-lo normalmente:</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Observe a imagem:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Provavelmente se trata de fotos
+      de telescópios, com análises.<br>
+      <br>
+      <embed style="width: 748px; height: 454px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_025.swf"><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><span style="font-weight: bold;"><br>
+        INTERFACE GRÁFICA</span></span><br>
+    <span style="font-family: Verdana;"><br>
+    </span><span style="font-family: Verdana;">Andre, como
+      sabemos seu o servidor permite login anônimo, vamos visualizar os
+      arquivos utilizando interface gráfica, como se
+      estivéssemos fisicamente no servidor:</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Abra seu Insecuritynet 3.X e entre
+      em:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Iniciar -&gt; clientes -&gt; FTP via
+      Explorer</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Escolha: anonimous<br>
+      <br>
+      <embed style="width: 433px; height: 245px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_026.swf"><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;">Digite o IP do servidor e aguarde a conexão</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<embed style="width:
+        625px; height: 334px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_027.swf"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Agora
+      você poderá visualizar os arquivos de uma forma mais
+      cômoda, porem no modo texto você tem mais
+      opções.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Olhe o arquivo PDF:</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><embed style="width: 565px; height: 264px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/img_028.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;<br>
+    </span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><span style="font-weight: bold;"><br>
+        LISTA DE COMANDOS do FTP.exe (Windows)</span></span><br>
+    <span style="font-family: Verdana;"><br>
+    </span>
+    <table style="text-align: left; width: 641px; height: 703px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">!</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Executa o comando na máquina
+              local.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">?</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Semelhante a help.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;"> append</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Adiciona dados a um arquivo
+              existente.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">ascii</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Configura o tipo de
+              transferência de arquivos para ASCII.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">bell</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Emite um bip quando um
+              comando é executado.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">binary</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Configura o tipo de
+              transferência de arquivos para binário.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;"> bye</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Encerra a sessão FTP.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">cd</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Seguido de caminho/diretório
+              muda para o diretório informado.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">delete</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Apaga um arquivo. Para mais
+              de um arquivo usa-se mdelete.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">debug</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Estabelece a modalidade de
+              depuração.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">dir</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Mostra o conteúdo do
+              diretório servidor atual.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;"> disconnect</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Semelhante a bye.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">get</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Obtêm um arquivo do
+              servidor. Para mais de um arquivo usa-se mget.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">glob</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Seleciona a expansão para
+              nomes de arquivo.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">hash</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Demonstra cada bloco do
+              arquivo durante a transferência.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">help</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Lista sumariamente todos
+              comandos disponíveis.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">literal</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Permite enviar comandos
+              arbitrários.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">ls</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Mostra uma lista abreviada
+              do conteúdo do diretório servidor.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">mkdir</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Cria um diretório ou
+              subdiretório no servidor.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">prompt</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Ativa/desativa o modo
+              interativo.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">put</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Envia um arquivo ao
+              servidor. Para enviar mais de um arquivo usa-se mput.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">pwd</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Mostra o diretório de
+              trabalho.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">quit</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Finaliza a sessão FTP.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">quote</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Envia subcomandos do
+              servidor FTP, como se encontram no servidor.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">recv</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Similar a get.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">remotehelp</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Solicita ajuda do servidor
+              FTP remoto.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">rename</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Renomeia um arquivo.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">send</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Semelhante a put.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">status</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Obtem informações de estado
+              do servidor.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">trace</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Demonstra o caminho
+              percorrido pelo arquivo na transferência.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">type</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Especifica o tipo de
+              representação.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">user</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Iniciar a sessão no
+              servidor.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">verbose</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Ativa/desativa a modalidade
+              literal.</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"><big style="color: rgb(204, 0,
+        0);"><span style="font-weight: bold;">&nbsp;IMPORTANTE:</span></big></span><big style="color: rgb(204, 0,
+        0);"><br>
+        &nbsp;Nao confunda os comandos FTP com o protocolo FTP, estes
+        comandos
+        são apenas uma interação entre você e o
+        cliente ftp.exe.<br>
+      </big>Nas
+        próximas aulas vamos estudar o protocolo FTP, e enviar comandos
+        diretamente ao servidor, sem utilizar nenhum cliente..<br>
+        <br>
+        <br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">
+        <div id="barra"></div>
+      </span><br>
+      <span style="font-family: Verdana;"><span style="font-weight:
+          bold;"><br>
+          EXERCICIO</span></span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><br style="font-family:
+        Verdana;">
+      <span style="font-family: Verdana;">Procure um servidor FTP ativo
+        na seguinte faixa de IP:<br>
+        <br>
+        143.106.10.140 &lt;-&gt; &nbsp;</span><span style="font-family:
+        Verdana;">143.106.10.160<br>
+        <br>
+        Conecte, e logue no servidor.<br>
+        Envie um "printf" do login para: contato@insecuritynet.com.br<br style="font-family: Verdana;">
+      </span> <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;"></span><span style="font-family: Verdana;"></span><br style="font-family:
+        Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+        Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+        Verdana;"></span><span style="font-family: Verdana;"></span><br>
+      <span style="font-family: Verdana; font-weight: bold;">
+        <div id="barra"></div>
+      </span><br style="font-family: Verdana;">
+    
+ 
+<!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="14" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="918f64161f42b3b7b312be629efd525f" type="hidden">
+
+<b>1-) Qual o comando utilizado para fazer um download de um arquivo de um servidor FTP?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>lcd </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>dir </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>get</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>cd </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>put </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) Qual o comando para enviar subcomandos do servidor FTP?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>debug </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>debug </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>quote</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>mkdir </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>quit </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) Qual o comando utilizado para enviar&nbsp; um arquivo para um servidor FTP?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>lcd </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>dir </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>get</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>cd </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>put </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2014_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="14" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2014_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

@@ -1,0 +1,1229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  10</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2010_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=92c5dcb473c34957b13bcc425cc6061f&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">10 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:53  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2010_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 10</span><br><br>
+<div id="listasx"><ul>
+
+  <li><span style="font-family: Verdana;">Proteção
+baseada em tabela</span></li>
+
+  <li><span style="font-family: Verdana;">TCP
+Tables</span></li>
+
+  <li><span style="font-family: Verdana;">Regra
+de defesa modelo</span></li>
+
+  <li><span style="font-family: Verdana;">Testando
+a regra modelo</span></li>
+
+  <li><span style="font-family: Verdana;">Visualizando
+os Logs</span></li>
+
+  <li><span style="font-family: Verdana;">Radar
+hipotético</span></li>
+
+  <li><span style="font-family: Verdana;">Editando
+sua própria regra</span></li>
+
+  <li><span style="font-family: Verdana;">Permitindo
+um item</span></li>
+
+  <li><span style="font-family: Verdana;">Bloqueando
+um item</span></li>
+
+  <li><span style="font-family: Verdana;">Permissão
+total para um item</span></li>
+
+</ul></div>
+
+<div align="justify"><span class="small_gray_text">&nbsp;&nbsp;</span><span class="small_gray_text"></span>
+<big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+</span></big></big><span style="font-family: Verdana;"><br>
+
+<big><big><big><span style="font-weight: bold;"></span></big></big></big></span><br style="font-family: Verdana;">
+
+
+<table style="text-align: left; width: 655px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <embed style="width: 116px; height: 78px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_017.swf"><br>
+
+      </td>
+
+      <td><big><big><big><span style="font-family: Verdana; font-weight: bold;">PROTEÇÃO
+BASEADA EM TABELA</span></big></big></big></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<span style="font-family: Verdana;">&nbsp;</span><big><big><br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-family: Verdana; font-weight: bold;"><br>
+
+</span></big></big><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Andre, esta
+aula é inteiramente prática, iremos criar regras
+de defesa e cancelar conexões.<br>
+
+Se você estiver fazendo algum download importante, ele corre
+o risco de ser cancelado durante a experiência<br>
+
+<br>
+
+Nas aulas anteriores vimos sobre conexões, podemos chegar as
+seguintes conclusões:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+
+<div id="listasx"><ul>
+
+  <li><span style="font-family: Verdana;">Para
+alguém invadir nosso computador é
+necessário que haja uma conexão.</span></li>
+
+  <li><span style="font-family: Verdana;">Cada
+conexão é composta por vários itens.</span></li>
+
+</ul></div>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Portanto se tivermos controles
+sobre os Itens de nossas conexões podemos criar regras de
+defesa.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Podemos pensar nos itens de
+cada conexão como uma tabela.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Sem
+dúvida o mais completo firewall baseado em tabela
+é o IP TABLES desenvolvido para sistemas LINUX.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Desenvolvemos
+um sistema similar para Windows onde você pode criar regras
+baseadas em tabelas restritas as conexões TCP.<br>
+
+O objetivo de nosso sistema de proteção
+é puramente didático.<br style="font-family: Verdana;">
+
+</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br>
+
+<span style="font-family: Verdana;"><big><big><big><span style="font-weight: bold;"><br>
+
+&nbsp;TCP&nbsp;TABLES</span></big></big></big><br>
+
+<br>
+
+O TCP TABLES possibilita você a criar regras de
+proteções para seu computador.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">As regra
+são baseadas em conexões permitidas e
+não permitidas.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Antes de
+começar precisamos relembrar sobre conexões:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Para existir uma
+conexão entre dois computadores precisa de cinco fatores:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;
+* IP Local (Endereço do computador local)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;
+* Porta Local (Porta de conexão no computador local)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;
+* IP Remoto (Endereço do outro computador)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;
+* Porta Remota (Porta de conexão do outro computador)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;
+* Processos (Programas que criam as conexões)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Com o TCP TABLES
+você pode mapear e definir quais são suas
+conexões seguras, e evitar novas conexões
+não permitidas.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Não
+é um firewall porque o TCP TABLE atua de forma diferente:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;
+* Você decide o que é confiável ou
+não antes do problema aparecer</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;
+* Não existe bloqueio de porta, desta forma uma porta
+aparentemente aberta esta protegida internamente pelo TCP TABLE</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;
+* O sistema funciona como um RADAR que detecta conexões
+não permitidas.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">O TCP TABLE
+é uma ferramenta presente na versão 3.X do
+Insecuritynet</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Vamos abrir a
+ferramenta.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Entre em:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Iniciar
+--&gt; Defesa --&gt; TCP TABLES</span><br style="font-family: Verdana;">
+
+<br>
+
+<big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"><big><big><span style="font-weight: bold;">Regra de defesa modelo.</span><br style="font-weight: bold;">
+
+</big></big><br style="font-family: Verdana;">
+
+</span><span style="font-family: Verdana;">O
+programa vem com uma regra pré-configurada, que certamente
+não irá se aplicar à sua necessidade.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Mas vamos
+visualizar esta regra para que possamos entender a
+configuração.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Entre em:
+visualizar regra</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">
+<embed style="width: 611px; height: 382px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_001.swf"><br>
+
+</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Temos
+três tipos de permissões:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; color: rgb(255, 0, 0);">+B
+(Bloqueado)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; color: rgb(51, 51, 255);">-P
+(Permitido mas submisso ao restante da tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; color: rgb(0, 102, 0);">+P
+(Permissao total Independente do restante da tabela)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">
+<embed style="width: 605px; height: 253px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_002.swf"><br>
+
+<br>
+
+</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">A tabela possui
+cinco itens:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">IP LOCAL , PORTA
+LOCAL, IP REMOTO, PORTA REMOTA, PROCESSO</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Cada item pode
+estar em dois modos:<br>
+
+<br>
+
+</span>
+<table style="text-align: left; width: 560px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="background-color: rgb(0, 0, 0);"><span style="font-family: Verdana; font-weight: bold; color: rgb(255, 255, 51);">MODO
+OPEN (Todos permitidos mas submisso ao resto da tabela)</span><br style="font-family: Verdana;">
+
+      <span style="font-family: Verdana; font-weight: bold; color: rgb(51, 255, 255);">MODO
+CLOSED (Todas bloqueados)</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<span style="font-family: Verdana;">Vamos
+analisar os cinco itens da tabela da figura acima:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;">IP
+LOCAL</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Está
+no modo OPEN (Todos IPs locais permitidos mas submisso ao resto da
+tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">+P:127.0.0.1
+(significa que conexões neste IP tem total
+permissão independente do resto da tabela)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;">PORTA
+LOCAL</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Está
+no modo OPEN (Todas as portas locais permitidas, mas submisso ao resto
+da tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">+B:21 (proibida
+conexão na porta local 21)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">+B:23 (proibida
+conexão na porta local 23)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;">IP
+REMOTO</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Está
+no modo OPEN (Todos IPs Remotos permitidos mas submisso ao resto da
+tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">+B:140.211.167.51(proibida conexão neste IP)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;">PORTA
+REMOTA</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Está
+no modo CLOSED (Todas as portas bloqueadas, exceto as permitidas na
+tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">-P:80
+(permitida conexão na porta remota 80 desde que o restante
+da conexão não seja bloqueado por outro item da
+tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">-P:443
+(permitida conexão na porta remota 443 desde que o restante
+da conexão não seja bloqueado por outro item da
+tabela)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;">PROCESSO</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Está
+no modo CLOSED (Todas os processos bloqueados, exceto as permitidas na
+tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">-P firefox.exe
+(processo permitido desde que o restante da conexão
+não seja bloqueado por outro item da tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">-P telnet.exe
+(processo permitido desde que o restante da conexão
+não seja bloqueado por outro item da tabela)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">+P:msnmsgr.exe
+(Permissão total para o Messenger)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">+P:System.exe
+(Permissão total para processos do sistema)<br>
+
+</span><span style="font-family: Verdana;"><br style="font-family: Verdana;">
+
+</span>
+<table style="text-align: left; width: 579px; height: 296px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr style="font-weight: bold;" align="center">
+
+      <td style="background-color: rgb(204, 204, 255);"><span style="font-family: Verdana;">RESUMO DA TABELA MODELO</span></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(246, 246, 246);">
+      <table style="text-align: left; width: 569px; height: 128px;" border="1" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+
+            <td style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">IP
+LOCAL</td>
+
+            <td style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">PORT
+LOC</td>
+
+            <td style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">IP
+REMOTO</td>
+
+            <td style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">PORT
+REM</td>
+
+            <td style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">PROCESSO</td>
+
+          </tr>
+
+          <tr>
+
+            <td style="color: rgb(255, 255, 51); background-color: rgb(0, 0, 0); font-weight: bold;">OPEN</td>
+
+            <td style="color: rgb(255, 255, 51); background-color: rgb(0, 0, 0); font-weight: bold;">OPEN</td>
+
+            <td style="color: rgb(153, 255, 255); background-color: rgb(0, 0, 0); font-weight: bold;">CLOSED</td>
+
+            <td style="color: rgb(153, 255, 255); background-color: rgb(0, 0, 0); font-weight: bold;">CLOSED</td>
+
+            <td style="color: rgb(153, 255, 255); background-color: rgb(0, 0, 0); font-weight: bold;">CLOSED</td>
+
+          </tr>
+
+          <tr>
+
+            <td style="background-color: rgb(0, 0, 0);"><span style="color: rgb(51, 255, 51);">+P 127.0.0.1<br>
+
+            <br>
+
+            </span> <br>
+
+            </td>
+
+            <td style="background-color: rgb(0, 0, 0);"><span style="color: rgb(255, 0, 0);">+B 21</span><br style="color: rgb(255, 0, 0);">
+
+            <span style="color: rgb(255, 0, 0);">+B
+23<br>
+
+            <br>
+
+            </span> </td>
+
+            <td style="background-color: rgb(0, 0, 0);"><span style="color: rgb(255, 0, 0);">+B 140.211.167.51<br>
+
+            <br>
+
+            </span> <br>
+
+            </td>
+
+            <td style="background-color: rgb(0, 0, 0);"><span style="color: rgb(51, 204, 255);">-P 80</span><br style="color: rgb(51, 204, 255);">
+
+            <span style="color: rgb(51, 204, 255);">-P
+443<br>
+
+            <br>
+
+            </span> </td>
+
+            <td style="background-color: rgb(0, 0, 0);"><span style="color: rgb(51, 204, 255);">-P firexox.exe</span><br>
+
+            <span style="color: rgb(51, 255, 51);">+P
+msnmsrg.exe</span><br style="color: rgb(51, 255, 51);">
+
+            <span style="color: rgb(51, 255, 51);">+P
+System</span></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <span style="font-family: Verdana;"><br>
+
+Conexões no IP LOCAL "127.0.0.1", no processo "msnmsgr.exe"
+e no processo "System.exe" não serão bloqueados
+pelo TCP TABLES.<br>
+
+      <br style="font-family: Verdana;">
+
+      </span><span style="font-family: Verdana;">Todos
+os processos (exceto os citados acima serão bloqueado pelo
+TCP TABLE)</span><br style="font-family: Verdana;">
+
+      <span style="font-family: Verdana;"><br>
+
+Todas as portas remotas serão bloqueados (exceto a 80 e a
+443) serão bloqueadas)</span><br style="font-family: Verdana;">
+
+      <span style="font-family: Verdana;"><br>
+
+O IP remoto 140.211.167.51 será bloqueado<br>
+
+      <br style="font-family: Verdana;">
+
+      </span><span style="font-family: Verdana;">Conexões
+nas portas locais 21 e 23 serão bloqueadas.</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<br>
+
+<span style="font-family: Verdana;"><br>
+
+<br>
+
+</span><span style="font-family: Verdana;"></span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana; font-weight: bold;">TESTANDO A
+REGRA MODELO</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Na tabela acima
+temos o IP 140.211.167.51 (este IP corresponde ao site "www.linux.com")</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Vamos ativar o
+TCP TABLES.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 233px; height: 133px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_003.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Agora vamos
+abrir o site "www.linux.com" em nosso navegador de internet.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 425px; height: 106px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_004.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Observe que a
+conexão foi bloqueada, e o site nao foi aberto.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 363px; height: 142px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_005.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-style: italic;">"O
+bloqueio do site www.linux.com foi apenas um exemplo
+técnico, a equipe insecuritynet não é
+contra a comunidade linux, nós usamos e recomendamos o
+sistema operacional linux. Inclusive foi a
+inspiração para a desenvolvimento do
+Insecuritynet."</span><br style="font-family: Verdana;">
+
+<br>
+
+<span style="font-family: Verdana; font-weight: bold;">OUTRO
+EXEMPLO</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Vamos simular um
+keylogger tentando acessar um servidor SMTP para enviar emails.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 502px; height: 88px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_006.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Observe que o
+conexão foi bloqueada:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 349px; height: 141px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_007.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><br>
+
+<embed style="width: 205px; height: 38px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_008.swf"><br>
+
+<br>
+
+<br style="font-family: Verdana;">
+
+<big><big><big><span style="font-family: Verdana; font-weight: bold;"></span></big></big></big><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+<br>
+
+</span></big></big><big><big><big><span style="font-family: Verdana; font-weight: bold;">VISUALISANDO
+OS LOGs<br>
+
+</span></big></big></big><span style="font-family: Verdana;"><br>
+
+O TCP TABLES cria um LOG de todos os bloqueios.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Você
+pode visualizar os LOGs em sua pasta de trabalho...\Meus
+documentos\Insecuritynet</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 462px; height: 237px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_009.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Observe
+que todas os dados do bloqueio foram registrados (Inclusive o caminho
+do executável que tentou criar a conexão)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Podemos associar
+TCP TABLE á um radar, que localiza conexões
+não permitidas e as cancela</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+<br>
+
+</span></big></big><span style="font-family: Verdana;"><big><big><big><span style="font-weight: bold;">RADAR HIPOTÉTICO</span></big></big></big><br>
+
+<br>
+
+Nossa tabela padrão pode ser representada como um radar:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;">RELEMBRANDO
+O RESUMO DA TABELA</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">-
+Conexões no IP LOCAL "127.0.0.1", no processo "msnmsgr.exe"
+e no processo "System.exe" não serão bloqueados
+pelo TCP TABLES.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">- Todos os
+processos (exceto os citados acima serão bloqueadas pelo TCP
+TABLE)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">- Todas as
+portas remotas serão bloqueados (exceto a 80 e a 443)
+serão bloqueadas)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">- O IP remoto
+140.211.167.51 será bloqueado</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">-
+Conexões nas portas locais 21 e 23 serão
+bloqueadas.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 640px; height: 480px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_010.swf"><br>
+
+<br>
+
+<br>
+
+<big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br>
+
+<br style="font-family: Verdana;">
+
+<big><big><big><big><span style="font-family: Verdana; font-weight: bold;">EDITANDO
+SUA PRÓPRIA REGRA</span></big></big></big></big><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Andre, o
+exemplo acima foi com uma regra que já vem configurada no
+software, claro que não se aplica à suas
+necessidades. A principal característica da ferramenta
+é que você é quem define o que
+é seguro e o que não é seguro.
+Você pode criar suas próprias regras de acordo com
+a sua necessidade e de acordo com os programas que você usa
+para conectar a Internet.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Para editar
+basta entrar em “Editar regra”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Selecione uma
+das opções:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">LOCAL IP LOC
+PORT REM IP REM PORT PROCESS</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana; font-weight: bold;">PERMITINDO
+UM ITEM</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Neste
+exemplo vamos permitir que conexões na porta remota 587
+não seja bloqueada (como foi bloqueada no exemplo acima)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Entre em <span style="font-weight: bold;">REM PORT</span> (Porta
+remota)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Escolha o modo
+CLOSED (para manter todas as outras portas bloqueadas)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 109px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_011.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Agora temos duas
+opções de permissões +P e -P.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">+P
+(Permissão total)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">-P
+(Permissão submissa)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Vamos add com
+permissão submissa (-P)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 121px; height: 100px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_012.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"><br>
+
+Digite a porta.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 163px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_013.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Observe que a
+porta foi adicionada na tabela:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 83px; height: 260px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_014.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Agora vamos
+criar novamente a conexão:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 502px; height: 88px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_006.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Observe que
+não houve bloqueio.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span>
+<embed style="width: 241px; height: 87px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_015.swf"><br>
+
+<br>
+
+<br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana; font-weight: bold;">BLOQUEANDO
+UM ITEM.</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Para bloquear um
+item é necessário que o item esteja no modo
+aberto, pois no modo fechado já esta bloqueado por
+padrão.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Neste exemplo
+vamos bloquear conexões na porta local 1245.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Selecione a
+opção Porta Local:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">LOCAL IP <span style="font-weight: bold;">LOC PORT</span> REM IP REM
+PORT PROCESS</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Escolha o modo
+Aberto "OPEN MODE"</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Digite a porta e
+observe a tabela:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><br>
+
+<embed style="width: 90px; height: 134px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/img_016.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">As
+conexões que utilizarem esta porta (1245) de seu computador
+serão bloqueadas.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana; font-weight: bold;">PERMISSSÃO
+TOTAL PARA UM ITEM.</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Em alguns casos
+é necessário dar permissão total para
+um item da tabela.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Por exemplo:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">O IP local
+"127.0.0.1" é utilizado pelo navegador.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">O Messenger
+utiliza varias portas aleatórias locais e remotas.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Você
+pode dar permissão total tanto em "OPEM MODE" como em
+"CLOSED MODE".</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">basta
+você escolher a opção +P</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Com esta
+opção o Item será permitido
+independente de outro item da tabela estiver bloqueada a
+conexão.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">No exemplo acima
+bloqueamos a porta local 1245, mas o processo "msnmsgr.exe" esta com
+permissão +P, isto significa que este processo tem
+permissão para tudo, inclusive para usar a porta 1245.<br>
+
+<br>
+
+</span>
+<table style="text-align: left; width: 689px; height: 276px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr style="font-weight: bold;">
+
+      <td style="background-color: rgb(229, 223, 255);"><span style="font-family: Verdana;">DICAS PARA EDIÇAO
+DE REGRAS</span></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="background-color: rgb(240, 240, 240);"><span style="font-family: Verdana;">Antes de criar sua regra,
+faça um relatório de todos os programas que
+utilizam a Internet em seu computador.</span><br style="font-family: Verdana;">
+
+      <span style="font-family: Verdana;"><br>
+
+1-) Não bloqueie atualizações de seu
+antivírus.<br>
+
+      <br style="font-family: Verdana;">
+
+      </span><span style="font-family: Verdana;">2-)Mantenha
+o IP LOCAL em OPEN MODE porque se você possuir IP
+DINÂMICO terá que sempre ficar modificando sua
+regra.</span><br style="font-family: Verdana;">
+
+      <span style="font-family: Verdana;"><br>
+
+3-)Mantenha a Porta local em OPEN MODE porque quando você
+cria um conexão externa sua porta local é
+aleatória. Use os bloqueios para bloquear
+possíveis servidores em sem computador.</span><br style="font-family: Verdana;">
+
+      <span style="font-family: Verdana;"><br>
+
+4-)Mantenha o IP REMOTO em OPEN MODE, pois cada site visitado
+é um IP remoto diferente, apenas deixe no modo CLOSED se o
+computador estiver atrás de uma proxy e libere o IP da proxy.</span><br style="font-family: Verdana;">
+
+      <span style="font-family: Verdana;"><br>
+
+5-)PORTAS REMOTAS E PROCESSOS mantenha no MODO CLOSED e adicione suas
+permissões, manter este itens abertos pode comprometer a
+segurança de sua REGRA.</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<br>
+
+<big><span style="font-family: Arial;">Caso
+você detecte algum processo estranho conectado em seu
+computador pequise sobre o nome do processo e tente identifica-lo. </span></big><br style="font-family: Verdana;">
+
+ <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><big><big><span style="font-family: Verdana; font-weight: bold;"></span></big></big><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br>
+
+<big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana;">
+
+
+
+
+
+</div>
+
+<!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="10" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="82c65d916f5cfea853c6a0c90571e115" type="hidden">
+
+<b>1-) O que corresponde +P no TCP tables?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Permitido desde que o restante da conexão não seja bloqueado por outro item da tabela </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Item Bloqueado </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Total permissão independente do resto da tabela</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Permitido somente no computador Local </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) O que corresponde -P no TCP tables?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Permitido desde que o restante da conexão não seja bloqueado por outro item da tabela </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Item Bloqueado </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Total permissão independente do resto da tabela</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Permitido somente no computador Local </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) O que corresponde +B no TCP tables?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Permitido desde que o restante da conexão não seja bloqueado por outro item da tabela </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Item Bloqueado </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Total permissão independente do resto da tabela</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Permitido somente no computador Local </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2010_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="10" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2010_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

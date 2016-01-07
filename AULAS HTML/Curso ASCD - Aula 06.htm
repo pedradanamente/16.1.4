@@ -1,0 +1,1176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  06</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2006_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=80a3c1e001025b3492af5680884def3f&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">06 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:32  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2006_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 06</span><br><br>
+
+                                                          <div id="listasx"><ul>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Introdução
+                                                          à Sistema
+                                                          Operacional</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Kernel</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Shell</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Estrutura
+                                                          básica de um
+                                                          sistema</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Como
+                                                          obter/permitir
+                                                          acesso remoto
+                                                          ao sistema</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Abrindo
+                                                          uma porta de
+                                                          seu computador</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Abrindo
+                                                          uma porta para
+                                                          a shell do
+                                                          sistema</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Conclusão.</span></li>
+                                                          </ul></div>
+                                                          
+                                                          <div align="justify"><span class="small_gray_text">&nbsp;&nbsp;</span><span class="small_gray_text"></span>
+                                                          <div id="barra"></div><br><br><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;
+                                                          font-style:
+                                                          italic;"></span><br style="font-family:
+                                                          Verdana;"><br style="font-family:
+                                                          Verdana;"><span style="font-family:
+                                                          Verdana;"></span><table style="text-align:
+                                                          left;
+                                                          background-color:
+                                                          rgb(255, 255,
+                                                          255); width:
+                                                          740px;" border="0" cellpadding="0" cellspacing="0">
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          </table><table style="text-align:
+                                                          left; width:
+                                                          100%;" border="0" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr>
+                                                          <td><embed style="width:
+                                                          124px; height:
+                                                          98px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_008.swf"><br>
+                                                          </td>
+                                                          <td style="font-weight:
+                                                          bold;"><big><big><span style="font-family:
+                                                          Verdana;">INTRODUÇÃO
+                                                          à SISTEMA
+                                                          OPERACIONAL.</span></big></big></td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <br>
+                                                          O sistema
+                                                          operacional é
+                                                          um programa ou
+                                                          um conjunto de
+                                                          programas
+                                                          que
+                                                          inicializam o
+                                                          hardware do
+                                                          computador,
+                                                          controla as
+                                                          tarefas que o
+                                                          seu
+                                                          computador
+                                                          realiza e
+                                                          gerencia os
+                                                          recursos do
+                                                          sistema para
+                                                          otimizar o
+                                                          desempenho.<br>
+                                                          <br>
+                                                          Exemplos de
+                                                          SO:<br>
+                                                          Windows XP,
+                                                          Windows Vista,
+                                                          Linux Ubuntu,
+                                                          etc.<br>
+                                                          <br>
+                                                          <br>
+                                                          <span style="font-weight:
+                                                          bold;">O
+                                                          sistema
+                                                          operacional
+                                                          deve realizar
+                                                          as seguintes
+                                                          funções:<br>
+                                                          <br>
+                                                          </span></span>
+                                                          <table style="text-align:
+                                                          left; width:
+                                                          100%;" border="0" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr style="font-family:
+                                                          Verdana;">
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);">Inicializar
+                                                          o hardware do
+                                                          computador</td>
+                                                          </tr>
+                                                          <tr style="font-family:
+                                                          Verdana;">
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);">Fornecer
+                                                          rotinas
+                                                          básicas para
+                                                          controle de
+                                                          dispositivos</td>
+                                                          </tr>
+                                                          <tr style="font-family:
+                                                          Verdana;">
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);">Fornecer
+                                                          gerência,
+                                                          escalonamento&nbsp;
+                                                          e interação de
+                                                          tarefas</td>
+                                                          </tr>
+                                                          <tr style="font-family:
+                                                          Verdana;">
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);">Manter
+                                                          a integridade
+                                                          de sistema</td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <br>
+                                                          <span style="font-weight:
+                                                          bold;">Partes
+                                                          de um Sistema
+                                                          Operacional</span><br>
+                                                          <br>
+                                                          </span>
+                                                          <table style="text-align:
+                                                          left; width:
+                                                          100%;" border="0" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr style="font-family:
+                                                          Verdana;">
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);">Núcleo
+                                                          (Kernel)</td>
+                                                          </tr>
+                                                          <tr style="font-family:
+                                                          Verdana;">
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);">Gerenciador
+                                                          de processo</td>
+                                                          </tr>
+                                                          <tr style="font-family:
+                                                          Verdana;">
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);">Escalonador</td>
+                                                          </tr>
+                                                          <tr style="font-family:
+                                                          Verdana;">
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);">Gerenciador
+                                                          de arquivo</td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <big><big><span style="font-weight:
+                                                          bold;">KERNEL</span></big></big><br>
+                                                          <br>
+                                                          O Kernel é o
+                                                          componente
+                                                          central do
+                                                          sistema
+                                                          operativo da
+                                                          maioria
+                                                          dos
+                                                          computadores;
+                                                          ele serve de
+                                                          ponte entre
+                                                          aplicativos e
+                                                          o
+                                                          processamento
+                                                          real de dados
+                                                          feito a nível
+                                                          de hardware.<br>
+                                                          </span><span style="font-family:
+                                                          Verdana;"><br>
+                                                          <br>
+                                                          <big><big><span style="font-weight:
+                                                          bold;"></span></big></big></span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          <br>
+                                                          </span></big></big><span style="font-family:
+                                                          Verdana;"><big><big><span style="font-weight:
+                                                          bold;"></span></big></big></span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"></span></big></big>
+                                                          <table style="text-align:
+                                                          left; width:
+                                                          261px; height:
+                                                          100px;" border="0" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr>
+                                                          <td><embed style="width:
+                                                          130px; height:
+                                                          88px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_009.swf"></td>
+                                                          <td><big><big><big><span style="font-weight:
+                                                          bold;
+                                                          font-family:
+                                                          Verdana;">&nbsp;SHELL
+                                                          </span></big></big></big></td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <br>
+                                                          <span style="font-family:
+                                                          Verdana;">A
+                                                          tradução de
+                                                          Shell é
+                                                          concha. O
+                                                          Shell é a
+                                                          camada que
+                                                          envolve o
+                                                          Kernel. Como
+                                                          dito antes o
+                                                          Kernel é o
+                                                          núcleo do
+                                                          Sistema
+                                                          Operacional. É
+                                                          o kernel quem
+                                                          conversa
+                                                          com o Hardware
+                                                          indicando o
+                                                          que deve ser
+                                                          feito.</span><br style="font-family:
+                                                          Verdana;">
+                                                          <span style="font-family:
+                                                          Verdana;">O
+                                                          Shell é a
+                                                          camada mais
+                                                          acima do
+                                                          Kernel. É a
+                                                          camada que o
+                                                          usuário tem
+                                                          acesso para
+                                                          que ele possa
+                                                          fazer as
+                                                          requisições
+                                                          para o Kernel
+                                                          para que o
+                                                          Kernel entre
+                                                          em
+                                                          contato com o
+                                                          Hardware.</span><br style="font-family:
+                                                          Verdana;">
+                                                          <br style="font-family:
+                                                          Verdana;">
+                                                          <span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;">O Shell
+                                                          nada mais é
+                                                          que o
+                                                          interpretador
+                                                          de comandos
+                                                          que transmite
+                                                          ao Kernel o
+                                                          que é para ser
+                                                          realizado.</span><br>
+                                                          <big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"> </span></big></big><span style="font-family:
+                                                          Verdana;"><big><span style="font-weight:
+                                                          bold;"></span></big></span><span style="font-family:
+                                                          Verdana;"><br>
+                                                          </span><big style="font-weight:
+                                                          bold;"><big>&nbsp;
+                                                          <span style="color:
+                                                          rgb(0, 102,
+                                                          0);">EXEMPLOS
+                                                          DE SHELLS</span></big></big><br>
+                                                          &nbsp;<br>
+                                                          &nbsp;&nbsp;<br style="font-family:
+                                                          Verdana;">
+                                                          
+                                                          <table style="text-align:
+                                                          left; width:
+                                                          100%;" border="0" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(255, 255,
+                                                          255);"><img style="width:
+                                                          105px; height:
+                                                          124px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/linux.jpg"><big><big><big><big><span style="font-weight:
+                                                          bold;">LINUX</span></big></big></big></big></td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(255, 255,
+                                                          255);"><img style="width:
+                                                          118px; height:
+                                                          111px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/windows.jpg"><big><big><big><span style="font-weight:
+                                                          bold;">WINDOWS</span></big></big></big></td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);
+                                                          font-family:
+                                                          Verdana;">Bourne
+                                                          shell(sh)<br>
+                                                          Korn Shell
+                                                          (ksh)<br>
+                                                          C Shell (csh)<br>
+                                                          Bash</td>
+                                                          <td style="background-color:
+                                                          rgb(234, 236,
+                                                          255);
+                                                          font-family:
+                                                          Verdana;">4Dos
+                                                          / 4Nt / 4OS2<br>
+                                                          Windows Power
+                                                          Shell<br>
+                                                          explorer.exe<br>
+                                                          <span style="font-weight:
+                                                          bold;">CMD.exe
+                                                          (prompt de
+                                                          comandos)</span></td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          
+                                                          <span style="font-family:
+                                                          Verdana;"></span><span style="font-family:
+                                                          Verdana;"></span><span style="font-family:
+                                                          Verdana;"></span><span style="font-family:
+                                                          Verdana;"></span><span style="font-family:
+                                                          Verdana;"></span><span style="font-family:
+                                                          Verdana;"></span><span style="font-family:
+                                                          Verdana;"></span><br>
+                                                          &nbsp;<big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br></span></big></big><br>
+                                                          &nbsp;<big style="font-weight:
+                                                          bold;"><br>
+                                                          &nbsp; <big><big>ESTRUTURA
+                                                          BÁSICA DE UM
+                                                          SISTEMA</big></big></big><br>
+                                                          <br>
+                                                          &nbsp; &nbsp;<embed style="width:
+                                                          403px; height:
+                                                          353px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_006.swf"><br>
+                                                          <br>
+                                                          &nbsp; &nbsp;
+                                                          <br>
+                                                          &nbsp; &nbsp;
+                                                          &nbsp;<br>
+                                                          
+                                                          <table style="text-align:
+                                                          left; width:
+                                                          100%;" border="1" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(234, 236,
+                                                          255);">USUÁRIO</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(234, 236,
+                                                          255);">"Pessoa"</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(234, 236,
+                                                          255);">SHELL</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(234, 236,
+                                                          255);">&nbsp;Interpreta
+                                                          os comandos o
+                                                          usuario e
+                                                          envia para o
+                                                          Kernel</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(234, 236,
+                                                          255);">KERNEL</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(234, 236,
+                                                          255);">&nbsp;Recebe
+                                                          os comandos do
+                                                          SHEL e executa
+                                                          no HARDWARE</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(234, 236,
+                                                          255);">HARDWARE</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(234, 236,
+                                                          255);">&nbsp;Parte
+                                                          física</td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <br>
+                                                          <span style="font-family:
+                                                          Verdana;"><span style="font-weight:
+                                                          bold;">Exemplo:
+                                                          Deletando um
+                                                          arquivo</span><br>
+                                                          <br style="font-family:
+                                                          Verdana;">
+                                                          </span><span style="font-family:
+                                                          Verdana;">O <span style="font-weight:
+                                                          bold;">USUÁRIO</span>
+                                                          acessa a mouse
+                                                          na SHELL
+                                                          exeplorer.exe
+                                                          (janelas do
+                                                          Windows) e
+                                                          clica no
+                                                          arquivo para
+                                                          deleta-lo.</span><br style="font-family:
+                                                          Verdana;">
+                                                          <span style="font-family:
+                                                          Verdana;">O <span style="font-weight:
+                                                          bold;">SHELL</span>
+                                                          exeplorer.exe
+                                                          interpreta sua
+                                                          a ação do
+                                                          usuário e
+                                                          trasmite ao
+                                                          KERNEL e o <span style="font-weight:
+                                                          bold;">KERNEL</span>
+                                                          vai até o <span style="font-weight:
+                                                          bold;">HARDWARE</span>
+                                                          (HD) e elimina
+                                                          o arquivo.</span><br>
+                                                          <br>
+                                                          <big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          <br>
+                                                          COMO
+                                                          OBTER/PERMITIR
+                                                          ACESSO REMOTO
+                                                          AO SISTEMA<br></span></big></big>
+                                                          <br>
+                                                          <span style="font-family:
+                                                          Verdana;">Andre, na
+                                                          estrutura
+                                                          básica de um
+                                                          sistema temos
+                                                          4 itens:
+                                                          Usuário,
+                                                          Shell, Kernel,
+                                                          Hardware.<br>
+                                                          Vamos ver qual
+                                                          o melhor item
+                                                          para podermos
+                                                          controlar um
+                                                          sistema:<br>
+                                                          Hardware: Meio
+                                                          físico ( sem
+                                                          acesso remoto
+                                                          )<br>
+                                                          Kernel:
+                                                          Linguagem de
+                                                          maquina ( sem
+                                                          possibilidade
+                                                          real de
+                                                          comunicação)<br>
+                                                          Usuário:
+                                                          acesso ao
+                                                          usuário deixa
+                                                          de ser acesso
+                                                          remoto<br>
+                                                          Shell :
+                                                          interpreta
+                                                          todos os
+                                                          comandos e
+                                                          permite
+                                                          controlar todo
+                                                          o sistema.<br>
+                                                          <br>
+                                                          Como vimos
+                                                          obtendo um
+                                                          Shell do
+                                                          sistema
+                                                          podemos ter
+                                                          acesso remoto
+                                                          e controlar
+                                                          todo o
+                                                          sistema.<br>
+                                                          <br>
+                                                          </span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br></span></big></big><br>
+                                                          <big><big><span style="font-family:
+                                                          Verdana;"><br>
+                                                          <big><span style="font-weight:
+                                                          bold;">ABRINDO
+                                                          UMA PORTA DE
+                                                          SEU COMPUTADOR</span></big></span></big></big><br>
+                                                          <br>
+                                                          Quando você
+                                                          abre uma porta
+                                                          de seu
+                                                          computador
+                                                          você permite
+                                                          que outro
+                                                          computador
+                                                          conecte ao seu
+                                                          PC.<br>
+                                                          Isto não
+                                                          significa que
+                                                          necessariamente
+                                                          o outro
+                                                          computador
+                                                          terá acesso ao
+                                                          seu sistema.<br>
+                                                          Vamos abrir
+                                                          uma porta de
+                                                          deixa-la
+                                                          apenas em
+                                                          escuta.<br>
+                                                          <br>
+                                                          Abra seu
+                                                          Insecuritynet
+                                                          3.X e entre
+                                                          em:<br>
+                                                          Iniciar -&gt;
+                                                          Gerenciamento
+                                                          Local -&gt;
+                                                          Gerenciar
+                                                          Portas -&gt;
+                                                          Abrir porta
+                                                          para escuta.<br>
+                                                          Escolha a
+                                                          porta 15<br>
+                                                          <br>
+                                                          Observe que
+                                                          seu computador
+                                                          esta
+                                                          aguardando uma
+                                                          conexão na
+                                                          porta 15.<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          668px; height:
+                                                          335px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_004.swf"><br>
+                                                          <br>
+                                                          &nbsp;Agora
+                                                          vamos fazer o
+                                                          papel de um
+                                                          computador
+                                                          externo e
+                                                          conectar na
+                                                          porta 15
+                                                          utilizando
+                                                          apenas o
+                                                          Prompt de
+                                                          comandos.<br>
+                                                          <br>
+                                                          &nbsp;Abra o
+                                                          Prompt de
+                                                          Comando e
+                                                          digite:<br>
+                                                          &nbsp;telnet
+                                                          &lt;seu ip&gt;
+                                                          15<br>
+                                                          &nbsp;Exemplo:
+                                                          <br>
+                                                          &nbsp;telnet
+                                                          189.7.37.216
+                                                          15<br>
+                                                          &nbsp;<br>
+                                                          &nbsp; <embed style="width:
+                                                          552px; height:
+                                                          114px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_010.swf"><br>
+                                                          <br>
+                                                          &nbsp; Tecle
+                                                          Enter <br>
+                                                          &nbsp; <br>
+                                                          &nbsp; &nbsp;<embed style="width:
+                                                          492px; height:
+                                                          130px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_011.swf"><br>
+                                                          <br>
+                                                          &nbsp; &nbsp;
+                                                          Observe que
+                                                          existe a
+                                                          conexão porem
+                                                          não aparece
+                                                          nada, digite
+                                                          qualquer
+                                                          coisa.<br>
+                                                          <br>
+                                                          &nbsp; &nbsp;
+                                                          &nbsp;Todos os
+                                                          dados que você
+                                                          digitar serão
+                                                          enviados para
+                                                          a porta 15 do
+                                                          "computador
+                                                          remoto" (no
+                                                          caso você
+                                                          mesmo) <br>
+                                                          <br>
+                                                          &nbsp; &nbsp;
+                                                          &nbsp;A porta
+                                                          15 não está
+                                                          direcionada
+                                                          para nenhum
+                                                          programa,
+                                                          apenas está
+                                                          recebendo os
+                                                          dados.<br>
+                                                          &nbsp; &nbsp;
+                                                          &nbsp;A tela
+                                                          continua
+                                                          "preta" porque
+                                                          não existem
+                                                          nada ligado à
+                                                          porta 15 e por
+                                                          isto nada é
+                                                          enviado.<br>
+                                                          <br>
+                                                          &nbsp; &nbsp;
+                                                          &nbsp;para
+                                                          visualizar os
+                                                          dados enviados
+                                                          para a porta
+                                                          15
+                                                          visualize a
+                                                          tela de escuta
+                                                          do
+                                                          Insecuritynet
+                                                          3.X &lt;listng
+                                                          15&gt;<br>
+                                                          <br>
+                                                          &nbsp; <embed style="width:
+                                                          667px; height:
+                                                          331px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_012.swf"><br>
+                                                          <br>
+                                                          &nbsp;
+                                                          &nbsp;Neste
+                                                          exemplo voce
+                                                          abriu a porta
+                                                          15 de seu PC e
+                                                          direcionou
+                                                          os dados para
+                                                          a tela de
+                                                          visualização
+                                                          do
+                                                          Insecuritynet
+                                                          3.X <br>
+                                                          &nbsp; &nbsp;<br>
+                                                          &nbsp; &nbsp;<embed style="width:
+                                                          392px; height:
+                                                          229px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_005.swf"><br>
+                                                          &nbsp; &nbsp;
+                                                          Nesta conexão
+                                                          não é possível
+                                                          acessar o
+                                                          sistema do PC
+                                                          2.<br>
+                                                          &nbsp; &nbsp;
+                                                          Os dados são
+                                                          apenas
+                                                          enviados para
+                                                          a tela de
+                                                          escuta do
+                                                          Insecuritynet,
+                                                          e não para uma
+                                                          <span style="font-weight:
+                                                          bold;">SHELL
+                                                          do Sistema.</span><br>
+                                                          <br>
+                                                          <big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          <br>
+                                                          ABRINDO UMA
+                                                          PORTA PARA UMA
+                                                          SHELL</span></big></big><br>
+                                                          <big><big></big></big><span style="font-family:
+                                                          Verdana;">&nbsp;
+                                                          &nbsp; <br>
+                                                          <span style="font-weight:
+                                                          bold; color:
+                                                          rgb(204, 0,
+                                                          0);">(Cuidado
+                                                          ao realizar
+                                                          esta
+                                                          experiência,
+                                                          pois durante a
+                                                          mesma seu
+                                                          computador
+                                                          ficará
+                                                          inteiramente
+                                                          vulnerável)<br>
+                                                          <br>
+                                                          </span>Andre, agora
+                                                          vamos abrir
+                                                          uma porta para
+                                                          a SHELL
+                                                          CMD.exe<br>
+                                                          Fechea janela
+                                                          de escuta do
+                                                          Insecuritynet
+                                                          &nbsp; <br>
+                                                          &nbsp;</span><span style="font-family:
+                                                          Verdana;">Abra
+                                                          seu
+                                                          Insecuritynet
+                                                          3.X e entre
+                                                          em:<br>
+                                                          Iniciar -&gt;
+                                                          Gerenciamento
+                                                          Local -&gt;
+                                                          Gerenciar
+                                                          Portas -&gt;
+                                                          Abrir porta
+                                                          para cmd.exe.<br>
+                                                          Escolha a
+                                                          porta 15<br>
+                                                          <br>
+                                                          Observe que
+                                                          seu computador
+                                                          esta
+                                                          aguardando uma
+                                                          conexão na
+                                                          porta 15.<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          665px; height:
+                                                          335px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_003.swf"><br>
+                                                          <br>
+                                                          Abra o Prompt
+                                                          de comandos
+                                                          novamente e
+                                                          conecte via
+                                                          telnet.<br>
+                                                          <br>
+                                                          &nbsp;</span><span style="font-family:
+                                                          Verdana;"><embed style="width:
+                                                          552px; height:
+                                                          114px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_011.swf"></span><br>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          &nbsp; Tecle
+                                                          Enter<br>
+                                                          &nbsp;<br>
+                                                          &nbsp; <embed style="width:
+                                                          668px; height:
+                                                          336px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_001.swf"><br>
+                                                          </span><span style="font-family:
+                                                          Verdana;">&nbsp;
+                                                          <br>
+                                                          Observe que
+                                                          agora temos
+                                                          total acesso
+                                                          ao computador
+                                                          pela porta 15,
+                                                          é como se você
+                                                          estivesse do
+                                                          Prompt de
+                                                          comando do
+                                                          computador
+                                                          remoto.<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          663px; height:
+                                                          334px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/img_002.swf"><br>
+                                                          <br>
+                                                          </span><span style="font-family:
+                                                          Verdana;">Todos
+                                                          os dados
+                                                          enviados para
+                                                          a porta 15
+                                                          está sendo
+                                                          direcionado
+                                                          para a SHELL
+                                                          cmd.exe.<br>
+                                                          &nbsp;Como
+                                                          vimos
+                                                          anteriormente
+                                                          o SHELL
+                                                          permite que
+                                                          você controle
+                                                          o Sistema.<br>
+                                                          <br>
+                                                          <img style="width:
+                                                          392px; height:
+                                                          229px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/cmd_conec_15.JPG"><br>
+                                                          </span><span style="font-family:
+                                                          Verdana;"><br>
+                                                          PARA FECHAR A
+                                                          PORTA DE
+                                                          CONEXÃO BASTA
+                                                          FECHAR A
+                                                          JANELA
+                                                          "LISTEN" do
+                                                          INSECURITYNET<br>
+                                                          O
+                                                          Insecuritynet
+                                                          não manterá
+                                                          sua porta
+                                                          aberta.<br>
+                                                          <br>
+                                                          </span><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          <br>
+                                                          Conclusão <br>
+                                                          </span><span style="font-family:
+                                                          Verdana;"><br>
+                                                          </span><span style="font-family:
+                                                          Verdana;">Para
+                                                          obter acesso
+                                                          remoto à um
+                                                          computador não
+                                                          basta apenas
+                                                          uma
+                                                          porta aberta,
+                                                          mas esta porta
+                                                          precisa estar
+                                                          direcionada a
+                                                          uma SHELL
+                                                          (programa que
+                                                          permita que
+                                                          voce interaja
+                                                          com o sistema,
+                                                          neste caso o
+                                                          Prompt de
+                                                          comando
+                                                          CMD.exe)<br>
+                                                          <br>
+                                                          <br>
+                                                          </span><!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="06" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="5738abadee616a29b3681149cd4abdbe" type="hidden">
+
+<b>1-) Quais das alternativas abaixo representa um Sistema Operacional?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Word </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Exel </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Linux</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Promp de Comando </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Paint </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) Quais das alternativas abaixo representa uma Shell?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Word </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Exel </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Linux</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Promp de Comando </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Paint </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) Quais os riscos de abrir uma porta para uma Shell do Sistema sem nenhuma senha?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhum risco, uma shell não oferece nada de importante </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhum risco, a shell só pode ser acessada localmente </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O risco é caracterizado apenas no Windows.</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Grave falha de segurança, pois com acesso à shell podemos controlar o sistema </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2006_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="06" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2006_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </div></body></html>

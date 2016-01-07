@@ -1,0 +1,702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  03</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2003_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=b513284d75a1b7a49785e2805252fea7&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">03 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:35  Brasil &nbsp; &nbsp; &nbsp; Acesso:7<br>
+<table style="text-align: left; width: 240px; height: 48px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="border: 0px solid ; width: 43px;"><img style="border: 0px solid ; width: 42px; height: 36px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/ico-concluido.png"></td>
+      <td><span style="font-weight: bold; color: rgb(0, 0, 0);">Aula já concluída</span></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 03</span><br><br>
+    <div id="listasx"><ul>
+      <li><span style="font-family: Verdana;">Protocolo TCP</span></li>
+      <li><span style="font-family: Verdana;">Análise do
+            protocolo</span></li>
+      <li><span style="font-family: Verdana;">Conexão</span></li>
+      <li><span style="font-family: Verdana;">Transmissão do dado</span></li>
+      <li><span style="font-family: Verdana;">Término</span></li>
+      <li><span style="font-family: Verdana;">Análise direta do
+            protocolo</span></li>
+      <li><span style="font-family: Verdana;">Portas TCP</span></li>
+      <li><span style="font-family: Verdana;">Protocolo UDP</span></li>
+      <li><span style="font-family: Verdana;">Portas UDP</span></li>
+      <li><span style="font-family: Verdana;">Diferenças entre
+            UDP e TCP</span></li>
+      <li><span style="font-family: Verdana;">Exemplo prático de
+            aplicação de portas TCP</span></li>
+      <li><span style="font-family: Verdana;">Como localizar um
+            Trojan analisando as portas</span></li>
+      <li><span style="font-family: Verdana;">Análise da porta</span></li>
+    </ul></div>
+    <div id="listasx"><ul>
+    </ul></div>
+    <big><big><span style="font-family: Verdana; font-weight:
+            bold;"><div id="barra"></div><br><br>
+          </span></big></big><span style="font-family:
+        Verdana;"><br>
+		
+		
+        
+		
+<table style="text-align: left; width: 497px; height: 32px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 170px; height: 88px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/tcp.jpg"></td>
+      <td><big><big><big><span style="font-weight: bold;">PROTOCOLO TCP</span></big></big></big>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+		
+		<br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Antes de iniciarmos os estudos
+        sobre TCP, vamos voltar na pilha TCP/IP.<br>
+        <br>
+      </span>
+    <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><small style="font-weight: bold;"><span style="font-family:
+                Verdana;">IP:</span></small></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Protocolo responsável pelo
+                endereçamento de rede</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><small style="font-weight: bold;"><span style="font-family:
+                Verdana;">TCP:</span></small></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Protocolo responsável pelo
+                transporte dos dados.</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br style="font-family:
+        Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"><span style="font-weight: bold;">Exemplo:</span>
+        <br>
+        <span style="color: rgb(0, 102, 0);">Quando você envia um
+          arquivo para outro computador você necessita dos endereços das
+          duas máquinas (protocolo IP)</span> <span style="color:
+          rgb(0, 0, 153);">e
+          também precisa de uma forma de transmitir estes dados de modo
+          que as duas maquinas consigam enviar e receber o dados
+          (protocolo TCP)</span></span><br style="font-family: Verdana;
+        color: rgb(0, 0, 153);">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;"></span><span style="font-family:
+        Verdana;">O
+        TCP (Transmission Control Protocol - Protocolo de Controle de
+        Transmissão), é um protocolo orientado a conexões
+        confiável que permite a entrega sem erros de um fluxo de bytes.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><big><span style="font-family: Verdana; font-weight: bold;">Funcionamento
+          do TCP:</span></big><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana; font-weight: bold; font-style:
+        italic;">Como é feita a conexão:</span><br style="font-family:
+        Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">1-) Computador cliente solicita um
+        “pedido de conexão” ao computador servidor</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">2-) O computador servidor
+        verifica o pedido e retorna com a “permissão de conexão”</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">3-) O computador cliente&nbsp;
+        recebe as informações de confirmação
+        enviadas pelo servidor e envia estas confirmações de
+        volta ao servidor. O servidor recebe as informações,
+        verifica que elas estão corretas e estabelece a sessão.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana; font-weight: bold; font-style:
+        italic;">Após a sessão estabelecida (RESUMO):</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">O remetente envia os dados ao
+        destinatário.<br>
+        <br style="font-family: Verdana;">
+      </span><span style="font-family: Verdana;">O destinatário
+        confirma de se os dados chegaram corretamente e solicita um novo
+        pacote
+        de dados ou “pede” para enviar novamente porque os dados
+        foram corrompidos.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Assim que todos os dados foram
+        enviados a sessão é encerrada.</span><br style="font-family:
+        Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <big><big><span style="font-family: Verdana;
+            font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana;">
+    <big><big> <span style="font-family: Verdana; font-weight:
+            bold;"><br>
+            ANÁLISE DO PROTOCOLO TCP</span></big></big><br style="font-family: Verdana;">
+      <br>
+    <span style="font-family:
+        Verdana;"><b>CONEXÃO:</b></span><br style="font-family:
+      Verdana;">
+    <table style="text-align: left; width: 596px; height: 233px;" border="0" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td><span style="font-family: Verdana;"> <embed style="width: 207px; height: 221px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_003.swf"></span></td>
+          <td><br style="font-family: Verdana;">
+              <span style="font-family: Verdana;"> Cliente: SYN
+                (solicita a abertura da conexão) <br>
+                Servidor: SYN (avisa que a porta está disponível)<br>
+                Servidor: ACK (confirma o recebimento)<br>
+                Cliente: ACK (confirma e inicia a conexão)<br>
+              </span> </td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+        <br>
+      </span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+        Verdana;"></span><span style="font-family: Verdana; font-weight:
+        bold;">TRANSMISSÃO DO DADO:</span><br style="font-family:
+        Verdana;">
+      <span style="font-family: Verdana;">Cliente: DATA (é enviado o
+        pacote com o dado)</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Servidor: OK (a confirmação,
+        depois de verificar a integridade do pacote)</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana; font-weight: bold;">TERMINO</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+    
+    <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td> <embed style="width: 209px; height: 160px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_004.swf"></td>
+          <td><span style="font-family: Verdana;"> Cliente: FIN
+                (solicita o fechamento da conexão)<br>
+                Servidor: ACK (confirmar o recebimento do FIN para
+                encerrar a sessão)<br>
+                Servidor: FIN (encerra a sessão do servidor para o
+                cliente)<br>
+                Cliente: ACK (confirma o FIN do servidor)<br>
+              </span></td>
+        </tr>
+      </tbody>
+    </table>
+    <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><br style="font-family:
+        Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana; font-weight: bold;">As
+        principais características do protocolo TCP são as seguintes:</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp; * TCP
+        permite entregar ordenadamente os datagramas provenientes do
+        protocolo IP</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp; * TCP
+        permite verificar a onda de dados para evitar uma saturação da
+        rede</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp; * TCP
+        permite
+        formatar os dados em segmentos de comprimento variável a fim de
+        os "entregar" ao protocolo IP</span><br style="font-family:
+        Verdana;">
+      <span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp; * TCP
+        permite
+        multiplexar os dados, quer dizer, fazer circular simultaneamente
+        informações que provêm de fontes
+        (aplicações, por exemplo) distintas numa mesma linha</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <big><big><span style="font-family: Verdana;
+            font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana; font-weight: bold;">
+    <big> <span style="font-family: Verdana; font-weight: bold;"><br>
+          ANÁLISE DIRETA DO PROTOCOLO TCP:</span></big><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;
+        <embed style="width: 536px; height: 395px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_005.swf"></span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    
+    <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">PORTA DE ORIGEM:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Ponto&nbsp; terminal&nbsp;
+                da conexão da origem(16 BTIs)</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">PORTA DE DESTINO:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Ponto&nbsp; terminal da
+                conexão da destino (16 BTIs)</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Número de sequência:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Identifica a posição do
+                segmento no fluxo de dados (32 BITs)</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Número de Confirmação:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Confirma o recebimento da
+                dado recebido anteriormente e indica o próximo segmento
+                aguardado.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Tamanho do cabeçalho TCP:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">(32 BITs)</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Checksum:</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Verificação de erros</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <big><big><span style="font-family: Verdana;
+            font-weight: bold;"><div id="barra"></div><br><br>
+            <br style="font-family: Verdana;">
+          </span></big></big> <span style="font-family:
+        Verdana;">&nbsp;</span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+        Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><big><big><big><big><span style="font-family: Verdana; font-weight: bold;">PORTAS
+                TCP:</span></big></big></big></big><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Andre, observe que no protocolo TCP
+        temos um espaço de 16 BTIs para Portas de origem e 16 BTIs para
+        a porta de destino.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Logo o numero máximo de portas
+        é:<br>
+        <br>
+      </span>
+    <table style="text-align: left; width: 517px; height: 47px;" border="0" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td> <embed style="width: 43px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_001.swf"></td>
+          <td><span style="font-family: Verdana;">=
+                2X2X2X2X2X2X2X2X2X2X2X2X2X2X2X2X = 65.536 portas.</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br style="font-family:
+          Verdana;">
+      </span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+        Verdana; font-weight: bold;">PARA QUE SERVE AS PORTAS:</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Imagine uma empresa com
+        vários setores e um único número de telefone, e
+        precisa ter acessos diretos aos setores de forma externa. A
+        solução seria usar um PABX com vários
+        ramais. Exemplo:<br>
+        Ramal 01 = Recepção<br>
+      </span><span style="font-family: Verdana;">Ramal 02
+        = Diretoria<br>
+      </span><span style="font-family: Verdana;">Ramal 03
+        = Sala de reunião<br>
+      </span><span style="font-family: Verdana;">Ramal 04
+        = Controle de estoque</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">No computador é a mesma
+        coisa, existe apenas um endereço IP, mas vários programas
+        e serviços, por exemplo: Navegador, Messenger, Jogos online,
+        etc.). Cada serviço deve ter sua porta específica assim
+        com apenas um endereço IP você pode acessar diferentes
+        serviços do computador.<br>
+        <br>
+        <embed style="width: 405px; height: 284px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_002.swf"><br>
+        &nbsp; <br style="font-family: Verdana;">
+      </span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">As portas TCP mais usadas
+        (também chamadas de "well known ports") são as portas de
+        0 a 1023, que são reservadas para serviços mais
+        conhecidos e utilizados, como servidores web, FTP, servidores de
+        e-mail, compartilhamento de arquivos, etc. A porta 80, por
+        exemplo,
+        é reservada para uso de servidores web, enquanto a porta 21
+        é a porta padrão para servidores FTP. A porta "0"
+        é reservada, por isso não entra realmente na lista.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+          </span></big></big><span style="font-family:
+        Verdana;"></span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><big><big><big><span style="font-family: Verdana; font-weight: bold;">
+              PROTOCOLO UDP</span></big></big></big><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Não vamos nos aprofundar no
+        protocolo UDP, mas é importante que você saiba que o
+        protocolo UDP é muito semelhante ao TCP porem não existe
+        confirmação se os dados chegaram corretamente.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <big><span style="font-family: Verdana; font-weight: bold;">PORTAS
+          UDP:</span></big><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">O sistema é parecido com o
+        TCP, com exatamente o mesmo numero de portas.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Segue abaixo algumas portas
+        padrões UDP:</span><br style="font-family: Verdana;">
+    
+    <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">53 UDP</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Consultas de nomes DNS
+                (Domain Name System, sistema de</span><br style="font-family: Verdana;">
+              <span style="font-family: Verdana;">nomes de domínios)</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">69&nbsp;</span><span style="font-family: Verdana;">UDP</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Trivial File Transfer
+                Protocol (TFTP)</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">137&nbsp;</span><span style="font-family: Verdana;">UDP</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Serviço de nomes de
+                NetBIOS</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">138&nbsp;</span><span style="font-family: Verdana;">UDP</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Serviço de datagrama de
+                NetBIOS </span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">161&nbsp;</span><span style="font-family: Verdana;">UDP</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Simple Network Management
+                Protocol (SNMP)</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">520&nbsp;</span><span style="font-family: Verdana;">UDP</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Routing Information
+                Protocol (RIP, protocolo de informações</span><span style="font-family: Verdana;"> de roteamento)</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <br style="font-family: Verdana;">
+    <big><big><span style="font-family: Verdana; font-weight:
+            bold;"><div id="barra"></div><br><br>
+          </span></big></big><span style="font-family:
+        Verdana;">&nbsp;</span><span style="font-family: Verdana;"> <br>
+      </span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+        Verdana;"></span><big style="font-weight: bold;"><big><span style="font-family: Verdana;">DIFERENÇAS ENTRE UDP E TCP.</span></big></big><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">A grande diferença entre os
+        dois protocolos de transporte é que o protocolo TCP é
+        confiável porque checa se todos os dados foram entregues
+        corretamente, caso o dado seja corrompido durante a transmissão
+        o protocolo TCP rejeita o dado e solicita um novo envio. Já no
+        protocolo UDP isto não acontece, um dado corrompido é
+        entregue de forma corrompida.<br>
+        O Protocolo UDP, não estabelece uma conexão antes de
+        envia os dados (Ao contrario do TCP).
+        Se o destinatário está Online ou não, ele
+        simplesmente envia os dados, sem saber se vão chega ao destino
+        ou não.
+      </span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;Mas porque usar UDP?</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Como os dados não são
+        conferidos a velocidade de transmissão é significativamente
+        maior.&nbsp; Em serviços te transmissão de VOZ, por
+        exemplo, você necessita de alta velocidade de transmissão e caso
+        algum BYTE seja corrompido não implicará de forma
+        significativa no dado entregue.</span><br style="font-family:
+        Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+    <big><big><span style="font-family: Verdana;
+            font-weight: bold;"><div id="barra"></div><br><br>
+            <br style="font-family: Verdana;">
+          </span></big></big> <big><big><span style="font-family: Verdana; font-weight: bold;">EXEMPLOS
+            PRÁTICOS DE APLICAÇÃO DE PORTAS TCP:</span></big></big><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Quando você utiliza a internet
+        ou rede seu computador irá abrir varias portas para as conexões.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Vamos visualizar as portas
+        abertas em nosso Computador:</span><br style="font-family:
+        Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Abra seu Insecuritynet 3.X e entre
+        em:</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Inicio -&gt; Gerenciamento
+        Local -&gt; Visualizar portas abertas:</span><br style="font-family: Verdana;">
+      <br>
+      <embed style="width: 567px; height: 365px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_006.swf"><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"><br>
+        As portas em <span style="font-weight: bold; color: rgb(0, 153,
+          0);">Verdes</span> estão aguardando uma conexão.</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">As portas em <span style="font-weight: bold; color: rgb(102, 102, 102);">cinza</span>
+        esta conectadas localmente (localhost)</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">As portas em <span style="font-weight: bold; color: rgb(51, 204, 255);">Azul</span>
+        estão conectadas com outros computadores.</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"><br>
+      </span><span style="font-family: Verdana;">Observe que do lado
+        esquerdo temos os processos que estão ativos nas respectivas
+        portas.<br>
+        <br style="font-family: Verdana;">
+      </span> <big><big><span style="font-family:
+            Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+            <br style="font-family: Verdana;">
+          </span></big></big> 
+    <div style="text-align: center;"><span style="font-family:
+          Verdana;"><big><span style="font-weight: bold;">&nbsp;COMO
+              LOCALIZAR UM TROJAN BACKDOOR MANUALMENTE </span></big></span><br>
+      <span style="font-family: Verdana;"><big><span style="font-weight: bold;">&nbsp;ANALISANDO AS PORTAS TCP<br>
+            </span></big></span><span style="font-family:
+          Verdana;"></span></div>
+    <span style="font-family: Verdana;"> <br>
+      </span><span style="font-family: Verdana;">Andre, estudando quais são
+        os processos do seu sistema e os programas de conexão que voce
+        usa, facilmente você poderá identificar um cavalo de
+        tróia ou spyware em seu computador.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Neste exemplo vou me infectar com
+        um Trojan feito com o NETCAT e analisar as portas de meu
+        Computador.<br>
+        Caso você também queira se infectar para fazer o teste, <a style="color: rgb(51, 51, 153);" href="http://insecuritynet.com.br/cursos/cursos_onlines/ascd/aula_ascd_03/AULA_O3_FILES/trojan_de_teste.rar">clique aqui</a> para
+        baixar o trojan (Senha para descompactar:1234).<br>
+        <br>
+      </span><span style="font-family: Verdana;">Inicio
+        -&gt; Gerenciamento Local -&gt; Visualizar portas abertas:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Observe que podemos ver a porta e
+        o processo estranho aqui no computador.<br>
+        Porta 666 nc.exe<br>
+      </span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span>
+      <embed style="width: 666px; height: 433px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_008.swf"><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Agora vou deixar alguém conectar
+        no trojan.<br>
+        <br>
+        <br>
+        <embed style="width: 665px; height: 432px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_007.swf"></span><span style="font-family: Verdana;"></span><br style="font-family:
+        Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Observe que a porta agora aparece
+        em <span style="font-weight: bold; color: rgb(51, 51, 255);">Azul</span>
+        (Conectada)</span><br>
+    <span style="font-family: Verdana;"><br>
+        Agora vamos obter dados desta Porta aberta para uma análise mais
+        profunda.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Em seu Insecuritynet 3.X entre
+        em:</span><br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Inicio -&gt; Defesa -&gt; Port
+        Info.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;"></span>
+      <embed style="width: 668px; height: 435px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/img_009.swf"><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      <span style="font-family: Verdana;">Observe que temos todos os
+        dados da conexão, inclusive quem está conectado ao trojan.</span><br style="font-family: Verdana;">
+      <br style="font-family: Verdana;">
+      
+    <table style="text-align: left; width: 382px; height: 200px;" border="0" cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr style="font-family: Verdana;" align="center">
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-weight: bold;">ANÁLISE DA PORTA 666</span></td>
+        </tr>
+        <tr>
+          <td>
+            <table style="text-align: left; font-family: Verdana; width:
+              405px; height: 144px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="background-color: rgb(234, 236, 255);"><span style="font-weight: bold;">Conexão:</span></td>
+                  <td style="background-color: rgb(234, 236, 255);">Estabilizada</td>
+                </tr>
+                <tr>
+                  <td style="background-color: rgb(234, 236, 255);"><span style="font-weight: bold;">IP Conectado:</span></td>
+                  <td style="background-color: rgb(234, 236, 255);">192.168.0.11</td>
+                </tr>
+                <tr>
+                  <td style="background-color: rgb(234, 236, 255);"><span style="font-weight: bold;">Processo:</span></td>
+                  <td style="background-color: rgb(234, 236, 255);">nc.exe</td>
+                </tr>
+                <tr>
+                  <td style="background-color: rgb(234, 236, 255);"><span style="font-weight: bold;">Número do processo:</span></td>
+                  <td style="background-color: rgb(234, 236, 255);">1968</td>
+                </tr>
+                <tr>
+                  <td style="background-color: rgb(234, 236, 255);"><span style="font-weight: bold;">Endereço do
+                        executável:</span></td>
+                  <td style="background-color: rgb(234, 236, 255);">C:\Windows\system32\nc.exe</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+        Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br>
+    <big><big><span style="font-family: Verdana;
+            font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana;">
+  <!-- FIMAULA -->
+</span></div>
+
+
+
+<!-- INITESTE -->
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2003_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="03" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2003_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

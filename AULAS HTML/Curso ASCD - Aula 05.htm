@@ -1,0 +1,1260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  05</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2005_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=ad01738016f43123e8209d8e61675a00&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">05 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:28  Brasil &nbsp; &nbsp; &nbsp; Acesso:3<br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2005_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 05</span><br><br>                                                          <div id="listasx"><ul>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Portas</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Como
+                                                          verificar uma
+                                                          porta em um
+                                                          servidor</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Port
+                                                          Scanners</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Scans
+                                                          de principais
+                                                          Serviços</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Faixa
+                                                          de portas</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Como
+                                                          Scanear seu
+                                                          próprio
+                                                          computador</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Porta
+                                                          aberta e
+                                                          vulnerabilidade</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Portas
+                                                          e áreas não
+                                                          publicas de
+                                                          websites</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Lista
+                                                          completa de
+                                                          portas de
+                                                          Serviços
+                                                          padrões</span></li>
+                                                          <li><span style="font-family:
+                                                          Verdana;">Exercício</span></li>
+                                                          </ul></div>
+                                                          
+                                                          <div align="justify"><span class="small_gray_text">&nbsp;&nbsp;</span><span class="small_gray_text"></span>
+                                                          <big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          </span></big></big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;
+                                                          font-style:
+                                                          italic;"></span><br style="font-family:
+                                                          Verdana;"><br style="font-family:
+                                                          Verdana;"><span style="font-family:
+                                                          Verdana;"></span><table style="text-align:
+                                                          left;
+                                                          background-color:
+                                                          rgb(255, 255,
+                                                          255); width:
+                                                          740px;" border="0" cellpadding="0" cellspacing="0">
+                                                          
+                                                          
+                                                          
+                                                          </table><table style="text-align:
+                                                          left; width:
+                                                          100%;" border="0" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr>
+                                                          <td><img style="width:
+                                                          124px; height:
+                                                          96px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/scan.jpg"></td>
+                                                          <td style="font-weight:
+                                                          bold;"><big><big><span style="font-family:
+                                                          Verdana;">PORT
+                                                          SCANS e
+                                                          SERVIÇOS
+                                                          ATIVOS.</span></big></big></td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <br>
+                                                          Primeiro vamos
+                                                          relembrar o
+                                                          que é uma
+                                                          porta TCP
+                                                          (aula nº3):<br>
+                                                          <br>
+                                                          <span style="font-weight:
+                                                          bold;">PARA
+                                                          QUE SERVE AS
+                                                          PORTAS:</span><br>
+                                                          <br>
+                                                          Andre, imagine uma
+                                                          empresa com
+                                                          vários setores
+                                                          e um único
+                                                          número de
+                                                          telefone,e
+                                                          precisa ter
+                                                          acessos
+                                                          diretos os
+                                                          setores de
+                                                          forma externa.
+                                                          A solução
+                                                          seria usar um
+                                                          PABX com
+                                                          vários
+                                                          ramais.Exemplo:<br>
+                                                          Ramal 01 =
+                                                          Recepção<br>
+                                                          Ramal 02 =
+                                                          Diretoria<br>
+                                                          Ramal 03 =
+                                                          Sala de
+                                                          reunião<br>
+                                                          Ramal 04 =
+                                                          Controle de
+                                                          estoque<br>
+                                                          <br>
+                                                          No computador
+                                                          é a mesma
+                                                          coisa, existe
+                                                          apenas um
+                                                          endereço
+                                                          IP, mas vários
+                                                          programas e
+                                                          serviços, por
+                                                          exemplo:
+                                                          Navegador,
+                                                          Messenger,
+                                                          Jogos online,
+                                                          etc.). Cada
+                                                          serviço deve
+                                                          ter
+                                                          sua porta
+                                                          específica
+                                                          assim com
+                                                          apenas um
+                                                          endereço IP
+                                                          você
+                                                          pode acessar
+                                                          diferentes
+                                                          serviços do
+                                                          computador.<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          405px; height:
+                                                          284px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_001.swf"><br>
+                                                          &nbsp;<br>
+                                                          <br>
+                                                          &nbsp;<br>
+                                                          <br>
+                                                          Como temos
+                                                          vários
+                                                          serviços
+                                                          comuns na WEB,
+                                                          existe a
+                                                          necessidade de
+                                                          padronização
+                                                          de portas.<br>
+                                                          <br>
+                                                          A seguir está
+                                                          uma lista com
+                                                          as principais
+                                                          portas e
+                                                          serviços:<br>
+                                                          <br>
+                                                          </span>
+                                                          <table style="text-align:
+                                                          left; width:
+                                                          100%;" border="0" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr>
+                                                          <td style="font-weight:
+                                                          bold;
+                                                          background-color:
+                                                          rgb(204, 204,
+                                                          255);">Porta</td>
+                                                          <td style="font-weight:
+                                                          bold;
+                                                          background-color:
+                                                          rgb(204, 204,
+                                                          255);">Protocolo</td>
+                                                          <td style="font-weight:
+                                                          bold;
+                                                          background-color:
+                                                          rgb(204, 204,
+                                                          255);">Serviço</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">21</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">FTP</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">Servidor
+                                                          de arquivos</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">23</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">TELNET</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">Conexao
+                                                          remota</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">25</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">SMTP</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">Servidor
+                                                          de Envio de
+                                                          Emails</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">53</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">DNS</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">Servidor
+                                                          para resolução
+                                                          de IPs de
+                                                          Domínios</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">80</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">HTTP</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">Servidor
+                                                          de Websites</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">110</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">POP</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">Servidor
+                                                          de leitura de
+                                                          Emais</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">135</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">Netbios</td>
+                                                          <td style="font-family:
+                                                          Verdana;
+                                                          background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);"><br>
+                                                          </td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <span style="font-family:
+                                                          Verdana;"><big><br style="font-weight:
+                                                          bold;">
+                                                          </big></span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br></span></big></big><br>
+                                                          <span style="font-family:
+                                                          Verdana;"><big><br style="font-weight:
+                                                          bold;">
+                                                          <span style="font-weight:
+                                                          bold;">Como
+                                                          verificar se
+                                                          uma porta de
+                                                          um determinado
+                                                          servidor está
+                                                          aberta</span></big><br>
+                                                          <br>
+                                                          O processo é
+                                                          muito simples,
+                                                          basta você
+                                                          fazer uma
+                                                          tentativa de
+                                                          conexão nesta
+                                                          porta.<br>
+                                                          <br>
+                                                          Por exemplo:<br>
+                                                          <br>
+                                                          Vamos
+                                                          verificar se o
+                                                          servidor
+                                                          www.google.com
+                                                          está com a
+                                                          porta 80
+                                                          aberta.<br>
+                                                          <br>
+                                                          Abra o
+                                                          Insecuritynet
+                                                          3.X entre em:<br>
+                                                          <br>
+                                                          Inicio -&gt;
+                                                          Intrusão -&gt;
+                                                          Conectar<br>
+                                                          <br>
+                                                          Digite o
+                                                          endereço do
+                                                          servidor e a
+                                                          porta<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          473px; height:
+                                                          259px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_003.swf"><br>
+                                                          <br>
+                                                          Observe que
+                                                          houve conexão:<br>
+                                                          <br>
+                                                          &nbsp;<embed style="width:
+                                                          598px; height:
+                                                          352px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_004.swf"><br>
+                                                          <br>
+                                                          </span><span style="font-family:
+                                                          Verdana;"><br>
+                                                          Agora vamos
+                                                          tentar
+                                                          conectar na
+                                                          porta 79<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          449px; height:
+                                                          246px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_005.swf"><br>
+                                                          <br>
+                                                          Observe que
+                                                          não houve
+                                                          conexão<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          590px; height:
+                                                          228px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_006.swf"><br>
+                                                          </span><span style="font-family:
+                                                          Verdana;"><br>
+                                                          Conclusão,
+                                                          temos um
+                                                          servidor
+                                                          (www.google.com)
+                                                          e várias
+                                                          portas de
+                                                          entrada neste
+                                                          caso a porta
+                                                          80 esta aberta
+                                                          para conexão.<br>
+                                                          <br>
+                                                          </span>
+                                                          <table style="text-align:
+                                                          left; width:
+                                                          129px; height:
+                                                          60px;" border="1" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);"><span style="color:
+                                                          rgb(102, 255,
+                                                          255);">80</span></td>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);"><span style="color:
+                                                          rgb(51, 255,
+                                                          51);">ON</span></td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);"><span style="color:
+                                                          rgb(153, 255,
+                                                          255);">79</span></td>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);"><span style="color:
+                                                          rgb(255, 0,
+                                                          0);">OFF</span></td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <br>
+                                                          Mas imagine
+                                                          ter que fazer
+                                                          isto com todas
+                                                          as portas,
+                                                          seria muito
+                                                          trabalhoso,
+                                                          para isto
+                                                          temos os Port
+                                                          Scans.<br>
+                                                          <br>
+                                                          </span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br></span></big></big><br>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <big><big><big><span style="font-weight:
+                                                          bold;">PORT
+                                                          SCANNERS</span></big></big></big><br>
+                                                          <br>
+                                                          O Port Scan é
+                                                          ferramenta
+                                                          indispensável
+                                                          para sua
+                                                          própria defesa
+                                                          e também para
+                                                          verificar
+                                                          possíveis
+                                                          vulnerabilidades
+                                                          em servidores
+                                                          remotos.<br>
+                                                          A ferramenta é
+                                                          utilizada para
+                                                          scannear um
+                                                          computador a
+                                                          procura de
+                                                          portas
+                                                          abertas.<br>
+                                                          Localizando
+                                                          uma porta
+                                                          aberta podemos
+                                                          saber qual
+                                                          serviço está
+                                                          ativo na porta
+                                                          como por
+                                                          exemplo (FTP,
+                                                          HTTP, Telnet,
+                                                          SMTP etc )<br>
+                                                          <br>
+                                                          <big><span style="font-weight:
+                                                          bold;">PORT
+                                                          SCAN de
+                                                          Principais
+                                                          serviços.</span></big><br>
+                                                          <br>
+                                                          Temos 65.536
+                                                          portas, não há
+                                                          necessidade de
+                                                          scannear todas
+                                                          estas portas,
+                                                          você pode
+                                                          fazer um Scan
+                                                          apenas nas
+                                                          portas
+                                                          padronizadas.<br>
+                                                          <br>
+                                                          Abra o
+                                                          Insecuritynet
+                                                          3.X e entre
+                                                          em: Inicio
+                                                          -&gt; Scan e
+                                                          Monitoramento-&gt;
+                                                          Por scan
+                                                          serviços.<br>
+                                                          <br>
+                                                          Vamos procurar
+                                                          portas abertas
+                                                          no servidor:
+                                                          microsoft.com<br>
+                                                          <br>
+                                                          &nbsp;<embed style="width:
+                                                          699px; height:
+                                                          523px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_007.swf"><br>
+                                                          <br>
+                                                          Observe que
+                                                          encontramos
+                                                          duas portas
+                                                          abertas: 21 e
+                                                          80<br>
+                                                          <br>
+                                                          </span>
+                                                          <table style="text-align:
+                                                          left; width:
+                                                          211px; height:
+                                                          35px;" border="1" cellpadding="2" cellspacing="2">
+                                                          <tbody>
+                                                          <tr>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);"><span style="color:
+                                                          rgb(102, 255,
+                                                          255);">21</span></td>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);"><span style="color:
+                                                          rgb(51, 255,
+                                                          51);">ON</span></td>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);
+                                                          color:
+                                                          rgb(102, 255,
+                                                          255);">Servidor
+                                                          FTP</td>
+                                                          </tr>
+                                                          <tr>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);"><span style="color:
+                                                          rgb(153, 255,
+                                                          255);">80</span></td>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);
+                                                          color: rgb(51,
+                                                          255, 51);">ON</td>
+                                                          <td style="background-color:
+                                                          rgb(0, 0, 0);
+                                                          color:
+                                                          rgb(102, 255,
+                                                          255);">Servidor
+                                                          HTTP</td>
+                                                          </tr>
+                                                          </tbody>
+                                                          </table>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <br>
+                                                          Você poderá
+                                                          conferir os
+                                                          serviços
+                                                          nestas portas,
+                                                          vamos conectar
+                                                          na porta 21:<br>
+                                                          <br>
+                                                          Inicio -&gt;
+                                                          Intrusão -&gt;
+                                                          Conectar<br>
+                                                          <br>
+                                                          Como sabemos
+                                                          que a porta 21
+                                                          é um servidor
+                                                          FTP, vamos
+                                                          usar o domínio
+                                                          correto:<br>
+                                                          <br>
+ftp.microsoft.com<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          305px; height:
+                                                          224px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_008.swf"><br>
+                                                          <br>
+                                                          Observe que
+                                                          houve conexão:<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          570px; height:
+                                                          316px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_009.swf"><br>
+                                                          <br>
+                                                          &nbsp;Como
+                                                          este servidor
+                                                          possui
+                                                          permissão para
+                                                          login anônimo
+                                                          vamos acessar
+                                                          os arquivos da
+                                                          Microsoft.<br>
+                                                          <br>
+                                                          Entre em
+                                                          Inicio -&gt;
+                                                          clientes -&gt;
+                                                          FTP via
+                                                          Explorer<br>
+                                                          <br>
+                                                          Selecione
+                                                          ANONYMOUS<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          387px; height:
+                                                          241px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_010.swf"><br>
+                                                          <br>
+                                                          Observe os
+                                                          arquivos do
+                                                          Servidor, você
+                                                          poderá copiar
+                                                          diretamente do
+                                                          servidor:<br>
+                                                          <br>
+                                                          &nbsp;<embed style="width:
+                                                          715px; height:
+                                                          283px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_011.swf"><br>
+                                                          <br>
+                                                          Claro que a
+                                                          Microsoft não
+                                                          deixa nada de
+                                                          confidencial
+                                                          em um
+                                                          servidor que
+                                                          possa ser
+                                                          acessado
+                                                          remotamente
+                                                          sem
+                                                          necessidade de
+                                                          login.<br>
+                                                          <br>
+                                                          Mas muitos
+                                                          servidores
+                                                          possuem dados
+                                                          que não
+                                                          poderiam estar
+                                                          públicos desta
+                                                          forma.<br>
+                                                          <br>
+                                                          Este foi
+                                                          apenas um
+                                                          exemplo do que
+                                                          um simples
+                                                          scan de portas
+                                                          pode fazer.<br>
+                                                          <br>
+                                                          Mas adiante em
+                                                          nosso curso
+                                                          vamos analisar
+                                                          cada porta
+                                                          padrão, cada
+                                                          serviço e como
+                                                          explorá-los.<br>
+                                                          <br>
+                                                          </span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br></span></big></big><br>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <big><big><span style="font-weight:
+                                                          bold;">FAIXA
+                                                          DE PORTAS</span></big></big><br>
+                                                          <br>
+                                                          Faixa de
+                                                          portas é um
+                                                          intervalo
+                                                          entre duas
+                                                          portas,
+                                                          exemplo a
+                                                          faixa de
+                                                          portas entre
+                                                          22 e 29:<br>
+                                                          <br>
+                                                          22, 23, 24,
+                                                          25, 26, 27, 28
+                                                          e 29.<br>
+                                                          <br>
+                                                          Caso você
+                                                          queira, você
+                                                          pode fazer um
+                                                          Scan apenas em
+                                                          uma
+                                                          determinada
+                                                          faixa.<br>
+                                                          <br>
+                                                          Inicio -&gt;
+                                                          Scan e
+                                                          Monitoramento
+                                                          -&gt; Port
+                                                          Scan Faixa<br>
+                                                          <br>
+                                                          Neste exemplo
+                                                          vamos fazer um
+                                                          scan de faixa
+                                                          entre as potas
+                                                          75 e 85<br>
+                                                          <br>
+                                                          &nbsp;<embed style="width:
+                                                          620px; height:
+                                                          397px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_012.swf"><br>
+                                                          <br>
+                                                          <br>
+                                                          As portas TCP
+                                                          mais usadas
+                                                          (também
+                                                          chamadas de
+                                                          "well known
+                                                          ports") são as
+                                                          portas de 0 a
+                                                          1023, que são
+                                                          reservadas
+                                                          para serviços
+                                                          mais
+                                                          conhecidos.<br>
+                                                          <br>
+                                                          </span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br></span></big></big><span style="font-family:
+                                                          Verdana;">&nbsp;<br>
+                                                          <br>
+                                                          <big><big><span style="font-weight:
+                                                          bold;">Como
+                                                          Scanear seu
+                                                          próprio
+                                                          computador.</span></big></big><br>
+                                                          <br>
+                                                          Basta fazer um
+                                                          Scan no IP:
+                                                          127.0.0.1<br>
+                                                          <br>
+                                                          Este IP é o
+                                                          endereço do
+                                                          localhost, sua
+                                                          maquina local.<br>
+                                                          <br>
+                                                          &nbsp;<embed style="width:
+                                                          619px; height:
+                                                          411px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_013.swf"><br>
+                                                          <br>
+                                                          <big><big><span style="font-weight:
+                                                          bold;"></span></big></big></span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          <br>
+                                                          </span></big></big><span style="font-family:
+                                                          Verdana;"><big><big><span style="font-weight:
+                                                          bold;">Uma
+                                                          porta aberta
+                                                          significa
+                                                          vulnerabilidade?</span></big></big><br>
+                                                          <br>
+                                                          Andre, uma porta aberta
+                                                          indica que
+                                                          existe uma
+                                                          possibilidade
+                                                          de conexão em
+                                                          um determinado
+                                                          serviço.<br>
+                                                          <br>
+                                                          Por exemplo,
+                                                          servidor
+                                                          www.microsoft.com
+                                                          tem a porta 80
+                                                          aberta, pois
+                                                          seu
+                                                          navegador
+                                                          precisa se
+                                                          conectar no
+                                                          servidor para
+                                                          o servidor
+                                                          poder enviar
+                                                          o conteúdo do
+                                                          site, todo o
+                                                          processo de
+                                                          conexão é
+                                                          feito através
+                                                          da porta 80,
+                                                          esta porta
+                                                          precisa estar
+                                                          aberta para
+                                                          que o site
+                                                          esteja no ar.
+                                                          Isto não é uma
+vulnerabilidade.<br>
+                                                          <br>
+                                                          &nbsp;Porem
+                                                          você pode
+                                                          listar todas
+                                                          as portas
+                                                          abertas de um
+                                                          determinado
+                                                          servidor e
+                                                          explorar o que
+                                                          cada porta
+                                                          faz, no
+                                                          exemplo
+                                                          prático
+                                                          exploramos a
+                                                          porta 21 e o
+                                                          servidor FTP
+                                                          aceitou um
+                                                          login
+                                                          anônimo (neste
+                                                          caso
+                                                          proposital).<br>
+                                                          <br>
+                                                          *&nbsp;Vários
+                                                          vírus de
+                                                          computador
+                                                          abrem portas
+                                                          para
+                                                          acessos
+                                                          remotos onde
+                                                          você pode ter
+                                                          acesso total
+                                                          ao sistema.<br>
+                                                          <br>
+                                                          Você pode
+                                                          identificar
+                                                          servidores
+                                                          desatualizados
+                                                          sujeitos a
+                                                          exploits.<br>
+                                                          <br>
+                                                          <br>
+                                                          </span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          <br>
+                                                          &nbsp; </span></big></big><span style="font-family:
+                                                          Verdana;"><big><span style="font-weight:
+                                                          bold;">Áreas
+                                                          não publicas
+                                                          de Websites</span></big><br>
+                                                          <br>
+                                                          &nbsp;
+                                                          Áreas de
+                                                          logins, não
+                                                          publicas são
+                                                          comuns na
+                                                          porta 8080,
+                                                          exemplo:<br>
+                                                          <br>
+                                                          Exemplo de
+                                                          site:<br>
+                                                          <a style="color:
+                                                          rgb(51, 102,
+                                                          255);" href="http://www.rexlab.ufsc.br/" target="_blank">http://www.rexlab.ufsc.br/</a><br>
+                                                          <br>
+                                                          Vamos fazer um
+                                                          scan de faixa
+                                                          entre a 8075 e
+                                                          a 8085<br>
+                                                          <br>
+                                                          <embed style="width:
+                                                          498px; height:
+                                                          206px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_014.swf"><br>
+                                                          <br>
+                                                          Porta 8080
+                                                          aberta<br>
+                                                          <br>
+                                                          &nbsp;<embed style="width:
+                                                          111px; height:
+                                                          56px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_015.swf"><br>
+                                                          <br>
+                                                          </span><span style="font-family:
+                                                          Verdana;">Vamos
+                                                          conectar
+                                                          através do
+                                                          navegador:<br>
+                                                          <br>
+                                                          </span><span style="font-family:
+                                                          Verdana;"></span><big><a style="color:
+                                                          rgb(51, 102,
+                                                          255);" href="http://www.rexlab.ufsc.br:8080/" target="_blank">http://www.rexlab.ufsc.br:8080</a></big><br>
+                                                          <span style="font-family:
+                                                          Verdana;"><br>
+                                                          <embed style="width:
+                                                          730px; height:
+                                                          490px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/img_016.swf"><br>
+                                                          <br>
+                                                          <br>
+                                                          </span><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          <br>
+                                                          Lista
+                                                          completas de
+                                                          Portas e
+                                                          Serviços
+                                                          padrões:<br>
+                                                          <a style="color:
+                                                          rgb(153, 51,
+                                                          0);" href="http://insecuritynet.com.br/cursos/cursos_onlines/ascd/aula_ascd_05/lista_de_portas.html" target="_blank">Clique aqui</a><br>
+                                                          <br>
+                                                          </span></big></big><big><big><span style="font-family:
+                                                          Verdana;
+                                                          font-weight:
+                                                          bold;"><div id="barra"></div><br><br>
+                                                          <br>
+                                                          </span></big></big><span style="font-family:
+                                                          Verdana;"><big><big><big><span style="font-weight:
+                                                          bold;">EXERCICIO:</span></big></big></big><br>
+                                                          <br>
+                                                          <br>
+                                                          Faça um port
+                                                          scan de faixo
+                                                          no servidor: </span>mud.darkerrealms.org<br>
+                                                          <span style="font-family:
+                                                          Verdana;">Porta
+                                                          inicial:1900<br>
+                                                          Porta final:
+                                                          2020<br>
+                                                          <br>
+                                                          Encontre a
+                                                          porta aberta e
+                                                          conecte.<br>
+                                                          <br>
+                                                          Envie uma
+                                                          imagem da
+                                                          conexão para
+                                                          nosso email:<br>
+contato@insecuritynet.com.br<br>
+                                                          <br>
+                                                          <br>
+                                                          Duvidas,
+                                                          prencha o
+                                                          formulário de
+                                                          dúvidas.</span><!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="05" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="2dbab3ed31e65385b964541999a43450" type="hidden">
+
+<b>1-) Para que serve um port scan?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Scannear um computador a procura de vírus </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Scannear um computador a procura qualquer vulnerabilidade </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Scannear um computador a procura de portas abertas</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Conectar em um computador remoto </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) Qual das sequências abaixo é uma faixa de porta?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>21,22,23,24,25,26,27 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>21,23,51,80,110 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>21,23,24,25,26,27</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>-1,0,1,2,3,4,5,6 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>33,34,35,38,39 </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) Uma porta aberta significa vulnerabilidade?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Sim, porta aberta representa uma grande falha de segurança. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Não necessariamente. Para um serviço estar online
+é necessário uma porta aberta. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Sim, uma porta aberta dá acesso à todo o sistema</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Não, todas as portas podem ficarem aberta sem nenhum risco </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2005_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="05" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2005_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </div></body></html>

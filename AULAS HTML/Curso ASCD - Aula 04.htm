@@ -1,0 +1,908 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  04</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2004_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=8db770f30f474547deda6383ef67936f&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">04 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:35  Brasil &nbsp; &nbsp; &nbsp; Acesso:4<br>
+<table style="text-align: left; width: 240px; height: 48px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="border: 0px solid ; width: 43px;"><img style="border: 0px solid ; width: 42px; height: 36px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/ico-concluido.png"></td>
+      <td><span style="font-weight: bold; color: rgb(0, 0, 0);">Aula já concluída</span></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 04</span><br><br>
+<div id="listasx"><ul>
+
+  <li><span style="font-family: Verdana;">Sobre
+o Prompt de Comandos</span></li>
+
+  <li><span style="font-family: Verdana;">Como
+abrir o prompt</span></li>
+
+  <li><span style="font-family: Verdana;">Diretórios</span></li>
+
+  <li><span style="font-family: Verdana;">Listando
+o conteúdo de um diretório</span></li>
+
+  <li><span style="font-family: Verdana;">Voltando
+um diretório</span></li>
+
+  <li><span style="font-family: Verdana;">Acessando
+um diretório</span></li>
+
+  <li><span style="font-family: Verdana;">Arvore
+de Diret[orios</span></li>
+
+  <li><span style="font-family: Verdana;">Manipulando
+Arquivos</span></li>
+
+  <li><span style="font-family: Verdana;">Renomeando
+Arquivos</span></li>
+
+  <li><span style="font-family: Verdana;">Copiando
+um Arquivo</span></li>
+
+  <li><span style="font-family: Verdana;">Lendo
+o conteúdo de um arquivo de texto</span></li>
+
+  <li><span style="font-family: Verdana;">Executando
+um arquivo</span></li>
+
+  <li><span style="font-family: Verdana;">Apagando
+um arquivo</span></li>
+
+  <li><span style="font-family: Verdana;">Comandos
+internos e externos</span></li>
+
+  <li><span style="font-family: Verdana;">Cores
+no Prompt de Comando<br>
+
+    </span></li>
+
+</ul></div>
+
+<div id="listasx"><ul>
+
+</ul></div>
+
+<div align="justify"><span class="small_gray_text">&nbsp;&nbsp;</span><span class="small_gray_text"></span>
+<big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+</span></big></big><span style="font-family: Verdana;"><br>
+
+
+
+<table style="text-align: left; width: 497px; height: 32px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 150px; height: 150px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/cmd.jpg"></td>
+      <td><big><big><big><span style="font-weight: bold;">PROMPT DE COMANDO</span></big></big></big>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Prompt de Comando é
+um interpretador de linha de comando no OS/2 e de sistemas baseados no
+Windows NT</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">O prompt
+é muito parecido com antigo MS-DOS.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">O programa
+está localizado no diretório:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">C:\WINDOWS\system32</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">(C: como
+Homedrive)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">O
+executável é o cmd.exe</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 577px; height: 459px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_001.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Assim como no
+WINDOWS EXPLORER onde utilizando o Mouse você pode criar
+pastas, mover arquivos, administrar o sistema, etc. Você
+também pode fazer tudo isto utilizando o Prompt de Comandos.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana; font-weight: bold;">COMO ABRIR
+O PROMPT</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">No seu Windows XP entre em:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Iniciar
+-&gt; Executar e Digite: cmd.exe</span><br style="font-family: Verdana;">
+
+<br>
+
+<embed style="width: 679px; height: 517px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_002.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Ou pelo caminho:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Iniciar -&gt; Todos os
+Programas -&gt; Acessórios -&gt; Prompt de Comandos</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 740px; height: 481px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_003.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">O WINDOWS
+EXPLORER recebe os comandos através do Mouse e do teclado,
+já o PROMPT é um interpretador de comandos de
+TEXTO, o mouse não é utilizado, apenas o teclado
+onde você digita os comandos.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><span style="font-family: Verdana;"></span><big><big><big><span style="font-family: Verdana; font-weight: bold;"><br>
+
+DIRETORIOS</span></big></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Andre, quando você abre o
+PROMPT por padrão ele é aberto no
+diretório de seu USUÁRIO:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 645px; height: 329px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_004.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Se estivéssemos
+utilizando o EXPLORER seria:<br>
+
+<br>
+
+<embed style="width: 380px; height: 225px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_005.swf"><br style="font-family: Verdana;">
+
+</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><big><br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-family: Verdana; font-weight: bold;">LISTANDO
+O CONTEÚDO DO DIRETÓRIO:</span></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Para sabermos o que contem no
+diretório utilize o comando DIR<br>
+
+<br style="font-family: Verdana;">
+
+</span>
+<embed style="width: 643px; height: 330px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_006.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana; font-weight: bold;">Voltando um
+Diretório:</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">O comando CD.. volta um
+diretório, similar o botão
+“BACK” do EXPLORER&nbsp; </span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 65px; height: 96px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_007.swf"></span><br style="font-family: Verdana;">
+
+<br>
+
+<embed style="width: 642px; height: 146px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_008.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><big><big><br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-family: Verdana; font-weight: bold;"><br>
+
+Entrando em um Diretório.</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">O comando CD
+&lt;”Nome do Diretorio”&gt; entra no
+diretório como se você estivesse clicando na
+PASTA.Não esqueça de deixar o nome do
+diretório entre aspas.<br>
+
+<br>
+
+</span><span style="font-family: Verdana;">Comparação
+com o Explorer</span><br style="font-family: Verdana;">
+
+<embed style="width: 418px; height: 179px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_009.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">PROMPT<br>
+
+<embed style="width: 644px; height: 327px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_010.swf"><br style="font-family: Verdana;">
+
+</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">NESTE EXEMPLO
+VAMOS ENTRAR NO DESKTOP:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">CD
+“DESKTOP”</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">DIR<br>
+
+<br>
+
+<embed style="width: 644px; height: 327px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_011.swf"><br>
+
+<br>
+
+<br style="font-family: Verdana;">
+
+</span><span style="font-family: Verdana;">Observe
+a lista de arquivos:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">.lnk = links</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&lt;DIR&gt;
+= Diretório (Pastas)</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">.txt = Arquivos
+de textos</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">.avi&nbsp; =
+Vídeo</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+&nbsp; <big><big style="font-weight: bold;">ÁRVORE
+DE DIRETÓRIOS</big></big><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"><br>
+
+Você também pode visualizar toda a
+árvore de diretórios partindo do
+diretório atual.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Utilize o
+comando TREE<br>
+
+<br style="font-family: Verdana;">
+
+</span>
+<embed style="width: 566px; height: 246px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_012.swf"><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+<br style="font-family: Verdana; font-weight: bold;">
+
+</span></big></big><big><big><big>
+<span style="font-family: Verdana; font-weight: bold;">MANIPULANDO
+ARQUIVOS</span></big></big></big><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"><br>
+
+&nbsp;</span><span style="font-family: Verdana;">Você
+pode manipular arquivos utilizando apenas alguns comandos do prompt.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;">&nbsp;RENOMEANDO
+ARQUIVOS:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Andre, vamos renomear
+um arquivo do Desktop, neste exemplo o arquivo: “Novo(a)
+Documento de texto.txt”</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Utilize o
+comando REN</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Vamos mudar o
+nome do arquivo para “Arquivo_teste.txt”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">COMANDO:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">REN "Novo(a)
+Documento de texto.txt" "Arquivo_teste.txt"</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 647px; height: 66px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_013.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Observe agora os
+arquivos do Diretório:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">COMANDO:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">DIR</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 642px; height: 325px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_014.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<big><span style="font-family: Verdana; font-weight: bold;">COPIANDO UM
+ARQUIVO</span></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Vamos copiar o arquivo para o
+diretório “meus Documentos”</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"><br>
+
+COMANDO:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">COPY
+"Arquivo_teste.txt" “C:\Documents and Settings\Lary
+Franciele\Meus
+documentos\Arquivo_teste.txt”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 639px; height: 86px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_015.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Vamos Verificar
+a Pasta “Meus Documentos”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 639px; height: 325px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_016.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">VISUAL NO EXPLORER</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">
+<embed style="width: 657px; height: 263px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_017.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<big><br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-family: Verdana; font-weight: bold;">LENDO
+O CONTEÚDO DE UM ARQUIVO DE TEXTO:</span></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Utilize o
+comando TYPE para visualizar o conteúdo de um arquivo.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Vamos ver o
+conteúdo do arquivo “Arquivo_teste.txt”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">COMANDO:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">TYPE
+“Arquivo_teste.txt”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 661px; height: 122px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_018.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana;"><b>EXECUTANDO
+UM ARQUIVO</b></span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Utilize o
+comando START para executar um arquivo.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Vamos executar o
+conteúdo do arquivo Arquivo_teste.txt</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">COMANDO:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">START
+Arquivo_teste.txt</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">É
+como se clicássemos no arquivo. ( O arquivo é
+aberto fora do Prompt ) (Não utilize aspas)<br>
+
+O arquivo tambem pode ser executado apenas digitando seu nome e
+estenção.<br>
+
+<br>
+
+<embed style="width: 723px; height: 509px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_019.swf"><br style="font-family: Verdana;">
+
+</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<big><big><span style="font-family: Verdana; font-weight: bold;">APAGANDO UM
+ARQUIVO</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Para deletar um
+arquivo utilize o comando DEL</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Vamos deletar o arquivo
+“Arquivo_teste.txt”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">COMANDO:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">DEL
+Arquivo_teste.txt</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">(Cuidado, pois o
+arquivo não vai para a lixeira)</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+<embed style="width: 657px; height: 43px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_020.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">OUTROS COMANDOS<br>
+
+Alem destes comandos INTERNOS (Comando do próprio prompt)
+Existem muitos outros comandos EXTERNOS presente no Windows XP que
+podem ser acessados pelo prompt.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">O comando PING
+é um exemplo:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Você
+pode verificar o Status de um Servidor:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 610px; height: 168px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_021.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Mais adiante
+vamos estudar todos estes comandos externos Detalhadamente.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br>
+
+<span style="font-family: Verdana;"><br style="font-family: Verdana; font-weight: bold;">
+
+</span><big> <span style="font-family: Verdana; font-weight: bold;">DIFERENÇA
+ENTRE COMANDO INTERNO E EXTERNO.</span></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">O comando interno é
+um comando do próprio “cmd.exe” o
+próprio prompt que executa as funções,
+por exemplo o comando “DIR”, é o
+próprio CDM.exe quem lista os diretórios.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana; font-weight: bold;">
+
+&nbsp; <span style="font-family: Verdana; font-weight: bold;">VISUALIZANDO
+TODOS OS COMANDOS INTERNOS:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Até
+agora estes exemplo foram apenas uma introdução
+ao Prompt de comandos, pois são muitos comandos e
+funções que vamos aprender ao longo do curso.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Para visualizar
+Todos os comandos internos digite “HELP” no prompt
+ou <a style="color: rgb(153, 51, 0);" href="http://insecuritynet.com.br/cursos/cursos_onlines/ascd/aula_ascd_04/comandos_do_prompt.html" target="_blank">clique
+aqui</a>.<br>
+
+<br style="font-family: Verdana;">
+
+</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;">&nbsp;COMANDOS
+EXTERNOS</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Um comando
+externo é realizado por outro programa, por exemplo o
+“PING” não é p prompt quem
+realiza a função mas sim o
+“ping.exe”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Os comandos
+externos padrões do Windows se encontra na pasta:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">...\WINDOWS\system32</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 528px; height: 197px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_022.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+</span></big></big><span style="font-family: Verdana;"></span><big><big><br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-family: Verdana; font-weight: bold;">CORES
+NO PROMPT DE COMANDO.</span></big></big><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Voce pode
+alterar a cor do prompt utilizando o comando COLOR</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">COLOR
+&lt;cor da fundo&gt; &lt;cor do fonte&gt;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Código
+de cores em HEXADECIMAL:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0 = Preto</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">1 = Azul</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">2 = Verde</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">3 =
+Verde-água</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">4 = Vermelho</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">5 = Roxo</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">6 = Amarelo</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">7 = Branco</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">8 = Cinza</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">9 = Azul claro</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">A = Verde claro</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">B =
+Verde-água claro</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">C = Vermelho
+claro</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">D =
+Lilás</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">E = Amarelo claro</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">F = Branco
+brilhante</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">EXEMPLO:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Fundo Azul Fonte
+Verde:<br>
+
+<br style="font-family: Verdana;">
+
+</span><span style="font-family: Verdana;">Comando:<br>
+
+<span style="font-weight: bold;">COLOR 1A</span></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+<embed style="width: 665px; height: 334px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/img_023.swf"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;<br>
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">IMPORTANTE!</span><br style="font-family: Verdana;">
+
+</span> <br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Faça todas estas
+experiências no PRATICA, utilize o prompt é muito
+importante você aprender os comandos pois quando aprendermos
+a cessar um computador remotamente a SHELL CMD você
+terá que saber o que fazer.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;Esta
+aula foi apenas uma introdução, o assunto
+é muito amplo e o leque de comandos é muito maior
+do que estes que vimos hoje.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Qualquer
+dúvida entre em contato.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br>
+
+<big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana;">
+
+
+
+
+
+</span></div>
+
+<!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2004_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="04" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2004_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

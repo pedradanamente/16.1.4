@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  13</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2013_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=0508781b0aa4d8a2308ce2dc5ce54ece&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">13 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  01/05/2014 15:11  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2013_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 13</span><br><br><div id="listasx">
+    <ul>
+      <li><span style="font-family: Verdana;">Túnel de Dados</span></li>
+      <li><span style="font-family: Verdana;">Criando um Tunel (Exemplo
+          com FTP)</span></li>
+      <li><span style="font-family: Verdana;">Exemplo com o protocolo
+          POP</span></li>
+      <li><span style="font-family: Verdana;">Interceptação de Dados</span></li>
+      <li><span style="font-family: Verdana;">Falsa configuração
+          induzida pelo Cracker.</span></li>
+      <li><span style="font-family: Verdana;">Captura de dados.<br>
+        </span></li>
+    </ul></div><br>
+    <span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+      <br>
+    </span><span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;"></span></span><br style="font-family: Verdana;">
+    <table style="text-align: left; width: 596px; height: 132px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td><embed style="width: 240px; height: 120px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_004.swf"></td>
+          <td><span style="font-family: Verdana; font-weight: bold;">TÚNEL
+              DE DADOS</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana; font-weight: bold;">
+    <span style="font-family: Verdana; font-weight: bold;"></span><span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">REVISÃO<br>
+        <br>
+      </span>Andre, neste tutorial vamos aprender sobre dados trafegando
+      através de um túnel.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Antes vamos rever algumas
+      coisas:<br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 613px; height: 100px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><img style="width: 39px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/marc.png"></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Para haver uma conexão entre
+              dois computadores no mínimo deve existir um cliente e um
+              servidor.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><img style="width: 39px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/marc.png"></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">O servidor fica aguardando a
+              conexão (modo escuta "Listing" )</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><img style="width: 39px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/marc.png"></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">O cliente é quem realiza a
+              conexão. (modo "Conect")</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+    </span><span style="font-family: Verdana;">Exemplo:</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><embed style="width:
+      504px; height: 172px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_006.swf"><br>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">O servidor de web fica
+      aguardando sua conexão. <br>
+      &nbsp;E seu computador conecta no servidor.</span><br style="font-family: Verdana;">
+    <br>
+    <span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <br>
+    &nbsp; <span style="font-weight: bold;">TÚNELDE DADOS</span><br>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">"Tunelar"
+      dados é fazer com que estes dados trafeguem através de um
+      terceiro computador, que irá servir de "ligação"
+      entre cliente e servidor.</span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 504px; height: 172px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_007.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">Podemos
+      utilizar um túnel para estudos de protocolos de
+      comunicação, pois através do túnel
+      você pode visualizar os comandos entre cliente e servidor.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">CRIANDO UM TÚNEL (Exercício
+        prático)</span></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Vamos usar o Programa
+      Insecuritynet 3.X para criar nosso túnel.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Primeiro vamos definir quem será
+      o cliente, o túnel e o servidor:</span><br style="font-family:
+      Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span>
+    <table style="text-align: left; width: 330px; height: 100px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">Cliente</span></td>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">Túnel</span></td>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold;"><span style="font-family: Verdana;">Servidor</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Nosso computador.</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Programa insecuritynet</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Servidor de FTP da
+              Unicamp&nbsp;</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Vamos criar nosso túnel.<br>
+      <br style="font-family: Verdana;">
+    </span><span style="font-family: Verdana;"><span style="font-weight:
+        bold;">1-)</span> Abra o programa e entre em:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Iniciar -&gt; Defesa -&gt; Port
+      Tunel</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><br>
+    <embed style="width: 552px; height: 228px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_008.swf"><br>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"><span style="font-weight: bold;">2-)
+      </span>Vamos escolher como o túnel será conectado:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Nosso túnel deverá aguardar uma
+      conexão e conectar no servidor da unicamp.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Então teremos que utilizar a
+      opção "<span style="font-weight: bold;">Listing -&gt; Conect</span>"</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Vamos
+      configurar o túnel para aguardar na porta 21 e redirecionar a
+      conexão para o servidor "ftp.unicamp.br" na porta 21.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">A porta 21 é a porta padrão para
+      servidores FTP.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><embed style="width:
+      432px; height: 186px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_009.swf"><br>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">O túnel será aberto e ficará
+      aguardando à conexão.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><br>
+    <embed style="width: 562px; height: 180px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_010.swf"><br>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"><span style="font-weight: bold;">3-)
+      </span>Vamos criar a conexão.</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">Agora nosso computador será
+      "virtualmente" o servidor de FTP da unicamp</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Vamos conectar em nosso "SUPOSTO
+      SERVIDOR FTP LOCAL"<br>
+      Abra uma pasta qualquer e digite o seguinte endereço na barra:
+      ftp://localhost<br style="font-family: Verdana;">
+    </span><span style="font-family: Verdana;"></span><br>
+    <embed style="width: 318px; height: 174px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_011.swf"><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">4-) Observe o TÚNEL
+      (VISUALIZANDO OS DADOS)</span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 668px; height: 403px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_012.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><br style="font-family:
+      Verdana; font-weight: bold;">
+    <span style="font-family: Verdana;"><span style="font-weight: bold;">Você
+        pode visualizar toda a comunicação entre cliente e servidor.</span><br>
+      <br style="font-family: Verdana;">
+    </span><span style="font-family: Verdana;">Os dados em <span style="color: rgb(0, 153, 0); font-weight: bold;">VERDE</span>
+      são dados de entrada (Nosso cliente)</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">Os dados em <span style="color:
+        rgb(51, 0, 153); font-weight: bold;">AZUL </span>são dados de
+      saída (Servidor Unicamp)<br>
+      <br>
+      <span style="font-weight: bold;">Conclusão</span></span><br style="font-family: Verdana;">
+    <br>
+    <span style="font-family: Verdana;">Quando você cria um Túnel deste
+      tipo seu computador passa a ser também um servidor.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Se outro computador conectar no
+      túnel, automaticamente será conectado ao seu redirecionamento.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><br>
+    </span><span style="font-family: Verdana;"><span style="font-weight:
+        bold;">Exemplo com um servidor POP</span></span><br>
+    <span style="font-family: Verdana;"><br>
+      Neste exemplo vamos redirecionar um serviço de recebimento de
+      email (POP)</span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 504px; height: 172px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_013.swf"><br>
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"><span style="font-weight: bold;">Configuração:</span><br>
+    </span>
+    <table style="text-align: left; width: 249px; height: 88px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Portade entrada:</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">110</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">IP de&nbsp;Saída:</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">pop.bol.com.br</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Posta de Saída:</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">110</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br>
+      <embed style="width: 443px; height: 71px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_014.swf"><br>
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Vamos fazer uma conexão com o
+      servidor pop.<br>
+      (Como fizemos na primeira aula do curso "exercício prático", mas
+      desta vês utilizando o <span style="font-weight: bold;">telnet</span>
+      do windows )<br>
+      <br>
+      Abra o Prompt de comandos de digite:<br>
+      telnet localhost 110<br>
+      <br>
+      <embed style="width: 512px; height: 155px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_018.swf"><br>
+      <br>
+      Depois de conectado, faça o Login:<br>
+      <br>
+      <embed style="width: 447px; height: 127px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_017.swf"><br>
+      <br>
+      Observe o túnel quando um computador remoto conecta em "nosso
+      serviço de pop".</span><br style="font-family: Verdana;">
+    <br>
+    <embed style="width: 609px; height: 596px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_003.swf"><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">O IP "127.0.0.1" conectou na
+      nossa porta 110 e foi redirecionado para o IP 200.221.4.119
+      (servidor pop)</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Os dados em verde são do
+      computador "127.0.0.1". Os dados em azul são do servidor POP.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Como deu para perceber o túnel é
+      uma ótima ferramenta para estudos de protocolos e conexões.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Veja que podemos ver o login e a
+      senha nos dados da conexão.<br>
+      Neste caso o túnel está em nosso computador, mas se o túnel
+      estivesse em outro computador e você fosse induzido a usar o
+      endereço do outro computador, Sua senha seria facilmente
+      capturada.<br>
+    </span><span style="font-family: Verdana;"><br>
+      &nbsp;<br>
+    </span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+      <br>
+      <br>
+      EXEMPLO DE INTERCEPTAÇÃO DE DADOS<br>
+    </span><span style="font-family: Verdana;"><br>
+    </span>
+    <table style="text-align: left; width: 457px; height: 44px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-weight: bold;">Definição de<br>
+              CRACKER&nbsp;</span> </td>
+          <td style="background-color: rgb(234, 236, 255);">&nbsp;<span style="font-family: Verdana;">Sujeito que quebra sistemas
+              de segurança na intenção de obter proveito pessoal.</span><br style="font-family: Verdana;">
+            <span style="font-family: Verdana;">Possui um auto nível de
+              conhecimento, porem sem ética, criminoso.</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <span style="font-family: Verdana;">O protocolo POP não encripta
+      nenhum dado.<br>
+      <br style="font-family: Verdana;">
+    </span><span style="font-family: Verdana; font-weight: bold;">Observe
+      como um "Cracker" pode capturar uma senha de seu email:</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">1-) O "Cracker" faz ataques na
+      sua rede para desestabilizar sua conexão ou a conexão de sua
+      empresa.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">2-) O cracker envia um falso
+      email alegado que o endereço do servidor de email foi modificado.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">3-) Inocentemente você configura
+      o Outlook de seus computadores com o novo endereço.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"><br>
+    </span>
+    <table style="text-align: left; width: 613px; height: 100px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><img style="width: 39px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/marc.png"></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">O novo endereço, na verdade
+              é o endereço do computador do "Cracker".</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><img style="width: 39px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/marc.png"></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">O computador do cracker na
+              verdade é um tunel para o computador real.</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);"><img style="width: 39px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/marc.png"></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Quando você conectar o
+              outlook todos os dados estarão sendo interceptados.</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <span style="font-family: Verdana;"><br>
+    </span><span style="font-family: Verdana; font-weight: bold;">Faça
+      você mesmo a experiência.</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Andre, caso você não tenha&nbsp;o
+      Outlok habilitado em seu computador, entre em:</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Iniciar -&gt; Painel de Controle
+      -&gt; Adicionar e Remover Programas -&gt; Adicionar e remover
+      Componentes do Windows</span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Habilite o OUTLOOK<br>
+      <br>
+      <embed style="width: 501px; height: 390px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_005.swf"><br style="font-family: Verdana;">
+    </span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana; font-weight: bold;">
+    <span style="font-family: Verdana;"><span style="font-weight: bold;">FALSA
+        CONFIGURAÇÃO (No Computador alvo) INDUZIDA PELO CRACKER</span><br>
+      Configure com estes endereços:</span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;">POP: localhost</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">SMTP: smtps.bol.com.br<br>
+      <br>
+      <embed style="width: 365px; height: 447px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_001.swf"><br>
+      <br>
+      No lugar do localhost o cracker iria usar seu IP ou um DNS
+      parecido com o real.<br>
+      <br>
+      <span style="font-weight: bold;"><br>
+        <br>
+        CONFIGURAÇÃO DO COMPUTADOR DO CRACKER</span><br>
+      Agora vamos configurar nosso computador para ser a ponta<br>
+      Crie um túnel como fizemos anteriormente <br>
+      <br>
+    </span><span style="font-family: Verdana;"><embed style="width:
+        443px; height: 71px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_015.swf"></span><br>
+    <span style="font-family: Verdana;"><br style="font-family:
+        Verdana;">
+    </span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana; font-weight: bold;">CONEXÃO</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">Agora tente visualizar seus
+      emails.</span><br>
+    <br>
+    <embed style="width: 508px; height: 223px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_019.swf"><br>
+    <br>
+    <br style="font-family: Verdana;">
+    <br style="font-family: Verdana; font-weight: bold;">
+    <span style="font-family: Verdana; font-weight: bold;">CAPTURA DE
+      DADOS &nbsp;(Computador do Cracker).</span><br style="font-family:
+      Verdana;">
+    <br style="font-family: Verdana;">
+    &nbsp;<span style="font-family: Verdana;">Observe os dados
+      trafegando pelo túnel :<br>
+      <br>
+      <embed style="width: 664px; height: 344px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/img_002.swf"><br>
+      <br>
+      <br style="font-family: Verdana;">
+      Seu login e sua senha foram capturadas.</span><br>
+    <br>
+    <br>
+    <span style="font-family: Verdana;">Com
+      um túnel de dados você pode visualizar os dados da conexão entre
+      cliente e servidor, pois o computador túnel é uma ponte de
+      ligação, assim você pode verificar a segurança de um protocolo de
+      comunicação, neste
+      exemplo vimos que o protocolo POP não oferece nenhum tipo de
+      segurança,
+      pois seus dados poderiam ser facilmente capturados.</span><br style="font-family: Verdana;">
+    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"></span><br style="font-family: Verdana;">
+    <br style="font-family: Verdana;">
+    <span style="font-family: Verdana;"></span><br style="font-family:
+      Verdana;">
+    <span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+      Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br>
+    <span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br style="font-family: Verdana;">
+  <!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="13" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="4097b2cef93078bf18ea9c807bf1cdd6" type="hidden">
+
+<b>1-) Qual a melhor definição para “tunelar” dados?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Fazer com que os dados de uma conexão fiquem disponíveis na web </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Fazer com que os dados de uma conexão sejam bloqueados </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Fazer com que os os dados de uma conexão sejam filtrados</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Fazer com que os dados de uma conexão passe por um terceiro computador e possa ser visualizado. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) No Insecuritynet 3.X, quais as cores definidas para dados de entrada e dados de saída?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Branco para entrada e Azul para saída </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Azul para entrada e Verde para saída </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Verde para entrada e Azul para saída.</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Verde para entrada e Branco para saída </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) No tunel de dados do Insecuritynet 3.X o que significa Listin?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Porta que irá aguardar uma conexão. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O insecuritynet irá conectar na porta remota </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Porta remota</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Porta local destidana ao servidor remoto. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2013_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="13" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2013_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

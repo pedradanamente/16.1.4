@@ -1,0 +1,595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  09</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2009_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=8d0f325ac01f142f6d79e6ae5e34680d&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">09 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:50  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2009_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 09</span><br><br>
+<div id="listasx"><ul>
+
+
+  <li><span style="font-family: Verdana;">Conexão
+Reversa</span></li>
+
+  <li><span style="font-family: Verdana;">Backdoor
+de Conexão Reversa (Pen Test)<br>
+
+    </span></li>
+
+</ul></div>
+
+<div align="justify"><span>&nbsp;&nbsp;</span><span></span>
+<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+</span><span style="font-family: Verdana;"><br>
+
+<span style="font-weight: bold;"></span></span><br style="font-family: Verdana;">
+
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td><img style="width: 249px; height: 166px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/conexao_reversa.jpg"></td>
+
+      <td><span style="font-family: Verdana; font-weight: bold;"><big>CONEXAO REVERSA</big></span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+ <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-weight: bold; font-family: Verdana;"><br>
+
+</span><br>
+
+&nbsp;<br>
+
+&nbsp;Conexão reversa é uma
+técnica utilizada para burlar sistemas de defesa,
+"enganando" o firewall e obtendo acesso ao sistema.<br>
+
+<br>
+
+&nbsp;&nbsp;
+Andre, o conceito é simples:<br>
+
+&nbsp; &nbsp;<br>
+
+&nbsp; O atacante cria um Backdoor <span style="font-weight: bold;">CLIENTE </span>e faz com
+que seu computador vire servidor deste Backdoor.<br>
+
+&nbsp; Este backdoor deve contar o endereço do atacante
+e a porta definida do servidor (Computador do Atacante)<br>
+
+&nbsp; <br>
+
+&nbsp;O atacante envia o backdoor para o alvo e assim que o
+backdoor for executado o computador alvo se conecta no computador do
+atacante. Porem o programa utilizado no backdoor permite apenas que o
+atacante tenha acesso a SHELL do Alvo.<br>
+
+<br>
+
+&nbsp; Características
+de uma conexão reversa:<br><br>
+
+
+<div id="listasx"><ul>
+
+  <li>&nbsp;O
+atacante não precisa do endereço do alvo</li>
+
+  <li>&nbsp;O
+backdoor não abre uma porta de escuta no computador alvo</li>
+
+  <li>&nbsp;O
+computador alvo não age como um servidor, mas sim o
+computador do atacante.</li>
+
+  <li>O
+alvo pode estar dentro de uma rede privada que mesmo
+assim&nbsp;haverá conexão</li>
+
+</ul></div>
+<br><br>
+&nbsp; &nbsp;<span style="font-weight: bold;">REQUISIÇÕES
+PARA O ATACANTE:</span><br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;
+&nbsp;O atacante deve possuir um endereço IP
+Válido na Internet para que o backdoor consiga conectar.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<br><br>
+<embed style="width: 600px; height: 220px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/conexao_reversa.swf"><br>
+
+<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+
+&nbsp;BACKDOOR DE CONEXAO REVERSA:<br>
+
+<br>
+
+&nbsp;</span><br>
+
+<span style="font-family: Verdana;">
+Andre, abra seu Insecuritynet 3.X e entre em:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Iniciar
+-&gt; Intrusão</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Agora escolha
+entre:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Direct Shell
+Remote</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Reverse Shell
+Remote</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Neste exemplo
+vamos criar um backdoor de conexão reversa.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Escolha a
+opção “Reverse Shell Remote”</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 374px; height: 396px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_004.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Agora entre
+em&nbsp; “Criar Server”.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 494px; height: 339px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_005.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Escolha a porta
+de conexão, vamos escolher a porta 15.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 203px; height: 83px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_006.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Como nosso
+Server é de conexão reversa vamos digitar nosso
+IP.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Você
+pode usar um endereço DNS no lugar no IP.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> O software
+já exibe seu IP nesta mesma janela:</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 378px; height: 187px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_007.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Por uma
+questão de segurança você deve criar
+uma senha&nbsp; para somente você ter acesso ao Server.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 227px; height: 98px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_008.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Tecle Enter</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> O Server
+será criado e automaticamente se abrirá uma pasta
+com o Backdoor “Backdoor_CON_REV”.</span><br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 390px; height: 372px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_009.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;Agora
+você já possui um Backdoor, você tem
+duas opções de teste:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Se auto
+contaminar ou enviar para um outro computador.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Caso
+você queira se auto contaminar, a vacina está
+presente no software tanto na versão registrada quanto na
+versão demo. O intuito da empresa é proporcionar
+estudo com total segurança.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> O
+endereço da vacina no software é:</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Iniciar
+-&gt; defesa -&gt; Vacina</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;Caso
+você queira enviar o software para outro computador,
+você pode usar qualquer meio, o importante é que o
+Server seja executado no computador remoto.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">
+&nbsp;Lembrando que o objetivo é apenas
+didático, o usuário do computador remoto
+receberá um aviso sobre o que estará acontecendo
+e sobre os riscos do teste.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 567px; height: 189px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_010.swf">&nbsp;&nbsp;<span style="font-family: Verdana;">&nbsp;&nbsp;</span>
+<span style="font-weight: bold;"><br>
+
+Conectando no Server</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Após
+o Server ser executado no computador alvo, entre em
+“Conectar” em seu Insecuritynet</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Reverse Shell
+Remote -&gt; conectar</span><br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 202px; height: 191px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_011.swf"><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> Digite a porta
+que você configurou o Server (porta 15)</span><br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 152px; height: 59px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/image023.htm"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> O Insecuritynet
+ficará aguardando a conexão do Server.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 305px; height: 180px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_013.swf"><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Após
+a conexão digite a senha que você configurou.</span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<embed style="font-family: Verdana; width: 567px; height: 431px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_014.swf"><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> &nbsp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"> PASS OK+ ( isto
+significa que você agora tem total domínio sobre o
+computador alvo)</span> <br>
+
+<br>
+
+<br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-family: Verdana; font-weight: bold;">&nbsp;
+&nbsp;RESUMO DESTA CONEXÃO REVERSA:</span><br>
+
+<br>
+
+&nbsp;
+<embed style="width: 489px; height: 241px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/img_017.swf"><br>
+
+<br>
+
+<br>
+
+<br>
+
+<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br style="font-family: Verdana;">
+
+
+
+</div><!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="09" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="7d8fce109d72ff88efb0f76055acd409" type="hidden">
+
+<b>1-) Se tratando de conexão reversa, qual a afirmação verdadeira?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O computador que inicia a conexão é um servidor. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O computador que recebe a conexão possui o mesmo IP que o coputador cliente. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O Computador que inicia a conexão fica vulnerável ao computador que recebe a conexão.</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O Computador que recebe a conexão fica vulnerável ao computador que inicia a conexão. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) Por que a firewall pode ser lubridiado por um Backdoor de conexao reversa?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Porque o Backdoor não deixar nenhuma porta em escuta no computador alvo. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Porque o Backdoor de conexao reversa tem o código invisível para o antivírus. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Porque o IP conectado não está na lista do firewall.</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Porque o DNS&nbsp; conectado não está na lista do firewall. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) Qual o melhor tipo de IP para quem irá fazer um ataque com conexão reversa.<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>IP Dinâmico </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>IP Local (Localhost) </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>IP fixo ou endereço DNS resolvendo em seu computador</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O IP do atacante não tem importância </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2009_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="09" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2009_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

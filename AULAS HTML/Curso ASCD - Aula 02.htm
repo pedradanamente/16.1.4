@@ -1,0 +1,2163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  02</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2002_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=79ea02ad8206401b6b26c2b5ed1db879&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">02 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:35  Brasil &nbsp; &nbsp; &nbsp; Acesso:5<br>
+<table style="text-align: left; width: 240px; height: 48px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="border: 0px solid ; width: 43px;"><img style="border: 0px solid ; width: 42px; height: 36px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/ico-concluido.png"></td>
+      <td><span style="font-weight: bold; color: rgb(0, 0, 0);">Aula já concluída</span></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 02</span><br><br>
+<div id="listasx"><ul>
+
+
+
+
+                                                                                <li><span style="font-family: Verdana;">Endereço IP</span></li>
+
+
+
+
+                                                                                <li><span style="font-family: Verdana;">Faixa de IP (IP Range)</span></li>
+
+
+
+
+                                                                                <li><span style="font-family: Verdana;">Diferenças de aplicação para Rede Local e Internet</span></li>
+
+
+
+
+                                                                                <li><span style="font-family: Verdana;">Classes de IP</span></li>
+
+
+
+
+                                                                                <li><span style="font-family: Verdana;">IP estático e Dinâmico</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">IP NAT</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Como descobrir seu Endereço IP</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Como descobrir o IP de um determinado Servidor</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Como saber quais IPs estão conectados em seu computador</span></li>
+
+
+                                          
+
+
+                                                                                <li><span style="font-family: Verdana;">Exercício Prático (Capturando IPs online em um determinada Faixa)</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Localizando o Ponto geográfico de um determinado IP</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Escondendo seu IP</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Visualizando em que pontos do Mundo seu PC está conectado.</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Como saber o endereço IP de seu PC é válido na Internet.</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Localhost</span></li>
+
+
+                                                                                <li><span style="font-family: Verdana;">Obtendo um novo IP (apenas para IPs Dinâmicos)<br>
+
+
+                                                                                  </span></li>
+
+
+
+
+                                                                              
+                                                                              
+</ul></div>
+
+
+
+
+                                                                            
+                                                                              
+                                                                              
+<div align="justify"><span class="small_gray_text">&nbsp;&nbsp;</span><span class="small_gray_text"></span>
+                                                                              
+                                                       
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+                                                                                    <br>
+
+
+Endereço
+ IP</span></big></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span>
+                                                                                    
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+  <tbody>
+
+
+
+    <tr>
+
+
+
+      <td><img style="width: 150px; height: 113px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/ip.jpg"></td>
+
+
+
+      <td><span style="font-family: Verdana;"><br>
+
+
+
+O uso de computadores em rede e,
+claro, a internet, requer que cada máquina tenha um
+identificador que a diferencie das demais. Para isso, é
+necessário, entre outras coisas, que cada computador tenha um
+endereço, alguma forma de ser encontrado.</span><br style="font-family: Verdana;">
+
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+  
+                                                                                      
+  
+  </tbody>
+                                                                                    
+</table>
+
+
+
+                                                                                    <span style="font-family: Verdana;"><br>
+
+
+
+                                                                                    </span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;O uso do protocolo TCP/IP
+não é completo se um endereço IP não for
+utilizado. Se, por exemplo, dados são enviados de um computador
+para outro, o primeiro precisa saber o endereço IP do
+destinatário e este precisa saber o IP do emissor, caso a
+comunicação exija uma resposta. Sem o endereço IP,
+os computadores não conseguem ser localizados em uma rede, e
+isso se aplica à própria internet, já que ela
+funciona como uma "grande rede".</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">O IP (na versão IPV4) é composto por
+ 32 bits dividido em quatro grupos de 8 bits.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Antes de continuar com o “IP” vamos 
+entender o que é BIT.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Bit = É a menor unidade de informação que pode ser armazenada 
+ou transmitida. Exemplo: 0101 (4 bits)</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Byte = conjunto de 8 bits.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Com apenas um BIT (podemos gerar duas informação) 0 ou 1&nbsp; (2 X
+ 1)</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Com dois BITs (podemos gerar 4 
+informações) 00&nbsp; ,&nbsp; 01&nbsp; , 10 , 11&nbsp; (2 X 2)</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Com&nbsp; três BITs (podemos gerar 8 
+informações) (2 X 2 X 2)<br style="font-family: Verdana;">
+
+
+
+
+                                                                                    </span><span style="font-family: Verdana;">Com&nbsp; quatro BITs (podemos 
+gerar 16 informações) (2 X 2 X 2 X 2)</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">.<br>
+
+
+
+
+.<br>
+
+
+
+
+.<br>
+
+
+
+
+Com&nbsp; oito BITs (podemos gerar 256 informações) (2 X 2 X 2 X 2 X 2 X 2 X
+ 2 X 2)</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Voltando ao IP, o endereço
+IP é formado por quatro grupos de 8 BITs, portanto em cada grupo
+podemos ter 256 números diferente, como temos o número 0 cada
+grupo irá de 0 à 255.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Como são 4 grupos temos (256 X 256 X
+ 256 X 256 = 4.294.967.296) possíveis endereços.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Podemos concluir que toda a faixa de
+ IP vai de 0.0.0.0 à 255.255.255.255</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana;">
+
+
+                                                                                    
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;"><br>
+
+
+FAIXA 
+DE IP (IP Range)</span></big></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Faixa de IP é um determinado grupo
+ de IPs que estão entre Dois IPs Definidos.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Por exemplo:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">A faixa de IP entre 127.0.0.1 e 
+127.0.0.7:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.1</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.2</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.3</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.4</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.5</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.6</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.7</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Outro exemplo (Lembrando que 255 é o ultimo numero do digito)</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">A faixa de IP entre 127.0.0.253 a 
+127.0.1.3:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.253</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.254</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.0.255</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.1.0</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.1.1</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.1.2</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">127.0.1.3</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Temos
+4.294.967.296 possibilidades de IPs diferente, tudo isto precisa ser
+organizado e regulamentado, para isto temos o seguinte:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><span style="font-family: Verdana;"></span><big><br style="font-family: Verdana; font-weight: bold;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana; font-weight: bold;"><br>
+
+
+&nbsp;DIFERENÇAS DE 
+APLICAÇÃO DE IP PARA REDE LOCAL E PARA INTERNET.</span></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Andre, o endereço IP pode ser usado
+para identificar um computador dentro de uma rede local (privada) ou
+para identificar um computador na internet</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Em
+uma rede local na sua casa seu computador pode ter o IP: 192.168.0.4
+(por exemplo) e em outra rede local na casa do seu amigo o PC dele
+também poderá utilizar este mesmo endereço.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span>
+                                                                                    
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+
+  <tbody>
+
+
+
+
+    <tr>
+
+
+
+
+      <td>SUA CASA</td>
+
+
+
+
+      <td></td>
+
+
+
+
+      <td>CASA DE SEU AMIGO</td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td>
+      
+      <embed style="width: 337px; height: 246px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_002.swf"></td>
+
+
+
+
+      <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+
+
+
+
+      <td>
+      
+      <embed style="width: 337px; height: 246px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_003.swf"></td>
+
+
+
+
+    </tr>
+
+
+
+
+  
+  
+                                                                                      
+  
+  </tbody>
+                                                                                    
+</table>
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Já o IP utilizado para
+localizar um computador na internet (189.25.4.8 e 201.45.8.79)
+não pode existir dois IPs iguais.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+                                                                                    <br style="font-family: Verdana; font-weight: bold;">
+
+
+                                                                                    </span></big></big><big><big>
+
+                                                                                    <span style="font-family: Verdana; font-weight: bold;">CLASSES DE IP 
+PARA REDE LOCAL:</span></big></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Como os endereços IP usados
+em redes locais são semelhantes aos IPs da internet, usa-se um
+padrão conhecido como IANA (Internet Assigned Numbers Authority)
+para a distribuição de endereços nestas redes.
+Assim, determinadas faixas de IP são usadas para redes locais,
+enquanto que outras são usadas na internet. Como uma rede local
+em um prédio não se comunica a uma rede local em outro
+lugar (a não ser que ambas sejam interconectadas) não
+há problemas de um mesmo endereço IP ser utilizado nas
+duas redes. Já na internet, isso não pode acontecer.
+Nela, cada computador precisa de um IP exclusivo.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">O padrão IANA divide a
+utilização de IPs para redes em, basicamente, 3 classes
+principais e duas que podem ser consideradas secundárias. Esta
+divisão foi feita de forma a evitar ao máximo o
+desperdício de endereços IPs que podem ser utilizados em
+uma rede:<br>
+
+
+
+
+                                                                                    <br>
+
+
+
+
+                                                                                    </span>
+                                                                                    
+<table style="text-align: left; width: 700px; height: 154px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+
+  <tbody>
+
+
+
+
+    <tr>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255); width: 100px;"><span style="font-family: Verdana; ">Classe A:</span></td>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">1.0.0.0 até 126.0.0.0 - Permite até 
+16.777.216 de computadores em cada rede (máximo de 126 redes);</span></td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Classe B:</span></td>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">128.0.0.0 até 191.255.0.0 - Permite até 
+65.536 computadores em uma rede (máximo de 16.384 redes);</span></td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Classe C:</span></td>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">192.0.0.0 até 223.255.255.254 - Permite 
+até 256 computadores em uma rede (máximo de 2.097.150 redes);</span></td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Classe D:</span></td>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">224.0.0.0 até 239.255.255.255 - multicast</span></td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Classe E:</span></td>
+
+
+
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">240.0.0.0 até 255.255.255.255 multicast 
+reservado</span></td>
+
+
+
+
+    </tr>
+
+
+
+
+  
+  
+                                                                                      
+  
+  </tbody>
+                                                                                    
+</table>
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    </span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><big><big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    </big></big><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana; font-weight: bold;">
+
+
+                                                                                    <big><big><big>
+
+                                                                                    <span style="font-family: Verdana; font-weight: bold;">IP ESTÁTICO E IP 
+DINÂMICO:</span></big></big></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Estático: é o IP Fixo que não muda 
+(exceto seja feita a mudança manualmente).</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Dinâmico: o IP muda a cada conexão 
+(por motivos de segurança)<br>
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+                                                                                    </span>
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <big><big><big><span style="font-family: Verdana; font-weight: bold;"></span></big></big></big><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br>
+
+
+                                                                                    <big><big><big><span style="font-family: Verdana; font-weight: bold;">IP NAT</span></big></big></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">É possível conectar
+vários computadores a Internet utilizando apenas 1
+endereço IP de internet. Basta você conectar um computador
+à intenet e usá-lo como servidor de internet. Os outros
+computadores você conecta à este “Servidor”.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Neste caso estamos criando um Rede
+Privada onde teremos que atribuir endereços IPs para estes
+computadores, no entanto estes IPs não pertencem à
+internet mas apenas à sua rede local.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"><span style="font-weight: bold;">Desvantagens:</span>
+Os computadores conectados ao servidor não possuem um
+endereço na internet, portanto não podem ser usados como
+servidores (exceto com redirecionamento de portas, como veremos no
+decorrer do curso).</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"><span style="font-weight: bold;">Vantagens:</span>
+ Com apenas um IP disponível na Internet você conecta vários 
+computadores à internet.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Cada computador não possui um 
+endereço na internet, isto o torna mais seguro.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    <big><big><big><span style="font-weight: bold;"></span></big></big></big><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br>
+
+
+                                                                                    <big><big><big><span style="font-weight: bold;"><br>
+
+
+COMO DESCOBRIR SEU 
+ENDEREÇO IP:</span></big></big></big><br>
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Para descobrir o seu IP basta utilizar o ipconfig (presente no
+ Windows).</span><br style="font-family: Verdana;">
+
+
+
+                                                                                    
+                                                                                    <span style="font-family: Verdana;">A</span><span style="font-family: Verdana;">bra o prompt de comando e digite: ipconfig<br>
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    </span><span style="font-family: Verdana;"></span><big><big>
+<embed style="width: 570px; height: 111px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_001.swf"><br>
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    <span style="font-family: Verdana;">Outra opção é observar
+ a tela inicial do Insecuritynet 3.X<br>
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    
+<embed style="width: 664px; height: 432px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_004.swf"><br>
+
+
+
+                                                                                    <br>
+
+
+
+Você também pode utilizar o DISPLAY IP.<br>
+
+
+<small>
+O Display IP nao é um aplicativo oficial de nossa empresa,
+apenas é um executável desenvolvido pelo programador do
+Insecuritynet a algum tempo atrás. Na verdade é mais
+interessante a idéia da programaçao do que a
+função em si.<br></small>
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    
+<embed style="width: 409px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_007.swf"><br>
+
+
+
+                                                                                    <br>
+
+
+
+<a style="color: rgb(153, 51, 0); font-weight: bold;" href="http://insecuritynet.com.br/site/downloads/DISPLAY_IP.rar">DOWNLOAD</a><br>
+
+
+                                                                                    <br>
+
+
+                                                                                    <br style="font-family: Verdana; font-weight: bold;">
+
+
+
+                                                                                    </span>
+                                                                                    </big></big><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana; font-weight: bold;">
+
+
+                                                                                    <big><big>
+
+                                                                                    <span style="font-family: Verdana; font-weight: bold;"><br>
+
+
+COMO DESCOBRIR O 
+IP DE UM DETERMINADO SERVIDOR.</span></big></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Para descobrir o IP de um servidor basta utilizar o ping 
+(presente no Windows).</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Por exemplo, para descobrir o IP do 
+servidor www.google.com</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Abra o prompt de comando e digite: 
+ping www.google.com</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Observe que o ping retorna com o IP: 66.249.90.104<br>
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    
+<embed style="width: 666px; height: 343px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_009.swf"><br style="font-family: Verdana;">
+
+
+
+                                                                                    </span>
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"><br>
+
+
+
+                                                                                    </span><span style="font-family: Verdana;">Andre, o Insecuritynet 3.X possui 
+uma ferramenta que retorna o IP qualquer servidor na internet.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Inicio -&gt; Scan e Monitoramento 
+-&gt; Captura de IP -&gt; Capturar IP de um determinado endereço DNS</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;
+<embed style="width: 665px; height: 435px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_010.swf"></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+                                                                                    <br style="font-family: Verdana; font-weight: bold;">
+
+
+                                                                                    </span></big></big><big>
+                                                                                    <span style="font-family: Verdana; font-weight: bold;">COMO SABER QUAIS 
+IPS ESTÃO CONECTADOS AO SEU COMPUTADOR.</span></big>
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Utilize o comando netstat –n no 
+prompt de comando:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Observe em: Endereço externo<br>
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+                                                                                    </span>
+                                                                                    
+<embed style="width: 658px; height: 333px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_011.swf"><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Você também pode usar o netstat do Insecuritynet 3.X</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Inicio -&gt; Gerenciamento Local -&gt; Gerenciar Conexões 
+-&gt; Visualizar conexões -&gt; Only TCP</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;
+<embed style="width: 665px; height: 432px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_012.swf"></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Os endereços em cinza são conexões 
+locais</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Os endereços em Verde escuro são de 
+serviços comuns (Web sites e Servidor do MSN)</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Os endereços em Verde claro são para
+ outros serviços.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">No lado esquerdo em azul você pode 
+visualizar todos os processos ligados ao determinado IP externo.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+                                                                                    </span></big></big><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;">EXERCÍCIO
+ PRÁTICO:</span></big></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Vamos localizar IPs Online em uma 
+determinada faixa de IP utilizando o ping.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Faixa determinada:</span><span style="font-family: Verdana;"> &nbsp;143.106.10.140 à 143.106.10.200</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">São 60 IPs para pingar um por um, 
+imagina fazer isto manualmente.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">O Insecuritynet pode fazer isto para
+ você:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Entre em: Iniciar -&gt; Scan e 
+monitoramento -&gt; ping faixa de IP</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;
+<embed style="width: 668px; height: 435px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_014.swf"></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">No lado direito em azul temos a lista de IPs encontrados.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">Para que isto é útil?</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">R: Você poderá
+encontrar todos os computadores ativos em uma rede, neste exemplo
+fizemos um scan na rede: 143.106.10 (Unicamp).</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Você tem todos os endereços IPs dos 
+computadores ligados e online na rede.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+                                                                                    <br style="font-family: Verdana; font-weight: bold;">
+
+
+                                                                                    </span></big></big><big>
+                                                                                    <span style="font-family: Verdana; font-weight: bold;">LOCALIZAR O PONTO
+ GEOGRÁFICO DE UM ENDEREÇO IP:</span></big>
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana;">Atualmente existem vários
+serviços na WEB que localizam a cidade de um determinado
+endereço IP, mas os resultados não são 100
+confiáveis.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana; font-weight: bold;">&nbsp;Localizar IP no 
+Brasil:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;<a style="color: rgb(153, 51, 0);" href="http://www.hostip.info/" target="_blank">www.hostip.info</a></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;
+<embed style="width: 722px; height: 549px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_015.swf"></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana; font-weight: bold;">Localizar IP no mundo:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <a style="color: rgb(153, 51, 0);" href="http://www.ipgeo.com/" target="_blank"><span style="font-family: Verdana;">www.ipgeo.com</span></a><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">free tools -&gt; Ip to Cowntry</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;
+<embed style="width: 443px; height: 333px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_016.swf"></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana; font-weight: bold;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana; font-weight: bold;">Como estes sites 
+funcionam se
+a maioria dos IPs não são fixos são
+dinâmicos (mudam a cada conexão)?</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"><span style="font-weight: bold; color: rgb(0, 153, 0);">R:</span> O site possui um banco de dados com os
+ IPS fixos do país ou do mundo e seu respectivo CEP.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Os IPs dinâmicos
+próximos aos IPs fixos estarão também
+próximos na faixa de IP distribuída.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Para localizar o País
+de origem é mais fácil porque cada país compra uma
+concessão de faixa de IPs.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"><a href="http://insecuritynet.com.br/cursos/cursos_onlines/ascd/aula_ascd_02/faixas_concedidas_ao_brasil.txt" target="_blank">Clique aqui</a> e veja todas as faixas de IPs 
+concedidas ao Brasil.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana; font-weight: bold;">Como localizar o usuário de um determinado 
+IP?</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"><span style="color: rgb(0, 153, 0); font-weight: bold;">R:</span> Neste caso estes dados por
+motivos de segurança não são públicos,
+só podem ser obtidos com autorização judicial.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Por exemplo: Você quer saber quem 
+estava utilizando o IP: 189.35.151.28&nbsp; no Dia 06/10/2010 as 15:00</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Este Ip pertence à uma faixa
+de IP distribuída à um provedor, é possível
+localizar o provedor, mas somente o provedor deste IP tem os dados de
+hora data e assinante da banda de internet (fica tudo registrado em
+Logs). O provedor apenas irá liberar estes dados sob ordem
+judicial.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+                                                                                    </span></big></big><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><big><big><big><span style="font-family: Verdana; font-weight: bold;">Escondendo seu IP.</span></big></big></big><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Você pode esconder seu IP utilizando
+ proxys, a idéia é muito
+simples, você conecta em outro computador e o outro computador
+navega para você. Assim o IP que ficará nos logs é
+o IP do computador a qual você esta conectado.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"><br>
+
+
+
+Existem muitos servidores Proxys que oferecens este serviços:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Exemplo:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <a style="color: rgb(153, 51, 0);" href="http://www.zend2.com/" target="_blank"><span style="font-family: Verdana;">http://www.zend2.com/</span></a><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Exemplo, quando você entra no 
+www.hostip.info seu IP automaticamente é localizado.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Experimente entrar no ipgeo.com
+utilizando o http://www.zend2.com/</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Ele irá detectar o endereço da Proxy
+ e não o seu:</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    
+<embed style="width: 416px; height: 325px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_017.swf"><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+                                                                                    <br style="font-family: Verdana; font-weight: bold;">
+
+
+                                                                                    </span></big></big><big><big>
+                                                                                    <span style="font-family: Verdana; font-weight: bold;">Identificando em 
+que pontos do mundo seu computador esta conectado:</span></big></big>
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Nossa empresa desenvolveu um 
+aplicativo capaz de realizar esta operação.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Quando você visita um site
+japonês, seu computador se conecta ao computador onde o site
+está hospedado no Japão.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">Quando você conversa
+com uma pessoa no Messenger que esta na Grecia, seu computador se
+conectará ao computador da Grécia.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Utilizando o Geonetstat você
+captura os IPs de todas suas atuais conexões e também em
+que ponto do mundo se encontra estes IPs.</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    
+<embed style="width: 662px; height: 541px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_018.swf"><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana;">
+
+
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;">Download:</span><a style="color: rgb(153, 51, 0);" href="http://insecuritynet.com.br/site/produtos/programa_geonetstat.php" target="_blank"><br style="font-family: Verdana;">
+<span style="font-family: Verdana;">
+site/produtos/programa_geonetstat.php
+</span></a>
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <br style="font-family: Verdana;">
+
+
+
+
+                                                                                    <span style="font-family: Verdana;"><br style="font-weight: bold;">
+
+
+
+                                                                                    <span style="font-weight: bold;">COMO SABER SE O ENDEREÇO IP DE SEU 
+COMPUTADOR É VÁLIDO NA INTERNET OU É UM IP NAT.</span><br>
+
+
+
+                                                                                    <br>
+
+
+
+Compare o endereço mostrado no ipconfig com o endereço mostrado no site <a style="color: rgb(153, 51, 0);" href="http://meuip.datahouse.com.br/" target="_blank">http://meuip.datahouse.com.br/</a><br>
+
+
+
+                                                                                    <br>
+
+
+
+Observe que neste caso, os dois endereços são iguais,
+portanto o IP de meu computador está válido na internet:<br>
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    </span>
+                                                                                    
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+  <tbody>
+
+
+
+    <tr>
+
+
+
+      <td>ipconfig (prompt)</td>
+
+
+
+      <td>Site MEUIP</td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td>
+      
+      <embed style="width: 384px; height: 111px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_001.swf"></td>
+
+
+
+      <td>
+      
+      <embed style="width: 270px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_005.swf"></td>
+
+
+
+    </tr>
+
+
+
+  
+                                                                                      
+  
+  </tbody>
+                                                                                    
+</table>
+
+
+
+                                                                                    <span style="font-family: Verdana;"><br>
+
+
+
+Geralmente IPs que começam com 192 , &nbsp;168 &nbsp;e&nbsp; 10
+&nbsp;são IPs NAT e não são válidos na internet.<br>
+
+
+
+                                                                                    </span><span style="font-family: Verdana;">Geralmente </span><span style="font-family: Verdana;">IPs Validos da Internet (Brasil) </span><span style="font-family: Verdana;">começam com 189 , &nbsp;200 &nbsp;, 201 , 187<br>
+
+
+
+                                                                                    <span style="font-style: italic;">(isto não é uma regra,
+pois existem faixas de IPs definidas e liberdade para
+configuração de endereço de IP em redes locais) </span></span><br>
+
+
+
+                                                                                    <span style="font-family: Verdana;"><br>
+
+
+
+                                                                                    </span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br>
+
+
+                                                                                    <span style="font-family: Verdana;"><big><big><big><br>
+
+
+LOCALHOST</big></big></big></span><br style="font-family: Verdana;">
+
+
+
+                                                                                    <br>
+
+
+
+                                                                                    <span style="font-family: Verdana;">O IP Localhost por padrão é:
+ <span style="font-weight: bold;">127.0.0.1</span><br>
+
+
+
+O IP Localhost não é válido na internet e também
+não é válido em sua rede local. Então para
+que ele serve?<br>
+
+
+
+&nbsp;O localhost é usado para a comunicação com a própria máquina.<br>
+
+
+
+Ser capaz de se comunicar com a máquina atual como se estivesse se 
+comunicando com uma máquina remota é útil para a finalidade de testes, 
+assim como para usar recursos localizados na máquina atual, mas que se 
+esperariam serem remotos. Por exemplo:<br>
+
+
+
+Se você tiver um Servidor HTTP instalado em seu computador, você pode 
+testá-lo utilizando o endereço:<br>
+
+
+
+http://127.0.0.1<br>
+
+
+                                                                                    <br>
+
+
+                                                                                    </span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+
+                                                                                    <br>
+
+
+                                                                                    </span></big></big><span style="font-family: Verdana;"><big><big><span style="font-weight: bold;">Obtendo um novo endereço IP (apenas para IPs Dinâmicos)</span></big></big><br><br>
+																					
+																					<span style="font-weight: bold; color: rgb(204, 0, 0);">Importante:</span><br>
+Esta ferramenta irá funcionar apenas se seu computador
+estiver ligado diretamente ao modem, sem nenhum roteador.<br>
+
+
+
+                                                                                    <br>
+
+
+                                                                        
+            Caso você possua IP dinâmico, à cada conexão você recebe um 
+novo endereço.<br>
+
+
+Para obter um novo endereço bastaria voce simplesmente
+desconectar da Internet e conectar novamente. Mas você não
+precisa reiniciar seu PC ou Modem para isto.<br>
+
+
+Você pode utilizar os comandos no Promtp:<br>
+
+
+ipconfig /release<br>
+
+
+ipconfig /renew<br>
+
+
+                                                                                    <br>
+
+
+Ou simplesmente Utilizar a ferramenta especifíca para isto no Insecuritynet 3.X<br>
+
+
+Inicio -&gt; Gerenciamento Local -&gt; Obter novo IP<br>
+
+
+                                                                                    <br>
+
+
+                                                                                    
+<embed style="width: 649px; height: 253px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/img_006.swf"><br>
+
+
+                                                                                    <br>
+
+
+
+                                                                                    <br>
+
+
+
+Nas próximas aulas vamos abordar sobre DNS, e soluções para Servidores IPs Dinâmicos.<br>
+
+
+Lembre que qualquer dúvida, basta nos enviar, responderemos com o maior prazer.<br>
+
+
+                                                                                    <br>
+
+
+                                                                                    </span><big><big><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span></big></big><br style="font-family: Verdana;">
+
+
+                                                                                    
+                                                                                    <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+
+
+
+                                                                                    </div>
+
+
+<!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2002_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="02" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2002_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

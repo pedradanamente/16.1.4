@@ -1,0 +1,1278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  15</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2015_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=7d842807776391c7f09805ef9c74a50b&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">15 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  01/05/2014 15:36  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2015_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 15</span><br><br>
+    <div id="listasx">
+      <ul>
+        <li><span style="font-family: Verdana;">Protocolo FTP</span></li>
+        <li><span style="font-family: Verdana;">Comandos FTP</span></li>
+        <li><span style="font-family: Verdana;">Respostas FTP</span></li>
+        <li><span style="font-family: Verdana;">Visualizando a
+            comunicaçao na prática</span></li>
+        <li><span style="font-family: Verdana;">Criando um tunel para
+            visualização do protocolo</span></li>
+        <li><span style="font-family: Verdana;">Exercício prático</span></li>
+        <li><span style="font-family: Verdana;">Logins anonimos</span></li>
+        <li><span style="font-family: Verdana;">Antigos exploits</span></li>
+        <li><span style="font-family: Verdana;">Principal
+            vulnerabilidade em servidores FTP</span></li>
+        <li><span style="font-family: Verdana;">Principais
+            vulnerabilidades do protocolo FTP</span></li>
+        <li><span style="font-family: Verdana;">RFC 959<br>
+          </span></li>
+      </ul>
+    </div>
+    <span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+      <br>
+    </span><span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;"></span></span><br style="font-family: Verdana;">
+    <table style="text-align: left; width: 100%;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td><img style="width: 122px; height: 105px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/protocolo_ftp.jpg"><br>
+          </td>
+          <td><span style="font-family: Verdana; font-weight: bold;">PROTOCOLO
+              FTP</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br>
+      Na aula anterior vimos como conectar e logar em um servidor
+      utilizando
+      o cliente FTP existente no Windows FTP.exe, porem os comandos
+      utilizados foram comandos do cliente e não propriamente do
+      protocolo. Nesta aula vamos ver como é a
+      comunicação entre cliente e servidor FTP (Protocolo FTP).<br>
+      <br>
+      Uma conexão FTP é composta por dois canais de comunicação:<br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 696px; height: 47px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);">1-)</td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">(Protocol Interpreter)</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Canal responsável pelos
+              comandos entre cliente e servidor</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255);">2-)</td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">(Data Transfer Process)</span></td>
+          <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Canal responsável pelos
+              dados transmitidos entre cliente e servidor.</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      Exemplo:<br>
+      <br>
+      <embed style="width: 523px; height: 280px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_003.swf"><br>
+      <br>
+      O “PI Servidor” é fica aguardando os comandos vindos
+      do “PI Cliente”, depois de recebidos os comandos ele
+      interpreta e pilota o DTP servidor.<br>
+      <br>
+    </span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+      <br>
+      <br>
+    </span><span style="font-family: Verdana;"><span style="font-weight:
+        bold;">COMANDOS FTP</span><br>
+      <br>
+      Os comandos FTP permitem precisar:<br>
+    </span><br>
+	<div id="listasx">
+    <ul>
+      <li><span style="font-family: Verdana;">A porta utilizada</span></li>
+      <li><span style="font-family: Verdana;">O modo de transferência
+          dos dados</span></li>
+      <li><span style="font-family: Verdana;">A estrutura dos dados</span></li>
+      <li><span style="font-family: Verdana;">A natureza da ação a
+          efetuar (Retrieve, List, Store,…)</span></li>
+    </ul></div><br>
+    <span style="font-family: Verdana;"><br>
+      Tipos de comandos FTP:<br>
+    </span>
+	<div id="listasx">
+    <ul>
+      <li><span style="font-family: Verdana;">Os comandos de controlo de
+          acesso</span></li>
+      <li><span style="font-family: Verdana;">Os comandos de
+          parametrização de transferência</span></li>
+      <li><span style="font-family: Verdana;">Os comandos de serviço FTP</span></li>
+    </ul></div><br>
+    <span style="font-weight: bold;">LISTA DE COMANDOS</span><br>
+    <span style="font-style: italic; font-weight: bold; color: rgb(255,
+      0, 0);"><br>
+      "Não se preocupe em decorar todos os comandos do protocolo"</span><br>
+    <br>
+    <span style="font-family: Verdana;"><span style="font-weight: bold;">COMANDOS
+        DE CONTROLE DE ACESSO</span><br>
+    </span>
+    <table style="text-align: left; width: 650px; height: 372px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">USER</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Cadeia de caracteres que permitem identificar o
+            utilizador. A identificação do utilizador é necessária para
+            estabelecer uma comunicação no canal de dados</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">PASS</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Cadeia de caracteres que especificam a
+            palavra-passe do utilizador. Este comando deve ser
+            imediatamente precedido do comando <i>USER</i>. Cabe ao
+            cliente esconder a afixação deste comando por razões de
+            segurança</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">ACCT</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Cadeia de caracteres que representam a conta
+            (account) do utilizador. Este comando não é geralmente
+            necessário. Aquando da resposta à aceitação da
+            palavra-passe, se a resposta for 230 esta fase não for
+            necessária; se a resposta for 332, é.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">CWD</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><i>Change Working Directory</i> : este comando
+            permite alterar o directório corrente. Este comando
+            necessita o caminho de acesso ao directório a atingir como
+            argumento</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">CDUP</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><i>Change to Parent Directory</i> :este comando
+            permite subir ao directório parente. Foi introduzido para
+            remediar os problemas de nomeação de directório parente de
+            acordo com o sistema (geralmente “. ”)</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">SMNT</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><i>Structure Mount</i> :</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">REIN</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><i>Reinitialize</i> :</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">QUIT </td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Comando permitindo terminar a sessão corrente. O
+            servidor espera até terminar a transferência corrente se for
+            caso disso, seguidamente fornece uma resposta antes de
+            fechar a conexão</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">COMANDOS DES PARÂMETROS DE
+        TRANSFERÊNCIA</span><br>
+    </span>
+    <table style="text-align: left; width: 655px; height: 163px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-family: Verdana;">PORT</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Cadeia de caracteres que permitem precisar o
+            número de porta a utilizar</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-family: Verdana;">PASV</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Comando permitindo indicar ao servidor DTP para
+            esperar uma conexão numa porta específica escolhida
+            aleatoriamente entre as portas disponíveis. A resposta a
+            este comando é o endereço IP da máquina e a porta.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-family: Verdana;">TYPE</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando permite precisar o tipo de formato em
+            que os dados serão enviados</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-family: Verdana;">STRU</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Carácter Telnet precisando a estrutura do ficheiro
+            (F para <i>File</i>, R para <i>Record</i>, P para <i>Page</i>)</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-family: Verdana;">MODE</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Carácter Telnet precisando o modo de transferência
+            dos dados (S para <i>Stream</i>, B para <i>Block</i>, C
+            para <i>Compressed</i>)</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br style="font-weight: bold;">
+      <span style="font-weight: bold;">COMANDOS DE SERVIÇO FTP</span><br>
+    </span>
+    <table style="text-align: left; width: 655px; height: 564px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">RETR</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (<i>RETRIEVE</i>) pede ao servidor
+            DTP uma cópia do ficheiro cujo caminho de acesso passou em
+            parâmetro.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">STOR</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (<i>store</i>) pede ao servidor DTP
+            que aceite os dados enviados sobre o canal de dados e que os
+            armazene no ficheiro que leva o nome passado em parâmetro.
+            Se o ficheiro não existir, o servidor cria-o, se não
+            esmaga-o</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">STOU</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando é idêntico ao precedente, mas pede ao
+            servidor que crie um ficheiro cujo nome é único. O nome do
+            ficheiro é devolvido na resposta</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">APPE</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Graças a este comando (<i>append</i>) os dados
+            enviados são concatenados no ficheiro que leva o nome
+            passado em parâmetro , se ele já existir; no caso contrário,
+            é criado. </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">ALLO</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (allocate) pede ao servidor que
+            preveja um espaço de armazenamento suficiente para conter o
+            ficheiro cujo nome passou em argumento.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">REST</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (restart) permite retomar uma
+            transferência onde tinha parado. Para isso, este comando
+            envia em parâmetro o indicador que representa a posição no
+            ficheiro onde a transferência tinha sido interrompida. Este
+            comando deve ser imediatamente seguido de um comando de
+            transferência.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">RNFR</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (rename from) permite rebaptizar um
+            ficheiro. Indica em parâmetro o nome do ficheiro a
+            rebaptizar e deve ser imediatamente seguido do comando RNTO</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">RNTO</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (rename to) permite rebaptizar um
+            ficheiro. Indica em parâmetro o nome do ficheiro a
+            rebaptizar e deve ser imediatamente precedido pelo comando
+            RNFR</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">ABOR</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (abort) diz ao servidor DTP para
+            abandonar todas as transferências associadas ao comando
+            precedente. Se nenhuma conexão de dados estiver aberta, o
+            servidor DTP não faz nada, se não fecha-a. Em contrapartida,
+            o canal de controlo permanece aberto.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">DELE</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (delete) permite suprimir o ficheiro
+            cujo nome passou em parâmetro. Este comando é irremediável,
+            só uma confirmação a nível do cliente pode ser feita.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">RMD</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este
+            comando (remove directory) permite suprimir um directório.
+            Indica em parâmetro o nome do directório a suprimir</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">MKD</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este
+            comando (make directory) permite criar um directório. Indica
+            em
+            parâmetro o nome do directório a criar</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">PWD</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (print working directory) permite
+            reenviar o caminho completo do directório corrente</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">LIST</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando permite reenviar a lista dos
+            ficheiros e directórios presentes no directório corrente.
+            Esta lista é enviada para o DTP passivo. É possível passar
+            em parâmetro deste comando um nome de directório, o servidor
+            DTP enviará a lista dos ficheiros no directório passado em
+            parâmetro</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">NLST</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (name liste) permite enviar a lista
+            dos ficheiros e directórios no directório corrente</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">SITE</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (<i>site parameters</i>) permite ao
+            servidor propor serviços específicos, não definidos no
+            protocolo FTP</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">SYST</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (system) permite enviar informações
+            para o servidor distante</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">STAT</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (status) permite emitir o estado do
+            servidor, por exemplo para conhecer a progressão de uma
+            transferência corrente. Este comando aceita em argumento um
+            caminho de acesso, reenvia então as mesmas informações que
+            LIST mas sobre o canal de controle</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">HELP</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando permite conhecer o conjunto das
+            encomendas compreendidas pelo servidor. As informações são
+            voltadas sobre o canal de controlo</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">NOOP</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Este comando (<i>no operations</i>) serve
+            unicamente para obter um comando OK do servidor. Pode servir
+            unicamente para não ser desligada após um tempo de
+            inactividade demasiado longo</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br>
+      &nbsp;<br>
+    </span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">RESPOSTAS FTP</span><br>
+      <br>
+      Andre, a cada requisição enviada pelo cliente o servidor
+      responde de forma à garantir um sincronização.<br>
+      <br>
+      As Respostas são constituídas por três números.<br>
+      <br>
+      Os códigos de resposta são constituídos por 3
+      números (xyz), cujos significados são os seguintes:<br>
+      <br>
+      &nbsp;&nbsp;&nbsp; * O primeiro número indica o estatuto da
+      resposta (sucesso ou falha)<br>
+      &nbsp;&nbsp;&nbsp; * O segundo número indica a que é que a
+      resposta se refere<br>
+      &nbsp;&nbsp;&nbsp; * O terceiro número dá um significado
+      mais específico (relativo a cada segundo número)<br>
+      <br>
+      <span style="font-weight: bold;">PRIMEIRO NUMERO</span><br>
+    </span>
+    <table style="text-align: left; width: 634px; height: 212px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><b>1</b>yz</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Resposta preliminar positiva</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A ação pedida está curso, uma segunda resposta
+            deve ser obtida antes de enviar um segundo comando</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><b>2</b>yz</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Resposta positiva de realização</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A ação pedida foi realizada, um novo comando pode
+            ser enviado</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><b>3</b>yz</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Resposta intermédia positiva</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A
+            ação pedida está temporariamente suspensa.
+            Informações suplementares são esperadas por parte
+            do cliente</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><b>4</b>yz</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Resposta negativa de realização</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A ação pedida não teve lugar porque o comando
+            temporariamente não foi aceite. O cliente deve experimentar
+            de novo mais tarde</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><b>5</b>yz</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Resposta negativa permanente</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A
+            ação pedida não teve exito porque o comando
+            não foi aceito. O cliente deve formular um pedido diferente</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br>
+      <span style="font-weight: bold;">SEGUNDO NUMERO</span><br>
+    </span>
+    <table style="text-align: left; width: 637px; height: 172px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">x<b>0</b>z</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Sintaxe</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A acção possui um erro de sintaxe, ou trata-se de
+            um comando não percebido pelo servidor</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">x<b>1</b>z</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Informação</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Trata-se de uma resposta que devolve informações
+            (por exemplo, para uma resposta a um comando STAT)</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">x<b>2</b>z</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Conexões</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A resposta refere-se ao canal de dados</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">x<b>3</b>z</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Autenticação e contas</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A resposta refere-se à ligação (USER/PASS) ou ao
+            pedido de mudança de conta (CPT)</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">x<b>4</b>z</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Não utilizado pelo protocolo FTP</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">x<b>5</b>z</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Sistema de arquivos</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A resposta refere-se ao sistema de arquivos
+            distante</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">Exemplos de mensagens:</span><br>
+      <br>
+      220 = </span>A ação pedida foi realizada, um novo comando pode
+    ser enviado, A resposta refere-se ao canal de dados<br>
+    <br>
+    <span style="font-family: Verdana;">150 =&nbsp;</span>A ação pedida
+    está curso, uma segunda resposta deve ser obtida antes de enviar um
+    segundo comando, A resposta refere-se ao sistema de arquivos
+    distante.<br>
+    <span style="font-family: Verdana;"><br>
+    </span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">VISUALIZANDO A COMUNICAÇÃO NA
+        PRÁTICA</span><br>
+      <br>
+      <span style="font-weight: bold;">Servidor teste:</span><br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 100%A3x;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="font-weight: bold;"><span style="font-family:
+              Verdana;">Server:</span></td>
+          <td><span style="font-family: Verdana;">ftp.xpg.com.br</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;"><span style="font-family:
+              Verdana;">Usuario:</span></td>
+          <td><span style="font-family: Verdana;">cursoinsecuritynet</span></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;"><span style="font-family:
+              Verdana;">Senha:</span></td>
+          <td><span style="font-family: Verdana;">abcd1234</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      &nbsp;<big style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">Importante:</span></big></span><br>
+        &nbsp;Não altere a senha da conta, colabore com seu estudo e com
+        os outros alunos do curso.<br>
+        &nbsp;Arquivos não citados na aula podem não ser de
+        procendencia de nossa equipe, pois o servidor está aberto
+        à todos os alunos.<br>
+        <br>
+        <br>
+        <span style="font-weight: bold;">Criando um túnel para
+          visualizar o protocolo.</span><br>
+        <br>
+        Abra o Insecuriytnet 3.X em:<br>
+        Inicio -&gt; Defesa -&gt; Port Tunel<br>
+        <br>
+        <span style="font-weight: bold;">Escolha :</span><br>
+        Listing &lt;-&gt; Conect<br>
+        <br>
+        <span style="font-weight: bold;">Configure:&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>
+        IN
+PORT.:21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        OUT
+IP...:ftp.xpg.com.br&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OUT
+        PORT.:21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>
+        <br>
+        &nbsp;<embed style="width: 619px; height: 412px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_004.swf"><br>
+        <br>
+        &nbsp;Automaticamente o túnel será aberto:<br>
+        <br>
+        <embed style="width: 619px; height: 329px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_005.swf"><br>
+        <br>
+        &nbsp;<br>
+        Agora vamos criar a conexão.<br>
+        <br>
+        Abra o <span style="font-weight: bold;">Promtp de Comando</span>
+        e digite:<br>
+        <span style="font-weight: bold;"><br>
+          ftp 127.0.0.1</span><br>
+        <br>
+        <span style="font-style: italic;">&nbsp;FAÇA O LOGIM:</span><br>
+        Usuário: cursoinsecuritynet<br>
+        Senha: abcd1234<br>
+        <br>
+        <embed style="width: 433px; height: 218px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_006.swf"><br>
+        <br>
+        Observe o protocolo no Tunel<br>
+        <br>
+        &nbsp;<embed style="width: 614px; height: 218px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_007.swf"><br>
+        <br>
+        &nbsp;<br>
+        Os comandos em <span style="font-weight: bold; color: rgb(0,
+          102, 0);">VERDE</span> são os comandos executados pelo cliente
+        (FTP.exe)<br>
+        Os comandos em <span style="font-weight: bold; color: rgb(51,
+          51, 153);">AZUL</span> são a resposta do servidor (Observe os
+        três números das mensagens FTP)<br>
+        <br>
+        Listando o diretório.<br>
+        <span style="font-weight: bold;">DIR</span><br>
+        <br>
+        &nbsp;<embed style="width: 651px; height: 123px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_008.swf"><br>
+        <br>
+        Agora observe o protocolo no túnel:<br>
+        <br>
+        <embed style="width: 452px; height: 129px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_009.swf"><br>
+        <big style="color: rgb(153, 102, 51);"><br style="font-weight:
+            bold;">
+          <span style="font-weight: bold;">ATENÇÃO !!<br>
+          </span></big>Veja
+          que no cliente temos os nomes nos arquivos e no túnel ele
+          não apareceu. Mas se é um túnel por onde os dados
+          passaram?<br>
+          <br>
+          A resposta está no começo da aula, a
+          comunicação é feita através de dois canais
+          e estamos “tunelando” apenas o PI canal de comandos e ano
+          da dados, os nomes dos arquivos são dados enviados pelo DTP do
+          servidor em outro canal (canal de transferência de dados).<br>
+          <br style="font-weight: bold;">
+          <span style="font-weight: bold;">&nbsp;Em que porta os dados
+            transmitidos?</span><br>
+          <br>
+          &nbsp;Observe o comando PORT realizado pelo cliente.<br>
+          &nbsp;PORT 127,0,0,1,5,242<br><br>
+        
+        <table style="text-align: left; width: 595px; height: 51px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr>
+              <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Os quatros primeiros
+                  dígitos representam o IP do servidor, em nosso caso
+                  127.0.0.1</span></td>
+            </tr>
+            <tr>
+              <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Os dois últimos dígitos
+                  representam a porta utilizada, mas existe um calculo
+                  para determinarmos esta porta.</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <span style="font-family: Verdana;"><br>
+          <br>
+          Calculo do numero da porta do comando PORT<br>
+          <span style="font-weight: bold;">Pegue o primeiro numero e
+            multiplique por 256 e some ao segundo.</span><br>
+          <br>
+        </span><span style="font-family: Verdana;">Em nosso caso 5 e 242</span><br>
+        <span style="font-family: Verdana;">(5 X 256) + 242 = <span style="font-weight: bold;">1522</span><br>
+          <br>
+          &nbsp;Portanto:<br>
+          &nbsp;</span><span style="font-family: Verdana;">PORT
+          127,0,0,1,5,242 significa que o dado se encontra no IP
+          127.0.0.1 na porta 1522</span><br>
+        <span style="font-family: Verdana;">________________________<br>
+          <br>
+          <span style="font-weight: bold;">Desconectando:</span><br>
+          <br>
+          Digite:<br>
+          <span style="font-weight: bold;">quit</span><br>
+          <br>
+          &nbsp;<embed style="width: 121px; height: 36px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_010.swf"><br>
+          <br>
+          Observe o túnel<br>
+          <br>
+          <embed style="width: 153px; height: 55px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_011.swf"><br>
+          &nbsp;<br>
+          <br>
+          &nbsp;<br>
+        </span><span style="font-family: Verdana; font-weight: bold;">
+          <div id="barra"></div>
+        </span><br>
+        <span style="font-family: Verdana;">&nbsp;<br>
+          <span style="font-weight: bold;">EXERCÍCIO PRÁTICO:</span><br style="font-weight: bold;">
+          <span style="font-weight: bold;">SEJA VOCÊ MESMO O CLIENTE</span><br>
+          <br>
+          &nbsp;<br>
+          Agora que já temos uma boa noção do protocolo FTP,
+          vamos enviar comandos diretos ao servidor, sem a necessidade
+          de um
+          cliente interpretador de comandos.<br>
+          <br>
+          Vamos fazer uma conexão direta com o servidor:<br>
+          <br>
+          &nbsp;<br>
+          Antes te conetctar , capture o IP de ftp.xpg.com.br<br>
+          Neste caso: 200.149.77.62<br>
+          <br>
+          Como já listamos anteriormente o servidor sabemos que temos um
+          arquivo hospedado: <span style="font-weight: bold;">arquivo_aula_15_ascd.txt</span><br>
+        </span><span style="font-family: Verdana;"><span style="font-weight: bold;"></span></span><span style="font-family: Verdana;"><br>
+        </span>
+        <table style="text-align: left; width: 569px; height: 14px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr>
+              <td style="background-color: rgb(234, 236, 255);
+                font-weight: bold;"><span style="font-family: Verdana;">Objetivo:</span></td>
+              <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Ler o conteudo do
+                  arquivo </span><span style="font-family: Verdana;">arquivo_aula_15_ascd.txt</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <span style="font-family: Verdana;"><br>
+          Abra o Insecuritynet 3.X entre em:<br>
+          Inicio -&gt; Intrusão -&gt; Conectar.<br>
+          <br>
+          Digite o IP e a porta (21)<br>
+          <embed style="width: 232px; height: 72px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_012.swf"><br>
+          <br>
+          &nbsp;<br>
+          Agora que conectamos vamos usar os comandos do protocolo FTP:<br>
+          <br>
+          Login:<br>
+          <span style="font-weight: bold;">USER cursoinsecuritnet</span><br style="font-weight: bold;">
+          <span style="font-weight: bold;">PASS abcd1234<br>
+            <br>
+            <embed style="width: 612px; height: 272px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_013.swf"><br>
+          </span><br>
+          &nbsp;<br>
+          Vamos usar o comando PASV para deixar o servidor definir uma
+          porta para
+          o canal de transferência de arquivos (assim não corremos o
+          risco de termos uma porta em uso).<br>
+          <br>
+          Digite:<br>
+          <span style="font-weight: bold;">PASV</span><br>
+          <br>
+          <embed style="width: 413px; height: 35px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_014.swf"><br>
+          <br>
+          Observe que o servidor retornou, os dados do canal de
+          transferência de dados (DTP)<br>
+          200,149,77,62,185,33 ( no seu caso poderá ser um outro IP e
+          outra porta)<br>
+          IP: 200.149.77.62<br>
+          <br>
+          Calculando a porta.<br>
+          (185 x 256) + 33 = 47393<br>
+          <br>
+          &nbsp;<br>
+          Vamos solicitar um "download" do arquivo:<br>
+          <span style="font-weight: bold;">RETR arquivo_aula_15_ascd.txt</span><br>
+          <br>
+          &nbsp;<br>
+          Agora vamos nos conectar ao canal DTP via telnet para
+          recebermos o conteudo do arquivo<br>
+          Abra o prompt de comandos de digite:<br>
+          telnet &lt;IP_do_canal_DTP&gt; &lt;Porta_do_canal_DTP&gt;<br>
+          em nosso caso:<br>
+          <span style="font-weight: bold;">telnet 200.149.77.62 47393</span><br>
+          <br>
+          <embed style="width: 321px; height: 116px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_016.swf"><br>
+          &nbsp;<br>
+          Observe a conexão, temos os dados do arquivo de texto, ou
+          seja, "baixamos" nosso arquivo.<br>
+          <br>
+          Após a termino, observe a mensagem FTP enviada no canal PI
+          (comandos)<br>
+          <embed style="width: 177px; height: 31px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_017.swf"><br>
+          <br>
+          &nbsp;<br>
+          <span style="font-weight: bold;">Histórico dos comandos
+            executados na experiência:</span><br>
+          <br>
+          <embed style="width: 630px; height: 187px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_018.swf"><br>
+          &nbsp;<br>
+          <br>
+          ETAPAS DA CONEXÃO<br>
+          <br>
+          &nbsp;<br>
+          <embed style="width: 654px; height: 460px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_020.swf"><br>
+          &nbsp;<br>
+          FIM DA EXPERIÊNCIA<br>
+          <br>
+        </span><span style="font-family: Verdana; font-weight: bold;">
+          <div id="barra"></div>
+        </span><br>
+        <span style="font-family: Verdana;"><br>
+          &nbsp;<span style="font-weight: bold;">LOGINS ANÔNIMOS</span><br>
+          <br>
+          <span style="font-family: Verdana;">&nbsp;</span></span><span style="font-family: Verdana;">Andre, alguns
+          servidores permitem login de forma anônima, isto torna
+          público os arquivos encontrados no servidor, você</span><span style="font-family: Verdana;">
+          não precisa de permissão para ter acesso aos arquivos. Em
+          alguns casos são intencionais mas em outros casos se trata de
+          "falta de atenção" do administrador do servidor.<br>
+          <br style="font-weight: bold;">
+          <span style="font-weight: bold;">Como logar em um FTP com
+            arquivos públicos?</span><br>
+          Basta usar o seguinte login:<br>
+          Usuario: anonymous<br>
+          Senha: IEUser@<br>
+          <br>
+          Exemplo de FTP com arquivos públicos:<br>
+          ftp.microsoft.com<br>
+          <br>
+          <embed style="width: 645px; height: 137px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_001.swf"><br style="font-family: Verdana;">
+        </span><span style="font-family: Verdana;"><br style="font-weight: bold;">
+          <span style="font-weight: bold;">Como saber se o servidor
+            aceita login anonimo?</span><br>
+          <br>
+          Você pode tentar o logim manualmente ou utilizar o SCAN FTP do
+          Insecuritynet 3.X<br>
+          iniciar -&gt; Scan e monitoramento -&gt; Scan FTP<br>
+          <br>
+          <embed style="width: 620px; height: 349px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/img_002.swf"><br>
+          <br>
+          <span style="font-weight: bold;">Observe:</span>
+          &nbsp;Anonimous Login..:+OK<br>
+          <br>
+        </span><span style="font-family: Verdana; font-weight: bold;">
+          <div id="barra"></div>
+        </span><br>
+        <span style="font-family: Verdana;"><br>
+          <span style="font-weight: bold;">ANTIGOS EXPLOITERS UTILIZANDO
+            O COMANDO QUOTE</span><br>
+          <br>
+          O comando quote presente no cliente "ftp.exe" permite que você
+          envie comandos diretamente ao servidor, sem ser interpretados
+          pelo
+          cliente.<br>
+          &nbsp;Antigamente algums servidores possuem falhas que
+          permitiam
+          acesso de usuário apenas injetando comandos de logins
+          diretamente ao
+          servidor, atualmente é muito raro você encontrar algum
+          servidor
+          vulnerável.<br>
+          <br>
+          &nbsp;Segue abaixo uma lista de logins:<br>
+          <br>
+          Exploit 1<br>
+        </span>
+        <table style="text-align: left; width: 190px; height: 58px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                user ftp</td>
+            </tr>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                cwd ~root</td>
+            </tr>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                pass ftp</td>
+            </tr>
+          </tbody>
+        </table>
+        <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br>
+        <span style="font-family: Verdana;">Exploit 2</span><br>
+        <table style="text-align: left; width: 190px; height: 58px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                user ftp</td>
+            </tr>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                cwd ~sys</td>
+            </tr>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                pass ftp</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <span style="font-family: Verdana;">Exploit 3</span><br>
+        <table style="text-align: left; width: 190px; height: 58px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                user ftp</td>
+            </tr>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                cwd ~sysop</td>
+            </tr>
+            <tr style="font-family: Verdana;">
+              <td style="background-color: rgb(234, 236, 255);">quote
+                pass ftp</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        O comado cwd é utilizado originalmente para abrir um diretorio,
+        netse exemplo "cwd ~root" se voce abrir o diretorio root você
+        terá acesso total ao servidor.<br>
+        <br>
+        <span style="font-family: Verdana; font-weight: bold;">
+          <div id="barra"></div>
+          <br>
+          <br>
+          PRINCIPAL VULNERABILIDADE EM SERVIDORES FTP<br>
+        </span><span style="font-family: Verdana;"><br>
+          Alguns servidores ftp deixam arquivos.ini expostos, estae
+          arquivos podem ser facilmente ser anexado ao google.<br>
+          &nbsp;Você poderá facilmente encontrar várias logins e senhas
+          apenas com uma busca no "google".<br>
+          <br>
+          &nbsp;Pesquise por:<br>
+          &nbsp;<span style="font-weight: bold;">filetype:ini ws_ftp pwd</span><br>
+        </span><span style="font-family: Verdana; font-weight: bold;"></span><span style="font-family: Verdana;"><br>
+        </span><span style="font-family: Verdana; font-weight: bold;">
+          <div id="barra"></div>
+        </span><br>
+        <br>
+        <span style="font-weight: bold;">VULNERABILIDADES DO PROTOCOLO
+          FTP</span><br>
+        <br>
+        <span style="font-family: Verdana;">&nbsp;Sem
+          dúvida o grande problema do protocolo FTP é a ausência de
+          criptografia, as sessôes de logins trafegam livremente na
+          Internet e sua senhas poderá ser interceptada. Um exemplo foi
+          a
+          nossa experiência que fizemos agora pouco, caso o túnel
+          estivese em um
+          computador remoto a senha poderia ser visualizada.</span><br style="font-family: Verdana;">
+        <span style="font-family: Verdana;">&nbsp;Alem do túnel os
+          logins podem ser capturados em redes privadas com SNIFFERs.</span><br style="font-family: Verdana;">
+        <span style="font-family: Verdana;"><br>
+          <br style="font-family: Verdana;">
+        </span><span style="font-family: Verdana; font-weight: bold;">
+          <div id="barra"></div>
+        </span><br style="font-family: Verdana;">
+        <span style="font-family: Verdana;"></span><span style="font-family: Verdana; font-weight: bold;"></span><span style="font-family: Verdana;"></span><br style="font-family:
+          Verdana; font-weight: bold;">
+        <span style="font-family: Verdana; font-weight: bold;">MAIS
+          INFORMAÇÕES</span><br style="font-family: Verdana;">
+        <br style="font-family: Verdana;">
+        <span style="font-family: Verdana;">O
+          estudo sobre ftp nao se restringe apena à esta aula, caso voce
+          queria se aprofundar no assunto veja este documento, onde
+          contem tudo
+          sobre o protocolo FTP.<br>
+          <a style="color: rgb(153, 0, 0);" href="http://insecuritynet.com.br/cursos/cursos_onlines/ascd/aula_ascd_15/La_RFC_959.txt" target="_blank">Clique aqui.</a><br>
+          <br style="font-family: Verdana;">
+        </span> <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+          Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family:
+          Verdana;"></span><span style="font-family: Verdana;"></span><br>
+        <span style="font-family: Verdana; font-weight: bold;">
+          <div id="barra"></div>
+        </span><br style="font-family: Verdana;">
+      
+  
+<!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="15" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="cda2ccafd29270710c9b5303fb03b6c1" type="hidden">
+
+<b>1-) Comandos do cliente FTP e Comandos do protocolo FTP são os mesmos?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nao, os comandos do cliente são diferentes dos comandos do protocolo </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Sim, são exatamente os mesmos comandos </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Sim, mas apenas no sistea UNIX&lt;</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Não, com exceção do prompt do Windows </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) Utilizando o cliente FTP como posso enviar um comando de protocolo?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Não é possível enviar comandos de protocolo com o cliente FTP </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Usando o comando “mkdir”. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Usando o comando “dirr”.</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Usando o comando “quote”. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Usando o comando “ls”. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) Como logar em um servidor FTP com arquivos públicos?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Não se pode logar em servidores com arquivos públicos. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Usuario:anonymous&nbsp; Senha: IEUser@ </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Apenas utilizando um software destinado à esta função</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Usuário: root&nbsp; Senha: IEUser@ </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2015_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="15" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2015_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

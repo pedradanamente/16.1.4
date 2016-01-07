@@ -1,0 +1,1180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  17</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2017_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=925ec3e93ac9dec4df3e5f4b3ebc977b&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" cellpadding="2" cellspacing="2" border="0">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">17 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  01/05/2014 15:46  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2017_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 17</span><br><br>
+
+    <div id="listasx">
+      <ul>
+        <li><span style="font-family: Verdana;">Protocolo HTTP</span></li>
+        <li><span style="font-family: Verdana;">Pedido HTTP</span></li>
+        <li><span style="font-family: Verdana;">Resposta HTTP</span></li>
+        <li><span style="font-family: Verdana;">Criando um servidor HTTP</span></li>
+        <li><span style="font-family: Verdana;">Bloqueio da porta 80</span></li>
+        <li><span style="font-family: Verdana;">Exercício prático</span></li>
+        <li><span style="font-family: Verdana;">Compressão HTTP</span></li>
+        <li><span style="font-family: Verdana;">Comando GET</span></li>
+        <li><span style="font-family: Verdana;">RFC 2616<br>
+          </span></li>
+      </ul>
+    </div>
+    <span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+      <br>
+    </span><span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;"></span></span><br style="font-family: Verdana;">
+    <table style="text-align: left; width: 558px; height: 160px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td><embed style="width: 202px; height: 148px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_003.swf"><br>
+          </td>
+          <td><span style="font-family: Verdana; font-weight: bold;">PROTOCOLO
+              HTTP</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana; font-weight: bold;">
+    <span style="font-family: Verdana;"><br>
+      O objectivo do protocolo HTTP é permitir uma transferência
+      de ficheiros (essencialmente no formato HTML) localizados graças
+      a uma cadeia de caracteres chamada URL entre um navegador (o
+      cliente) e
+      um servidor Web. Resumindo é o protocolo utilizado para você
+      poder visualizar um website.<br>
+      <br>
+      URL = Endereço Virtual exemplo (http://www.insecuritynet.com.br)<br>
+      <br>
+      <span style="font-weight: bold;">Funcionamento do protocolo HTTP</span><br>
+      <br>
+      1-) O cliente (navegador) faz o pedido<br>
+      2-) O servidor responde com os dados<br>
+      <br>
+      <embed style="width: 483px; height: 371px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_007.swf"><br>
+      <br>
+      &nbsp;<span style="font-weight: bold; font-style: italic; color:
+        rgb(0, 153, 0);">PORTA PADRÃO DO PROTOCOLO HTTP:</span><br>
+      &nbsp;<span style="font-weight: bold;">Porta 80</span><br>
+      <br>
+    </span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><br style="font-weight: bold;">
+      <span style="font-weight: bold;">Pedido HTTP</span><br>
+      <br>
+      Andre, o pedido HTTP são os comandos enviados pelo navegador e
+      interpretado pelo servidor, o pedido deve conter:<br>
+    </span><span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">Linha de pedido</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      O método<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      O URL (endereço)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;Versão
+      do protocolo utilizada pelo cliente (navegador)<br>
+      <br>
+      <span style="font-weight: bold;">Os campos de cabeçalho do
+        pedido&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Informações
+      sobre o navegador, sistema operacional, etc.<br>
+      <br>
+      <span style="font-weight: bold;">O corpo do pedido</span> <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Conjunto de
+      linhas opcionais que permitem envio de dados<br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 456px; height: 138px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr style="font-weight: bold;">
+          <td style="background-color: rgb(204, 204, 204);"><span style="font-family: Verdana;">Exemplo de um pedido HTTP</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(204, 204, 204);"><span style="font-family: Verdana;">GET/ HTTP/1.1&nbsp; <br>
+              Accept : text/html&nbsp; <br>
+              If-Modified-Since : Saturday, 15-January-2010 12:25:51
+              GMT&nbsp; <br>
+              User-Agent : Mozilla/4.0 (compatible; MSIE 5.0; Windows
+              98)</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br style="font-weight: bold;">
+      <span style="font-weight: bold;">COMANDOS HTTP</span><br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 487px; height: 111px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">GET</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Pedido do recurso situado na URL especificada</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">HEAD</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Pedido do cabeçalho do recurso situado na URL
+            especificada</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">POST</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Envio de dados ao programa situado na URL
+            especificada</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">PUT</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Envio de dados à URL especificada</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">DELETE</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Supressão do recurso situado na URL especificada</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br>
+      <span style="font-weight: bold;">
+        Rublicas</span><br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 495px; height: 648px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Accept&nbsp; </td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Tipo de conteúdo aceito pelo motor de pesquisa
+            (por exemplo text/HTML).</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Accept-Charset</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Jogo de caracteres esperado pelo motor de pesquisa</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Accept-Encoding</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Codificação de dados aceito pelo motor de pesquisa</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Accept-Language</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Linguagem esperada pelo motor de pesquisa.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Authorization</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Identificação do motor de pesquisa junto do
+            servidor</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Content-Encoding</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Tipo de codificação do corpo do pedido</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Content-Language&nbsp;</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Tipo de linguagem do corpo do pedido</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Content-Length</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Comprimento do corpo do pedido</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Content-Type</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Tipo de conteúdo do corpo do pedido (por exemplo
+            text/HTML).</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Date</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Data de início de transferência dos dados</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Forwarded</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Utilizado pelas máquinas intermédias entre o motor
+            de pesquisa e o servidor</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">From</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Permite especificar o e-mail do cliente</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">From</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Permite especificar que o documento deve ser
+            enviado se tiver sido alterado a partir de uma certa data</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Link</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Relação entre duas URL</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Orig-URL</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">URL de origem do pedido</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Referer</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">URL da ligação a partir da qual o pedido foi
+            efectuado</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">User-Agent</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Cadeia
+            dando informações sobre o cliente, como o nome e a
+            versão do navegador, do sistema de exploração</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br>
+      <br>
+    </span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><br>
+      <span style="font-weight: bold;">RESPOSTA HTTP</span><br>
+      <br>
+      Andre, as respostas HTTP são os comandos e dados enviados de servidor para o
+      navegador.<br>
+      A resposta HTTP deve conter:<br>
+      <br style="font-weight: bold;">
+      <span style="font-weight: bold;">
+        Uma linha de estatuto</span><br>
+      Esta linha determina:<br>
+    </span>
+	<div id="listasx">
+    <ul>
+      <li><span style="font-family: Verdana;">A versão do protocolo
+          utilizado </span></li>
+      <li><span style="font-family: Verdana;">O código de estatuto </span></li>
+      <li><span style="font-family: Verdana;">A significado do código </span></li>
+    </ul></div><br>
+    <span style="font-family: Verdana;"><span style="font-weight: bold;">
+        Os campos de rubrica da resposta</span><br>
+    </span>
+	<div id="listasx">
+    <ul>
+      <li><span style="font-family: Verdana;">
+          Permite o envio de dados do servidor</span></li>
+    </ul>
+    <span style="font-family: Verdana;"><span style="font-weight: bold;"><br>
+        Corpo da resposta</span><br>
+    </span>
+    <ul>
+      <li><span style="font-family: Verdana;">Dados pedidos</span></li>
+    </ul></div><br>
+    <br>
+    <table style="text-align: left; width: 456px; height: 138px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr style="font-weight: bold;">
+          <td style="background-color: rgb(204, 204, 204);"><span style="font-family: Verdana;">Exemplo de resposta HTTP</span></td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(204, 204, 204);"><span style="font-family: Verdana;">HTTP/1.0 200 OK&nbsp; <br>
+              Date : Sat, 15 Jan 2000 14:37:12 GMT&nbsp; <br>
+              Server : Microsoft-IIS/2.0&nbsp; <br>
+              Content-Type : text/HTML&nbsp; <br>
+              Content-Length : 1245&nbsp; <br>
+              Last-Modified : Fri, 14 Jan 2010 09:28:13 GMT</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      Corpo da resposta<br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 511px; height: 256px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Content-Encoding</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Tipo de codificação do corpo da resposta</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Content-Language&nbsp;</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Tipo de linguagem do corpo da resposta</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Content-Length</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Comprimento do corpo da resposta</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Content-Type</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Tipo de conteúdo do corpo da resposta (por exemplo
+            text/HTML).</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Date</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Data de início de transferência dos dados</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Expires</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Data limite de consumo dos dados</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Forwarded</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Utilizado pelas máquinas intermédias entre o motor
+            de pesquisa e o servidor</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Location</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Redireccionamento para uma nova URL associada ao
+            documento</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">Server</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Características do servidor que envia a resposta</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br>
+      <br>
+      <br style="font-weight: bold;">
+      <span style="font-weight: bold;">
+        Códigos de resposta:</span><br>
+      O código de resposta é constituído por três números: o primeiro
+      indica a classe de estatuto e seguintes a
+      natureza&nbsp; do erro.<br>
+      <br>
+    </span>
+    <table style="text-align: left; width: 632px; height: 862px;" cellpadding="2" cellspacing="2" border="0">
+      <tbody>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">10x</td>
+          <td style="background-color: rgb(234, 236, 255); font-style:
+            italic; font-weight: bold; font-family: Verdana;">Mensagem
+            de informação</td>
+          <td style="background-color: rgb(234, 236, 255); font-style:
+            italic; font-weight: bold; font-family: Verdana;">Estes
+            códigos não são utilizados na versão 1.0 do protocolo</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">20x</td>
+          <td style="background-color: rgb(234, 236, 255); font-style:
+            italic; font-weight: bold; font-family: Verdana;">Sucesso</td>
+          <td style="background-color: rgb(234, 236, 255); font-style:
+            italic; font-weight: bold; font-family: Verdana;">Estes
+            códigos indicam o bom desenrolar da transacção</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">200</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">OK</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O pedido foi realizado corretamente</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">201</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">CREATED</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">
+            <p class="niv1">Segue um comando POST indica o sucesso, o
+              corpo do resto do documento deve indicar a<a href="http://pt.kioskea.net/contents/internet/url.php3"></a>
+              URL onde o documento recentemente criado deveria
+              encontrar-se.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">202</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">ACCEPTED</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O pedido foi aceito, mas o procedimento seguinte
+            não foi realizado</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">203</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">PARTIAL INFORMATION</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Quando este código é recebido em resposta a um
+            comando<a href="http://pt.kioskea.net/contents/html/htmlform.php3"></a>
+            GET, isto indica que a resposta não está completa.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">204</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">NO RESPONSE</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O servidor recebeu o pedido mas não há informação
+            a devolver</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">205</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">RESET CONTENT</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O servidor indica ao navegador para suprimir o
+            conteúdo dos campos de um formulário</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">206</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">PARTIAL CONTENT</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Trata-se de uma resposta a um pedido que comporta
+            a rubrica <i>range</i>. O servidor deve indicar a rubrica
+            content-range</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">30x</td>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-style: italic; font-family: Verdana;">Redireção</td>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-style: italic; font-family: Verdana;">Estes
+            códigos indicam que o recurso já não está no lugar indicado</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">301</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">MOVED</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Os dados pedidos foram transferidos para um novo
+            endereço</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">302</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">FOUND</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Os dados pedidos são de uma nova URL, contudo
+            talvez tenham sido deslocados desde então</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">303</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">METHOD</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Isto
+            implica que o cliente deve tentar um novo endereço, tentando
+            preferivelmente um outro método além do GET</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">304</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">NOT MODIFIED</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">Se o cliente efectuar um comando GET condicional
+            (perguntando se o documento foi alterado desde a última vez)
+            e se o documento não tiver sido alterado, devolve este
+            código.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">40x</td>
+          <td style="background-color: rgb(234, 236, 255); font-style:
+            italic; font-weight: bold; font-family: Verdana;">Erro
+            devido ao cliente </td>
+          <td style="background-color: rgb(234, 236, 255); font-style:
+            italic; font-weight: bold; font-family: Verdana;">Estes
+            códigos indicam que o pedido está incorrecto</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">400</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">BAD REQUEST</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A sintaxe do pedido está mal formulada ou é
+            impossível de satisfazer</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">401</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">UNAUTHORIZED</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O parâmetro da mensagem dá as especificações das
+            formas de autorização aceitáveis. O cliente deve reformular
+            o seu pedido com os bons dados de autorização</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">402</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">PAYMENT REQUIRED</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O cliente deve reformular o seu pedido com os
+            dados de pagamento</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">403</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">FORBIDDEN</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O acesso ao recurso é simplesmente proibido</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">404</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">NOT FOUND</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O servidor não encontrou nada no endereço
+            indicado.</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">50x</td>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-style: italic; font-family: Verdana;">Erro devido
+            ao servidor</td>
+          <td style="background-color: rgb(234, 236, 255); font-weight:
+            bold; font-style: italic; font-family: Verdana;">Estes
+            códigos indicam que houve um erro interno do servidor</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">500</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">INTERNAL ERROR</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O servidor encontrou uma condição inesperada que o
+            impediu de satisfazer o pedido</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">501</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">NOT IMPLEMENTED</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O servidor não suporta o serviço pedido</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">502</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">BAD GATEWAY</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O servidor recebeu uma resposta inválida por parte
+            do servidor que tentava aceder agindo como uma ponte
+            estreita ou um proxy</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">503</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">SERVICE UNAVAILABLE</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">O servidor não pode responder-lhe no momento
+            presente, porque o tráfego é demasiado denso</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana; font-weight: bold;">504</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">GATEWAY TIMEOUT</td>
+          <td style="background-color: rgb(234, 236, 255); font-family:
+            Verdana;">A resposta do servidor foi demasiado longa no que
+            diz respeito ao tempo durante o qual a ponte estreita estava
+            preparada para o esperar</td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-family: Verdana;"><br>
+      <br>
+      <br>
+    </span><span style="font-family: Verdana;"><br>
+      <br>
+      <a style="color: rgb(0, 0, 255);" href="http://insecuritynet.com.br/cursos/cursos_onlines/ascd/aula_ascd_17/RFC_2616.txt" target="_blank"></a></span><span style="font-family: Verdana;
+      font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"> <br style="font-weight: bold;">
+      <span style="font-weight: bold;">Criando um servidor HTTP em seu
+        computador.</span><br>
+      <br>
+      O Insecuritynet 3.X possui um simples HTTP server para você
+      hospedar pequenas paginas em HTML em seu computador.<br>
+      &nbsp;<br>
+      &nbsp;Vamos abrir o servidor, entre em:<br>
+      &nbsp;Iniciar -&gt; servidores -&gt; HTTP<br>
+      &nbsp; <br>
+      &nbsp;Entre em "Abrir Diretório"<br>
+      &nbsp; <br>
+      &nbsp;<embed style="width: 611px; height: 383px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_001.swf"><br>
+      <br>
+      &nbsp; Automaticamente vai abrir uma pasta.<br>
+      &nbsp; <br>
+      &nbsp; Copie seu site para esta Pasta.<br>
+      &nbsp;&nbsp;<span style="font-weight: bold; color: rgb(204, 0,
+        0);">Importante:</span> A pagina inicial deve conter o nome: <span style="font-weight: bold;">index.html</span><br>
+      &nbsp; &nbsp;<br>
+      &nbsp; Caso você não possua nenhum site pronto, <a style="color:
+        rgb(0, 0, 255);" href="http://insecuritynet.com.br/cursos/cursos_onlines/ascd/aula_ascd_17/exemplo_de_pagina.rar">clique aqui</a> e
+      baixe este exemplo. (Senha:1234)<br>
+      &nbsp; &nbsp; <br>
+      &nbsp; &nbsp;<embed style="width: 619px; height: 306px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_006.swf"><br>
+      <br>
+      &nbsp; &nbsp;Agora vamos Iniciar o Servidor (Colocar a pagina no
+      ar)<br>
+      <br>
+      &nbsp; &nbsp;No servidor entre em: Iniciar servidor<br>
+      &nbsp; &nbsp;<br>
+      &nbsp; &nbsp; <embed style="width: 179px; height: 218px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_004.swf"><br>
+      <br>
+      &nbsp; &nbsp; Eles está OFF, após iniciar observe:<br>
+      &nbsp; &nbsp; <br>
+      &nbsp; &nbsp; <embed style="width: 620px; height: 390px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_012.swf"><br>
+      <br>
+      &nbsp; &nbsp; &nbsp;Server ON<br>
+      &nbsp; &nbsp; &nbsp;Endereço: http://192.168.137.8:8085 <br>
+      &nbsp; &nbsp; &nbsp;(O endereço do site será seu IP e a porta
+      configurada)<br>
+      <br>
+      &nbsp; &nbsp; Automaticamente o servidor será aberto em outra
+      janela (não feche esta janela, pois é o servidor ativo)<br>
+      &nbsp; &nbsp; <br>
+      &nbsp; &nbsp; <embed style="width: 620px; height: 237px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_011.swf"><br>
+      <br>
+      &nbsp; &nbsp; &nbsp;Agora vá ate seu navegador e Digite o Endereço
+      de seu site:<br>
+      <br>
+      &nbsp; &nbsp; &nbsp;<embed style="width: 488px; height: 373px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_013.swf"><br>
+      <br>
+      &nbsp;Observe que o servidor registra as as arquivos requeridos na
+      visualização do site:<br>
+      <br>
+      &nbsp;<embed style="width: 439px; height: 250px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_010.swf"><br>
+      <br>
+      &nbsp; Para fechar o servidor basta fechar esta janela do Prompt
+      "HTTP SERVER".<br>
+      <br style="font-weight: bold;">
+      <span style="font-weight: bold;">&nbsp; (Bloqueio da porta 80)
+        Sobre a porta utilizada.</span><br>
+      <br>
+      &nbsp; &nbsp;A porta padrão para HTTP é a porta 80, porem na
+      experiência utilizamos a porta 8085.<br>
+      &nbsp; &nbsp;Por motivos de segurança e banda de tráfego,
+      vários provedores de Internet bloqueiam a porta 80, sendo assim
+      voce nao pode hospedar um servidor HTTP em seu computador e
+      disponibilizar na Internet.<br>
+      &nbsp; &nbsp;Utilizando outra porta (por exemplo: 8085) seu
+      provedor
+      não irá bloquear e você poderá colocar sua pagina
+      no ar. <br>
+      &nbsp; &nbsp;Importante: Para sua pagina estar no ar, você deve se
+      certificar que seu IP não é NAT, ou seja, válido na Internet.
+      &nbsp;É o mesmo processo de se hospedar um servidor de
+      jogo.<br>
+      &nbsp; &nbsp;Este servidor do Insecuritynet é apenas didático,
+      sem maiores funções, você poderá apenas
+      hospedar seu site em formato HTML e arquivos para downloads. Noa
+      tem
+      suporte para PHP, ASP, etc.<br>
+      &nbsp; &nbsp;Caso voce deixe seu servidor online na Internet você
+      poderá visualizar os LOGs de conexões, entre em:<br>
+      &nbsp; &nbsp;...Meus documentos\Insecuritynet\LOGS\http_server.log<br>
+      <br>
+      &nbsp; <embed style="width: 625px; height: 356px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_005.swf"><br>
+      <br>
+      <br>
+    </span><span style="font-family: Verdana; font-weight: bold;">
+      <div id="barra"></div>
+    </span><br>
+    <span style="font-family: Verdana;"><br>
+      &nbsp;<span style="font-weight: bold;"> Exercício prático</span><br>
+      <br>
+      &nbsp; &nbsp;Vamos conectar em um servidor HTML e enviar os
+      comandos utilizando o protocolo HTTP.<br>
+      &nbsp; &nbsp; <br>
+      &nbsp;
+      Não vamos utilizar o navegador para conecar no site, apenas o
+      Prompt de comando e o protocolo HTTP.<br>
+      &nbsp;Abra o Prompt de comando e digite:<br>
+      &nbsp;<span style="font-weight: bold;">telnet www.google.com 80</span><br>
+      &nbsp;tecle enter.<br>
+      <br>
+      Agora vamos simular um navegador (firefox) fazendo um PEDIDO HTTP<br>
+      &nbsp;<br style="font-weight: bold; font-style: italic; color:
+        rgb(0, 102, 0);">
+      <span style="font-weight: bold; font-style: italic; color: rgb(0,
+        102, 0);">Copie o código abaixo e cole na janela de sua conexão</span><br>
+      <br>
+    </span><span style="font-family: Verdana;"><span style="font-weight:
+        bold;">GET / HTTP/1.1</span><br style="font-weight: bold;">
+      <span style="font-weight: bold;">Host: 127.0.0.1</span><br style="font-weight: bold;">
+      <span style="font-weight: bold;">User-Agent: Mozilla/5.0 (Windows;
+        U; Windows NT 5.1; pt-BR; rv:1.9.2.8) Gecko/20</span><br style="font-weight: bold;">
+      <span style="font-weight: bold;">100722 Firefox/3.6.8</span><br style="font-weight: bold;">
+      <span style="font-weight: bold;">Accept:
+        text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span><br style="font-weight: bold;">
+      <span style="font-weight: bold;">Accept-Language:
+        pt-br,pt;q=0.8,en-us;q=0.5,en;q=0.3</span><br style="font-weight: bold;">
+      <span style="font-weight: bold;">Accept-Charset:
+        ISO-8859-1,utf-8;q=0.7,*;q=0.7</span><br style="font-weight:
+        bold;">
+      <span style="font-weight: bold;">Keep-Alive: 115</span><br style="font-weight: bold;">
+      <span style="font-weight: bold;">Connection: keep-alive</span><br>
+      <br>
+      Cole na janela do prompt (Botão direito do mouse -&gt; colar)<br>
+      &nbsp;<br>
+      Tecle enter (3 vezes)<br>
+      <br>
+      Observe<br>
+      <br>
+      <embed style="width: 663px; height: 552px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_009.swf"><br>
+    </span><span style="font-family: Verdana;"><br>
+      Agora vamos pedir para o servidor mandar os dados codificados.<br>
+    </span><span style="font-family:
+        Verdana;">"Accept-Encoding: gzip,deflate"</span><br>
+      <span style="font-family: Verdana;"><br>
+        Conecte novamente no servidor e envie os seguinte código:<br>
+        <br>
+      </span><span style="font-family:
+          Verdana;">GET / HTTP/1.1<br>
+          Host: 127.0.0.1<br>
+          User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; pt-BR;
+          rv:1.9.2.8) Gecko/20<br>
+          100722 Firefox/3.6.8<br>
+          Accept:
+          text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<br>
+          Accept-Language: pt-br,pt;q=0.8,en-us;q=0.5,en;q=0.3<br>
+          <span style="color: rgb(204, 0, 0);">Accept-Encoding:
+            gzip,deflate</span><br>
+          Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7<br>
+          Keep-Alive: 115<br>
+          Connection: keep-alive</span><br>
+        <span style="font-family: Verdana;"><br>
+          Observe que o HTML foi todo codificado.<span style="font-weight: bold;"><br>
+            <br>
+            <embed style="width: 663px; height: 559px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/img_008.swf"><br>
+          </span></span><span style="font-family: Verdana; font-weight:
+          bold;"> </span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+        <br>
+        IMPORTANTE:<br>
+        <span style="font-weight: bold; font-family: Verdana; color:
+          rgb(255, 0, 0);">A explicaçao de cada comando utilizado no
+          exercício estão nas tabelas acima (comandos e rublicas)</span><br>
+        <br style="font-family: Verdana; font-weight: bold;">
+        <big style="font-weight: bold;"><span style="font-family:
+            Verdana;"></span><span style="font-family: Verdana;
+            font-weight: bold;">
+            <div id="barra"></div>
+          </span><br>
+          <span style="font-family: Verdana; font-weight: bold;">COMPRESSÃO
+            HTTP <br></span></big>
+            <br>
+            PORQUE CODIFICAR em GZIP?<br style="font-family:
+            Verdana;">
+          <span style="font-family: Verdana;">Ao contrario do que parece
+            não é por motivos de segurança, mas sim de desempenho.<br>
+            O GZIP nada mais é do que uma compressão, é como se
+            comptáctassemos um arquivo no Winrar ou Winzip.<br>
+            O tamanho de <span style="font-weight: bold;">arquivo de
+              texto </span>fica
+            muito menor, um código HTML nada mais é do que uma sequência
+            de
+            comandos em modo texto, portanto sua compressão irá
+            reduzir muito seu tamanho.<br>
+            &nbsp;Para que esta compressão seja possível, o servidor
+            deve
+            compactar o código e o navegador deve "descompactar". Isto
+            não envolve
+            segurança porque os dados podem ser facilmente
+            decodificados,
+            mas proporciona uma enorme economia de tempo e largura de
+            banda na web,
+            a economia media varia entre 60 1.677354e-307 85<br>
+            <br>
+          </span><span style="font-family: Verdana; font-weight: bold;">
+            <div id="barra"></div>
+          </span><br>
+          <span style="font-family: Verdana;"><br style="font-weight:
+              bold;">
+            <span style="font-weight: bold;">COMANDO GET</span><br>
+            <br>
+            O GET permite a navegação no site:<br>
+            <br>
+            Conecte novamente no google e envie este código:<br>
+            <br>
+            <span style="font-weight: bold;"><span style="color:
+                rgb(255, 0, 0);">GET /language_tools</span> HTTP/1.1</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">Host: 127.0.0.1</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">User-Agent: Mozilla/5.0
+              (Windows; U; Windows NT 5.1; pt-BR; rv:1.9.2.8) Gecko/20</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">100722 Firefox/3.6.8</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">Accept:
+              text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">Accept-Language:
+              pt-br,pt;q=0.8,en-us;q=0.5,en;q=0.3</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">Accept-Charset:
+              ISO-8859-1,utf-8;q=0.7,*;q=0.7</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">Keep-Alive: 115</span><br style="font-weight: bold;">
+            <span style="font-weight: bold;">Connection: keep-alive</span><br>
+            <br style="font-family: Verdana;">
+          </span> <span style="font-family: Verdana;">&nbsp;</span><span style="font-family: Verdana; font-weight: bold;">
+            <div id="barra"></div>
+          </span><br>
+          <span style="font-family: Verdana;"><br>
+            Veja a documentação completa do protocolo HTTP<br>
+            <br style="font-family: Verdana;">
+          </span>
+          <table style="text-align: left; width: 344px; height: 63px;" cellpadding="2" cellspacing="2" border="0">
+            <tbody>
+              <tr>
+                <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana; font-weight: bold;">Documento
+                    RFC 2616</span></td>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(234, 236, 255);"><span style="font-family: Verdana;">Maiores informações
+                    sobre o protocolo HTTP<br>
+                    <a style="color: rgb(0, 0, 255);" href="http://insecuritynet.com.br/cursos/cursos_onlines/ascd/aula_ascd_17/RFC_2616.txt" target="_blank">Clique aqui.</a></span></td>
+              </tr>
+            </tbody>
+          </table>
+          <br style="font-family: Verdana;">
+          <span style="font-family: Verdana;">&nbsp;</span><small style="font-family: Verdana;"><span style="font-weight:
+              bold;"></span><small style="font-family: Verdana;"><br>
+              <br>
+              <small style="font-family: Verdana;"><br>
+                <span style="font-family: Verdana; font-weight: bold;">
+                  <div id="barra"></div>
+                </span><br style="font-family: Verdana;">
+              </small></small></small>
+ <!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="17" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="bc10f2374717387b560b8375425c9a5a" type="hidden">
+
+<b>1-) Qual a porta padrão para servidores HTTP?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>21 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>110 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>8080</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>80 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>15 </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) O que é resposta HTTP?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>São os comandos e dados enviados de servidor para o navegador </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Resposta do navegador </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>É o endereço que digitamos no navegador</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>É quando enviamos um formulário </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) O que significa a resposta “404”?<br>
+<br>
+</b>
+<table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O servidor não encontrou nada no endereço indicado. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O pedido foi realizado corretamente </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O servidor não suporta o serviço pedido</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>O acesso ao recurso é simplesmente proibido. </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2017_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" cellpadding="2" cellspacing="2" border="0">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="17" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2017_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>

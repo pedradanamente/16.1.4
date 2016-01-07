@@ -1,0 +1,1406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Curso ASCD - Aula  11</title>
+<link rel="stylesheet" href="Curso%20ASCD%20-%20Aula%2011_arquivos/curso_inet.css" type="text/css">
+
+</head>
+<body>
+<style type="text/css">
+	body { background-image: url("../images_fixas/01-fundo_clean.jpg");
+	                 
+     
+      background-attachment: fixed;
+	
+	}
+</style>
+
+<div id="tudo2">
+<div id="conteudo">
+<p>
+
+</p><div id="reader">
+<center>
+<img style="border: 0px solid ; width: 794px; height: 200px;" alt="" src="Curso%20ASCD%20-%20Aula%2011_arquivos/projeto_reader_ascd.png"><br>
+</center>
+</div>
+
+
+
+<div id="login">
+
+<center>
+Arquitetura e Segurança em Comunicação de Dados
+</center>
+<br>
+<table style="text-align: left; width: 735px; height: 140px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td><img style="border: 0px solid ; width: 96px; height: 151px;" alt="" src="Curso%20ASCD%20-%20Aula%2011_arquivos/box_ascd_p.png"></td>
+      <td>
+      <form method="post" action="index.php?aut=bbfc6fc8a67e6c1b5455a192c5b944dc&amp;cont=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==">
+        <table style="text-align: left; width: 186px; height: 72px;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="font-family: Verdana;">Aula:</td>
+              <td style="font-family: Verdana;">11 de 48</td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Login:</td>
+              <td style="font-family: Verdana;"><input name="login" size="30" maxlenght="10" type="login"></td>
+            </tr>
+            <tr>
+              <td style="font-family: Verdana;">Pass:</td>
+              <td style="font-family: Verdana;"><input name="pass" value="" size="30" maxlenght="10" type="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input value=" Enviar " type="submit"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+      <td>
+      <div style="text-align: right;"><br style="font-family: Verdana;">
+      </div>
+      <img style="border: 0px solid ; width: 42px; height: 80px;" alt="" src="Curso%20ASCD%20-%20Aula%2011_arquivos/spacer.gif"></td>
+      <td>
+      <div style="text-align: right;"><small>&nbsp; &nbsp;
+Obrigado
+por participar de nosso curso.<br>
+Qualquer dúvida estamos à sua
+disposição.<br></small>
+      </div>
+      <br style="font-family: Verdana;">
+      <div style="text-align: right;"><small>Atenciosamente<br style="font-family: Verdana;">
+Equipe Insecuritynet<br></small>
+      <br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="logon">
+<center>
+Andre  26/03/2014 05:59  Brasil <br><i>Para concluir a aula responda o questionario no final desta página</i>
+</center>
+</div>
+
+<div style="text-align: right;">
+<br>
+<a href="http://insecuritynet.com.br/cursos/pesquisas/pesquisa_cursos_on.php?id_1=QW5kcmU=&amp;id_2=YW5kcmVlZWVtYWNoYWRvQGdtYWlsLmNvbQ==&amp;id_3=YXNjZF9vbg==&amp;id_4=aW5ldA==&amp;id_5=2869a3dd31b16f61a1ecdb9c5939c746" target="_blank"><img style="border: 0px solid ; width: 244px; height: 105px;" alt="Participe de nossa pesquisa" src="Curso%20ASCD%20-%20Aula%2011_arquivos/pesquisa_link.png"></a>
+<br>
+</div>
+
+
+<div id="aula">
+<!-- INIAULA -->
+
+<span style="font-weight: bold; color: rgb(204, 0, 0);">
+AULA Nº 11</span><br><br>
+<div id="listasx"><ul>
+
+  <li><span style="font-family: Verdana;">Estrutura
+binária de dados</span></li>
+
+  <li><span style="font-family: Verdana;">Caracteres</span></li>
+
+  <li><span style="font-family: Verdana;">Bytes
+e Bits</span></li>
+
+  <li><span style="font-family: Verdana;">Tabela
+ASCII</span></li>
+
+  <li><span style="font-family: Verdana;">Matemática
+Binária<br>
+
+    </span></li>
+
+  <li>Conversões<br>
+
+  </li>
+
+  <li><span style="font-family: Verdana;">Modo
+texto e Modo binário<br>
+
+    </span></li>
+
+</ul></div>
+
+<div id="listasx"><ul>
+
+</ul></div>
+
+<div align="justify"><span>&nbsp;&nbsp;</span><span></span>
+<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+</span><span style="font-family: Verdana;"><br>
+
+<span style="font-weight: bold;"></span></span><br style="font-family: Verdana;">
+
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td><img style="width: 116px; height: 99px;" alt="" src="Curso%20ASCD%20-%20Aula%2011_arquivos/binary3.jpg"></td>
+
+      <td><span style="font-family: Verdana; font-weight: bold;">ESTRUTURA
+BINÁRIA DE DADOS</span></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+ <span style="font-family: Verdana;">&nbsp;</span><br style="font-family: Verdana; font-weight: bold;">
+
+<span style="font-family: Verdana;">&nbsp;O
+conteúdo desta aula será utilizado futuramente
+nas aulas sobre criptografia.<br>
+
+&nbsp;Dados podem sem o conteúdo de um arquivo ou
+também bits trafegando na rede.<br>
+
+&nbsp;É de extrema importância que
+você conheça a estrutura para análise
+de códigos encriptados e transmissão de dados de
+forma segura.<span style="font-weight: bold;"><br>
+
+<br>
+
+CARACTERES </span><br>
+
+<br>
+
+Caractere (em informática) é o nome que se
+dá a cada um dos símbolos que se pode usar para
+produzir um programa ou arquivo de computador.<br>
+
+Por exemplo, um arquivo de texto:<br>
+
+<br>
+
+<img style="width: 234px; height: 118px;" alt="" src="Curso%20ASCD%20-%20Aula%2011_arquivos/texto_file.jpg"><br>
+
+&nbsp;<br>
+
+Neste exemplo temos os seguintes caracteres (t,e,s,t,e,&nbsp;
+,c,u,r,s,o,&nbsp; ,a,b,c,d).<br>
+
+O “espaço” também
+é um caractere.<br>
+
+<br>
+
+Um caractere equivale à um BYTE.<br>
+
+<br>
+
+Os bytes representam todas as letras (maiúsculas e
+minúsculas), sinais de pontuação,
+acentos, caracteres especiais e até
+informações que não podemos ver, mas
+que servem para comandar o computador e que podem inclusive ser
+enviados pelo teclado ou por outro dispositivo de entrada de dados e
+instruções.<br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana;"><br>
+
+<span style="font-weight: bold;">BYTES
+e BITS</span><br>
+
+<br>
+
+<span style="font-weight: bold;">BIT</span><br>
+
+Os computadores "entendem" impulsos elétricos, positivos ou
+negativos, que são representados por 1 ou 0,
+respectivamente. A cada impulso elétrico, damos o nome de
+bit (BInary digiT).<br>
+
+<br>
+
+<span style="font-weight: bold;">BYTE</span><br>
+
+Um byte é um conjunto de 8 bits.<br>
+
+Os bytes representam todas as letras (maiúsculas e
+minúsculas), sinais de pontuação,
+acentos, caracteres especiais e até
+informações que não podemos ver, mas
+que servem para comandar o computador e que podem inclusive ser
+enviados pelo teclado ou por outro dispositivo de entrada de dados e
+instruções.<br>
+
+<br>
+
+NUMERO DE CARACTERES.<br>
+
+<br>
+
+Se um byte é formado por apenas 8 Bitis, temos um limite
+máximo de quantidade de possíveis bytes.<br>
+
+<br>
+
+</span>
+<table style="text-align: left; width: 26px; height: 20px;" border="0" cellpadding="2" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+      <td>&nbsp; &nbsp;8</td>
+
+    </tr>
+
+    <tr>
+
+      <td>2</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<span style="font-family: Verdana;"><br>
+
+2 X 2 X 2 X 2 X 2 X 2 X 2 = 256<br>
+
+<br>
+
+Portanto temos 256 símbolos diferentes para formar toda a
+estrutura de arquivos.<br>
+
+<br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"></span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br><br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;">TABELA
+ASCII<br>
+
+</span><span style="font-family: Verdana;"><br>
+
+NA tabela ASCII (American Standard Code for Information Interchange),
+cada byte representa um caractere ou um sinal.<br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;">Caracteres
+Imprimíveis</span><br>
+
+<span style="font-family: Verdana;"><br>
+
+</span><span style="font-family: Verdana;">0010
+0000&nbsp;&nbsp;&nbsp; </span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+0001&nbsp;&nbsp;&nbsp; !</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+0010&nbsp;&nbsp;&nbsp; "</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+0011&nbsp;&nbsp;&nbsp; #</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+0100&nbsp;&nbsp;&nbsp; $</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+0101&nbsp;&nbsp;&nbsp; %</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+0110&nbsp;&nbsp;&nbsp; &amp;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+0111&nbsp;&nbsp;&nbsp; '</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+1000&nbsp;&nbsp;&nbsp; (</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+1001&nbsp;&nbsp;&nbsp; )</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+1010&nbsp;&nbsp;&nbsp; *</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+1011&nbsp;&nbsp;&nbsp; +</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+1100&nbsp;&nbsp;&nbsp; ,</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+1101&nbsp;&nbsp;&nbsp; -</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+1110&nbsp;&nbsp;&nbsp; .</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0010
+1111&nbsp;&nbsp;&nbsp; /</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+0000&nbsp;&nbsp;&nbsp; 0</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+0001&nbsp;&nbsp;&nbsp; 1</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+0010&nbsp;&nbsp;&nbsp; 2</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+0011&nbsp;&nbsp;&nbsp; 3</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+0100&nbsp;&nbsp;&nbsp; 4</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+0101&nbsp;&nbsp;&nbsp; 5</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+0110&nbsp;&nbsp;&nbsp; 6</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+0111&nbsp;&nbsp;&nbsp; 7</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+1000&nbsp;&nbsp;&nbsp; 8</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+1001&nbsp;&nbsp;&nbsp; 9</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+1010&nbsp;&nbsp;&nbsp; :</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+1011&nbsp;&nbsp;&nbsp; ;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+1100&nbsp;&nbsp;&nbsp; &lt;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+1101&nbsp;&nbsp;&nbsp; =</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+1110&nbsp;&nbsp;&nbsp; &gt;</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0011
+1111&nbsp;&nbsp;&nbsp; ?</span><br>
+
+<span style="font-family: Verdana;">0100
+0000&nbsp;&nbsp;&nbsp; @</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+0001&nbsp;&nbsp;&nbsp; A</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+0010&nbsp;&nbsp;&nbsp; B</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+0011&nbsp;&nbsp;&nbsp; C</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+0100&nbsp;&nbsp;&nbsp; D</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+0101&nbsp;&nbsp;&nbsp; E</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+0110&nbsp;&nbsp;&nbsp; F</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+0111&nbsp;&nbsp;&nbsp; G</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+1000&nbsp;&nbsp;&nbsp; H</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+1001&nbsp;&nbsp;&nbsp; I</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+1010&nbsp;&nbsp;&nbsp; J</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+1011&nbsp;&nbsp;&nbsp; K</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+1100&nbsp;&nbsp;&nbsp; L</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+1101&nbsp;&nbsp;&nbsp; M</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+1110&nbsp;&nbsp;&nbsp; N</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0100
+1111&nbsp;&nbsp;&nbsp; O</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+0000&nbsp;&nbsp;&nbsp; P</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+0001&nbsp;&nbsp;&nbsp; Q</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+0010&nbsp;&nbsp;&nbsp; R</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+0011&nbsp;&nbsp;&nbsp; S</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+0100&nbsp;&nbsp;&nbsp; T</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+0101&nbsp;&nbsp;&nbsp; U</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+0110&nbsp;&nbsp;&nbsp; V</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+0111&nbsp;&nbsp;&nbsp; W</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+1000&nbsp;&nbsp;&nbsp; X</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+1001&nbsp;&nbsp;&nbsp; Y</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+1010&nbsp;&nbsp;&nbsp; Z</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+1011&nbsp;&nbsp;&nbsp; [</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+1100&nbsp;&nbsp;&nbsp; \</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+1101&nbsp;&nbsp;&nbsp; ]</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+1110&nbsp;&nbsp;&nbsp; ^</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0101
+1111&nbsp;&nbsp;&nbsp; _</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+0000&nbsp;&nbsp;&nbsp; `</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+0001&nbsp;&nbsp;&nbsp; a</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+0010&nbsp;&nbsp;&nbsp; b</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+0011&nbsp;&nbsp;&nbsp; c</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+0100&nbsp;&nbsp;&nbsp; d</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+0101&nbsp;&nbsp;&nbsp; e</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+0110&nbsp;&nbsp;&nbsp; f</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+0111&nbsp;&nbsp;&nbsp; g</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+1000&nbsp;&nbsp;&nbsp; h</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+1001&nbsp;&nbsp;&nbsp; i</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+1010&nbsp;&nbsp;&nbsp; j</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+1011&nbsp;&nbsp;&nbsp; k</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+1100&nbsp;&nbsp;&nbsp; l</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+1101&nbsp;&nbsp;&nbsp; m</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+1110&nbsp;&nbsp;&nbsp; n</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0110
+1111&nbsp;&nbsp;&nbsp; o</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+0000&nbsp;&nbsp;&nbsp; p</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+0001&nbsp;&nbsp;&nbsp; q</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+0010&nbsp;&nbsp;&nbsp; r</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+0011&nbsp;&nbsp;&nbsp; s</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+0100&nbsp;&nbsp;&nbsp; t</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+0101&nbsp;&nbsp;&nbsp; u</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+0110&nbsp;&nbsp;&nbsp; v</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+0111&nbsp;&nbsp;&nbsp; w</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+1000&nbsp;&nbsp;&nbsp; x</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+1001&nbsp;&nbsp;&nbsp; y</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+1010&nbsp;&nbsp;&nbsp; z</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+1011&nbsp;&nbsp;&nbsp; {</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+1100&nbsp;&nbsp;&nbsp; |</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">0111
+1101&nbsp;&nbsp;&nbsp; }</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana; font-weight: bold;"><br>
+
+Caracteres não Imprimíveis<br>
+
+<br>
+
+</span><span style="font-family: Verdana;">Andre, nem todos os caracteres
+são imprimíveis, ou seja, podem ser visualizado.
+Alguns caracteres são apenas um dado que não
+podemos ver na tela do computador.<br>
+
+<br>
+
+0000 0000&nbsp;&nbsp;&nbsp;
+NUL&nbsp;&nbsp;&nbsp; Null - Nulo<br>
+
+0000 0001&nbsp;&nbsp;&nbsp;
+SOH&nbsp;&nbsp;&nbsp; Start of Header - Início
+do cabeçalho<br>
+
+0000 0010&nbsp;&nbsp;&nbsp;
+STX&nbsp;&nbsp;&nbsp; Start of Text - Início do
+texto<br>
+
+0000 0011&nbsp;&nbsp;&nbsp;
+ETX&nbsp;&nbsp;&nbsp; End of Text - Fim do texto<br>
+
+0000 0100&nbsp;&nbsp;&nbsp;
+EOT&nbsp;&nbsp;&nbsp; End of Tape - Fim de fita<br>
+
+0000 0101&nbsp;&nbsp;&nbsp;
+ENQ&nbsp;&nbsp;&nbsp; Enquire - Interroga identidade do
+terminal<br>
+
+0000 0110&nbsp;&nbsp;&nbsp;
+ACK&nbsp;&nbsp;&nbsp; Acknowledge - Reconhecimento<br>
+
+0000 0111&nbsp;&nbsp;&nbsp;
+BEL&nbsp;&nbsp;&nbsp; Bell - Campainha<br>
+
+0000 1000&nbsp;&nbsp;&nbsp;
+BS&nbsp;&nbsp;&nbsp; Back-space - Espaço
+atrás<br>
+
+0000 1001&nbsp;&nbsp;&nbsp;
+HT&nbsp;&nbsp;&nbsp; Horizontal Tabulation -
+Tabulação horizontal<br>
+
+0000 1010&nbsp;&nbsp;&nbsp;
+LF&nbsp;&nbsp;&nbsp; Line-Feed - Alimenta linha<br>
+
+0000 1011&nbsp;&nbsp;&nbsp;
+VT&nbsp;&nbsp;&nbsp; Vertical Tabulation -
+Tabulação vertical<br>
+
+0000 1100&nbsp;&nbsp;&nbsp;
+FF&nbsp;&nbsp;&nbsp; Form-Feed - Alimenta
+formulário<br>
+
+0000 1101&nbsp;&nbsp;&nbsp;
+CR&nbsp;&nbsp;&nbsp; Carriage-Return - Retorno do carro
+(enter)<br>
+
+0000 1110&nbsp;&nbsp;&nbsp;
+SO&nbsp;&nbsp;&nbsp; Shift-Out - Saída do
+shift&nbsp;<br>
+
+0000 1111&nbsp;&nbsp;&nbsp;
+SI&nbsp;&nbsp;&nbsp; Shift-In - Entrada no shift<br>
+
+0001 0000&nbsp;&nbsp;&nbsp;
+DLE&nbsp;&nbsp;&nbsp; Data-Link Escape<br>
+
+0001 0001&nbsp;&nbsp;&nbsp;
+DC1&nbsp;&nbsp;&nbsp; Device-Control 1<br>
+
+0001 0010&nbsp;&nbsp;&nbsp;
+DC2&nbsp;&nbsp;&nbsp; Device-Control 2<br>
+
+0001 0011&nbsp;&nbsp;&nbsp;
+DC3&nbsp;&nbsp;&nbsp; Device-Control 3<br>
+
+0001 0100&nbsp;&nbsp;&nbsp;
+DC4&nbsp;&nbsp;&nbsp; Device-Control 4<br>
+
+0001 0101&nbsp;&nbsp;&nbsp;
+NAK&nbsp;&nbsp;&nbsp; Neg-Acknowledge -
+Não-reconhecimento<br>
+
+0001 0110&nbsp;&nbsp;&nbsp;
+SYN&nbsp;&nbsp;&nbsp; Synchronous Idle<br>
+
+0001 0111&nbsp;&nbsp;&nbsp;
+ETB&nbsp;&nbsp;&nbsp; End-of-Transmission Block<br>
+
+0001 1000&nbsp;&nbsp;&nbsp;
+CAN&nbsp;&nbsp;&nbsp; Cancel<br>
+
+0001 1001&nbsp;&nbsp;&nbsp;
+EM&nbsp;&nbsp;&nbsp; End-Of-Medium<br>
+
+0001 1010&nbsp;&nbsp;&nbsp;
+SUB&nbsp;&nbsp;&nbsp; Substitute<br>
+
+0001 1011&nbsp;&nbsp;&nbsp;
+ESC&nbsp;&nbsp;&nbsp; Escape<br>
+
+0001 1100&nbsp;&nbsp;&nbsp;
+FS&nbsp;&nbsp;&nbsp; File Separator<br>
+
+0001 1101&nbsp;&nbsp;&nbsp;
+GS&nbsp;&nbsp;&nbsp; Group Separator<br>
+
+0001 1110&nbsp;&nbsp;&nbsp;
+RS&nbsp;&nbsp;&nbsp; Record Separator<br>
+
+0001 1111&nbsp;&nbsp;&nbsp;
+US&nbsp;&nbsp;&nbsp; Unit Separator<br>
+
+0111 1111&nbsp;&nbsp;&nbsp;
+DEL&nbsp;&nbsp;&nbsp; Delete<br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><br>
+
+<br>
+
+</span><span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br>
+
+<span style="font-family: Verdana; font-weight: bold;"><br>
+
+Matemática Binária<br>
+
+<br>
+
+</span><span style="font-family: Verdana;"><span style="font-family: Verdana;">Cada byte (conjunto de 8 bits)
+representa um numero decimal.</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">Não
+confunda este numero decimal com o caractere visível
+correspondente.<br>
+
+<br>
+
+</span></span>
+<table style="text-align: left; width: 309px; height: 206px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);">BYTE</td>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);"><br>
+
+      </td>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);">Binary</td>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);"><br>
+
+      </td>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);">Decimal</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0000
+0000</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0000
+0001</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">1</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">1</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0000
+0010</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">10</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">2</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0000
+0011</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">11</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">3</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0000
+0100</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">100</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">4</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">...</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);"><br>
+
+      </td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);"><br>
+
+      </td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);"><br>
+
+      </td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);"><br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">1111
+1111</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">11111111</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">255</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<span style="font-family: Verdana;"><span style="font-family: Verdana;"><br>
+
+</span></span><span style="font-family: Verdana; font-weight: bold;"><br>
+
+Conversor: Decimal -&gt; Binário<br>
+
+</span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<b>Digite um número Decimal: </b><input name="deci" id="deci" size="15" maxlength="15" type="text"> <input value="Convert!" onclick="dec2bin()" type="button"><br>
+
+<br>
+
+
+<div id="result"></div>
+
+
+<script type="text/javascript">
+function dec2bin() {
+var x = document.getElementById("deci").value;
+if ((/[^0-9]/g.test(x)) || x == "") {
+alert ("Entre com um numero Decimal");
+document.getElementById("deci").value = "";
+document.getElementById("deci").focus();
+return false;
+}
+x = parseInt(x);
+var bin = x.toString(2);
+var hex = x.toString(16).toUpperCase();
+var octal = x.toString(8);
+var figs = "A sequencia binaria referente ao decimal " + x + " &eacute; " + bin + "<br>";
+document.getElementById("result").innerHTML = figs;
+}
+</script>
+<br>
+
+_____________________________________________________<br>
+
+<br>
+
+Exemplo de um caractere representado na tabela:<br>
+
+<br>
+
+<table style="text-align: left; width: 437px; height: 77px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);">BYTE</td>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);"><br>
+
+      </td>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);">Binary</td>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);"><br>
+
+      </td>
+
+      <td style="font-family: Verdana; text-align: center; font-weight: bold; background-color: rgb(234, 236, 255);">Decimal</td>
+
+      <td style="background-color: rgb(234, 236, 255);"><span style="font-weight: bold;">Caractere</span></td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0110
+0001</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">01100001</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">97</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">a</td>
+
+    </tr>
+
+    <tr>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">0110
+0010</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">01100010</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">=</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">98</td>
+
+      <td style="font-family: Verdana; text-align: center; background-color: rgb(234, 236, 255);">b</td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<br>
+
+<br>
+<div id="barra"></div><br>
+<span style="font-weight: bold; font-family: Verdana;"></span><span style="font-family: Verdana; font-weight: bold;">&nbsp;Visualizador
+de dados de um caractere</span><span style="font-weight: bold; font-family: Verdana;"></span><br>
+
+<br>
+
+<script language="JavaScript">
+<!-- Begin
+binary_numbers = new Array("0000", "0001", "0010", "0011", "0100", "0101",
+"0110", "0111", "1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111");
+function toBinary(High, Low) {
+var hiHex = "ABCDEF";
+if (Low < 10 ) {
+LowNib = Low;
+}
+else {
+LowNib = 10 + hiHex.indexOf(Low);
+}
+if (High < 10 ) {
+HighNib = High;
+}
+else {
+HighNib = 10 + hiHex.indexOf(High);
+}
+eight_bits = binary_numbers[HighNib] + " " + binary_numbers[LowNib];
+return eight_bits;
+}
+function Dec2Hex(Decimal) {
+var hexChars = "0123456789ABCDEF";
+var a = Decimal % 16;
+var b = (Decimal - a)/16;
+hex = "" + hexChars.charAt(b) + hexChars.charAt(a);
+L = hexChars.charAt(a);
+H = hexChars.charAt(b);
+return hex;
+}
+var symbols = " !\"#$%&'()*+'-./0123456789:;<=>?@";
+function toAscii () {
+var loAZ = "abcdefghijklmnopqrstuvwxyz";
+symbols+= loAZ.toUpperCase();
+symbols+= "[\\]^_`";
+symbols+= loAZ;
+symbols+= "{|}~";
+var loc;
+loc = symbols.indexOf(document.asciiform.Input.value);
+if (loc >-1) {
+Ascii_Decimal = 32 + loc;
+return (32 + loc);
+}
+return(0); // If not in range 32-126 return ZERO
+}
+function getAscii(some_value) {
+document.asciiform.toDec.value = toAscii();
+document.asciiform.toHex.value = Dec2Hex(toAscii());
+document.asciiform.binary.value = toBinary(H, L);
+}
+// End -->
+</script>
+<!-- FIM DA INCLUSÃO NA TAG HEAD --><!-- COLOQUE O SEGUINTE CÓDIGO NA TAG BODY -->
+<form name="asciiform" onsubmit="return false;">
+  <table border="0">
+
+    <tbody>
+
+      <tr>
+
+        <td>
+        <center><small style="font-weight: bold;"><span style="font-family: Verdana;">Digite
+o caractere:</span> <input size="1" name="Input" maxlength="1" onchange="getAscii(this.value)">
+        <p><input value="display" onclick="document.asciiform.toDec.value=toAscii()" type="button"></p>
+
+        </small></center><small style="font-weight: bold;">
+
+        <p> <input size="10" name="toDec" onfocus="this.blur()"><span style="font-family: Verdana;">ASCII Decimal Output</span><br>
+
+        <input size="10" name="binary" onfocus="this.blur()"> <span style="font-family: Verdana;">ASCII Binary Output </span><br>
+
+        <input size="10" name="toHex" onfocus="this.blur()"> <span style="font-family: Verdana;">Hexadecimal</span><br>
+
+        </p>
+
+        </small></td>
+
+      </tr>
+
+    </tbody>
+  </table>
+
+</form>
+
+<br><div id="barra"></div><br>
+ <span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<br>
+
+
+<h4>Conversões
+de Medidas</h4>
+
+<p style="font-family: Verdana;">1 Byte
+= 8 Bit<br>
+
+1 Kilobyte = 1024 Bytes<br>
+
+1 Megabyte = 1048576 Bytes<br>
+
+1 Gigabyte = 1073741824 Bytes<br>
+
+1 Terabyte = 1099511627776 Bytes<br>
+
+1 Petabyte = 1125899906842624 Bytes<br>
+
+1 Exabyte = 1152921504606846976 Bytes<br>
+
+1 Zettabyte = 1180591620717411303424 Bytes<br>
+
+1 Yottabyte = 1208925819614629174706176 Bytes</p>
+
+<p style="font-family: Verdana;">Para
+converter uma unidade acima divide-se por 1024 e para converter uma
+unidade abaixo multiplica-se por 1024.<br>
+
+Exemplo: 2000 bytes para Kilobytes, uma unidade acima, é
+2000/1024 que resulta em aproximadamente: 1.95 KB.</p>
+
+<p style="font-family: Verdana; font-weight: bold;"><br>CONVERSOR
+DE MEDIDAS:</p>
+
+<p style="font-family: Verdana;"><!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com --><!-- Original: JavaScript Kit -->
+<!-- Web Site: http://wsabstract.com --></p>
+
+<form name="bandwidth">
+  <p><input name="original" size="20" value="1024" type="text">
+  <select size="1" name="units">
+  <option selected="selected" value="Bytes">Bytes</option>
+  <option value="Kb">Kb</option>
+  <option value="Mb">Mb</option>
+  <option value="Gb">Gb</option>
+  </select>
+
+  <input value="Calculate" name="B1" onclick="calculate()" type="button"></p>
+
+</form>
+
+<p> 
+<script>
+/*
+Bandwidth calculator (credit must stay enclosed)
+By javascriptkit.com
+For this and over 400+ JavaScripts,
+Visit http://www.javascriptkit.com
+*/
+var bytevalue=0
+function calculate(){
+var invalue=document.bandwidth.original.value
+var selectunit=document.bandwidth.units.options[document.bandwidth.units.selectedIndex].value
+if (selectunit=="Bytes")
+bytevalue=invalue
+else if (selectunit=="Kb")
+bytevalue=invalue*1024
+else if (selectunit=="Mb")
+bytevalue=invalue*1024*1024
+else if (selectunit=="Gb")
+bytevalue=invalue*1024*1024*1024
+alert (invalue+" "+selectunit+" equivale a:\n\n- "+bytevalue+" Bytes\n- "+Math.round(bytevalue/1024)+" Kb\n- "+Math.round(bytevalue/1024/1024)+" Mb\n- "+Math.round(bytevalue/1024/1024/1024)+" Gb\n")
+} </script></p>
+
+<p><!-- Script Size: 1.73 KB --> </p>
+
+&nbsp;<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><span style="font-weight: bold;"><br>
+
+&nbsp; <br>
+
+&nbsp; <span style="font-family: Verdana;">MODO
+TEXTO E MODO BINARIO</span></span><br style="font-family: Verdana;">
+
+<br>
+
+&nbsp; Dados no modo texto estão fundalmentalmente
+dentro da tabela ASCII, geralmente podemos visualizar e compreender os
+dados, é possivel até mesmo codificar um dado
+binário para o modo texto.<br>
+
+&nbsp; Dados no modo binário utiliza os 256 caracteres em uma
+linguagem nao acessivel a primeira vista, e a ordem dos dados traduz
+apenas uma mensagem onde a maquina tem o papel de compreender.<br>
+
+<br>
+
+<br>
+
+<br>
+
+&nbsp; EXEMPLOS DE ARQUIVOS em MODO TEXTO (ASCII)<br>
+
+&nbsp; arquivos.html
+&nbsp;arquivos.txt<br>
+
+&nbsp; <br>
+
+&nbsp; EXEMPLO DE PROTOCOLOS EM MODO TEXTO:<br>
+
+&nbsp; HTTP, POP<br>
+
+<br>
+
+&nbsp;&nbsp;EXEMPLOS DE ARQUIVOS em MODO
+BINARIO<br>
+
+&nbsp; arquivos.exe &nbsp; arquivos.docx<br>
+
+<br>
+
+&nbsp;&nbsp;<span style="font-family: Verdana;">EXEMPLO DE PROTOCOLOS EM MODO
+BINARIO</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp; TCP ,
+&nbsp;UDP,&nbsp; IP</span><br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp; (Por
+exemplo no TCP a porta é enviada de forma binaria)</span><br>
+
+<br>
+
+&nbsp; &nbsp;<br>
+
+&nbsp; <br>
+
+<br>
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;">&nbsp;Andre, futuramente
+vamos aprender a somar, subtrair em binários e também sobre números
+Hexadecimais.</span><span style="font-family: Verdana; font-weight: bold;"></span><span style="font-family: Verdana;"></span><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+<span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><span style="font-family: Verdana;"></span><br>
+
+<span style="font-family: Verdana; font-weight: bold;"><div id="barra"></div><br></span><br style="font-family: Verdana;">
+
+
+
+
+
+</div>
+
+<!-- FIMAULA -->
+</div>
+
+
+
+<!-- INITESTE -->
+
+<br><br>
+<b><big>Responda as questões abaixo para a conclusão da aula:</big></b>
+<br><br>
+<form method="post" action="scr_teste.php">
+<input name="nome" value="Andre" type="hidden">
+<input name="email" value="andreeeemachado@gmail.com" type="hidden">
+<input name="aula" value="11" type="hidden">
+<input name="id_empresa" value="inet" type="hidden">
+<input name="curso" value="ascd_on" type="hidden">
+<input name="aut" value="ed28cafb2acb11f5dbcba0dfd26449de" type="hidden">
+
+<b>1-) O que é um Byte ?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Impulsos elétricos, positivos ou negativos, que são representados por 1 ou 0 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Parte física de meu pendrive </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Conjunto de 256 bits</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Conjunto de 8 bits </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs1e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>Nenhuma das alternativas. </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>2-) Como é representado o Byte do&nbsp; caracter&nbsp; “a”&nbsp; na tabela&nbsp; ASCII?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>0110 0000 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>0100 0001 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>0110 0001</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>0010 0001 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs2e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>0110 0101 </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>3-) Um KB corresponde à quantos Bytes?<br>
+<br>
+</b>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-family: Verdana;"><small>a)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3a" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>1000 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>b)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3b" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>1024 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>c)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3c" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>256</small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>d)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3d" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>10000 </small></td>
+    </tr>
+    <tr>
+      <td style="font-family: Verdana;"><small>e)</small></td>
+      <td style="font-family: Verdana;"><small><input value="1" name="qs3e" type="checkbox"></small></td>
+      <td style="font-family: Verdana;"><small>512 </small></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<input value=" Enviar e concluir a aula" type="submit">
+<br><br></form>
+<!-- FINTESTE -->
+
+
+
+<!-- INIDUVIDA -->
+
+<br><br>
+<p><b>Dúvidas
+sobre o conteúdo da aula:</b></p>
+<br>
+<form action="../aula_curso.php" method="post">
+  <p></p>
+  <img src="Curso%20ASCD%20-%20Aula%2011_arquivos/duvidas.png" alt="" style="border: 0px solid ; margin-right: 10px; min-height: 91px; height: 88px; float: left;">
+  <table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="font-family: Verdana;"><small>Nome:</small></td>
+        <td><input name="nome" value="Andre" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Email:</small></td>
+        <td><input name="email" value="andreeeemachado@gmail.com" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>&nbsp;Aula:</small></td>
+        <td><input name="aula" value="11" size="50" type="text"></td>
+      </tr>
+      <tr>
+        <td style="font-family: Verdana;"><small>Dúvida:</small></td>
+        <td><textarea style="font-family: Verdana;" name="duvida" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input value=" Enviar " type="submit">&nbsp;<input value=" Limpar " type="reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<!-- FIMDUVIDA -->
+
+
+<center>
+<br>
+<img style="border: 0px solid ; width: 800px; height: 50px;" alt="" src="Curso%20ASCD%20-%20Aula%2011_arquivos/protecao_inteletual.png">
+</center>
+<p></p>
+</div>
+<div id="rodape_normal">
+    <p>
+    Todos Direitos Reservados - <a href="http://www.insecuritynet.com.br/"><strong>Insecuritynet</strong></a> - 2012
+    </p>
+    </div>
+	
+    </div>
+    
+    </body></html>
